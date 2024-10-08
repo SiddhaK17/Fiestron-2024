@@ -68,6 +68,7 @@
     background-size: cover;
     align-items: center;
     justify-content: center;
+    border-radius: 10%;
 }
 
 .row-two {
@@ -114,6 +115,7 @@
     padding-bottom: 25%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 5% / 10%;
 }
 
 .hodintroline {
@@ -157,6 +159,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .accounts {
@@ -173,6 +176,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .coverage {
@@ -189,6 +193,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .second-order {
@@ -211,6 +216,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .design {
@@ -227,6 +233,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .hospitality {
@@ -243,6 +250,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .third-order {
@@ -265,6 +273,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .security {
@@ -281,6 +290,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .technical {
@@ -297,6 +307,7 @@
     padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .fourth-order {
@@ -319,6 +330,7 @@
     padding-bottom: 50%;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10% / 15%;
 }
 
 .website-team-intro {
@@ -352,23 +364,27 @@
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
 .pic-2 {
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
 
 .pic-3 {
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
 
 .pic-4 {
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
 
 .to-give-padding {
@@ -395,16 +411,19 @@
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
 
 .pic-6 {
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
 
 .pic-7 {    
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
+    border-radius: 10%;
 }
