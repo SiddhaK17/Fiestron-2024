@@ -89,12 +89,35 @@
 .teacher7 {
     width: 15%;
     padding-bottom: 15%;
-    background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.teacher2 {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.teacher3 {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.teacher4 {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.teacher5 {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.teacher6 {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.teacher7 {
+    background-image: url(../images/sampleTeamPic.jpg);
 }
 
 .core {
@@ -147,154 +170,14 @@
     padding-top: 3rem;
 }
 
-.admin {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.admin-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.accounts {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.accounts-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.coverage {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.coverage-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.second-order {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 4rem;
-}
-
-.decor {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.decor-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.design {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.design-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.hospitality {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.hospitality-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.third-order {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 4rem;
-}
-
-.logistics {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.logistics-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
-.security {
-    font-size: 2rem;
-    padding: 3rem;
-    color: white;
-    width: 35%;
-    text-align: center;
-    word-spacing: 0.4rem;
-}
-
-.security-pic {
-    width: 100%;
-    padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10% / 15%;
-}
-
+.admin,
+.accounts,
+.coverage,
+.decor,
+.design,
+.hospitality,
+.logistics,
+.security,
 .technical {
     font-size: 2rem;
     padding: 3rem;
@@ -304,12 +187,67 @@
     word-spacing: 0.4rem;
 }
 
+.admin-pic,
+.accounts-pic,
+.coverage-pic,
+.decor-pic,
+.design-pic,
+.hospitality-pic,
+.logistics-pic,
+.security-pic,
 .technical-pic {
     width: 100%;
     padding-bottom: 65%;
-    background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;
     border-radius: 10% / 15%;
+}
+
+.admin-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.accounts-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.coverage-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.second-order {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.decor-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.design-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.hospitality-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.third-order {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.logistics-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.security-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
+}
+
+.technical-pic {
+    background-image: url(../images/sampleTeamPic.jpg);
 }
 
 .fourth-order {
@@ -363,33 +301,24 @@
 .pic-4 {
     width: 27%;
     padding-bottom: 22%;
+    padding-top: 2rem;
+    background-size: cover;
+    border-radius: 10%;
 }
 
 .pic-1 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
 .pic-2 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
 
 .pic-3 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
 
 .pic-4 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
 
 .to-give-padding {
@@ -411,26 +340,20 @@
 .pic-6,
 .pic-7 {
     width: 24%;
-    padding-bottom: 24%;
+    padding-bottom: 25%;
+    padding-top: 2rem;
+    background-size: cover;
+    border-radius: 10%;
 }
 
 .pic-5 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
 
 .pic-6 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
 
 .pic-7 {
-    padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
-    background-size: cover;
-    border-radius: 10%;
 }
