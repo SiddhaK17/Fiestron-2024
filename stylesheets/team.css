@@ -34,10 +34,9 @@
     margin-left: 22.5%;
     text-transform: capitalize;
     line-height: 3rem;
-    
 }
 
-.teachers{
+.teachers {
     padding-top: 8.5rem;
     text-align: center;
     color: white;
@@ -47,18 +46,18 @@
 }
 
 .second-para-adjusting {
-   font-size: 3.2rem;
-   width: 70%;
-   margin-left: 14.8%;
-   line-height: 5rem;
+    font-size: 3.2rem;
+    width: 70%;
+    margin-left: 14.8%;
+    line-height: 5rem;
 }
 
 .row-one {
-   padding-top: 5rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .teacher1 {
@@ -82,7 +81,12 @@
     border-radius: 50%;
 }
 
-.teacher2, .teacher3, .teacher4, .teacher5, .teacher6, .teacher7 {
+.teacher2,
+.teacher3,
+.teacher4,
+.teacher5,
+.teacher6,
+.teacher7 {
     width: 15%;
     padding-bottom: 15%;
     background-image: url(../images/sampleTeamPic.jpg);
@@ -93,8 +97,7 @@
     align-items: center;
 }
 
-
-.core{
+.core {
     padding-top: 9rem;
     text-align: center;
     color: white;
@@ -137,7 +140,6 @@
     margin-left: 19%;
     font-size: 3.8rem;
 }
-
 
 .first-order {
     display: flex;
@@ -355,7 +357,10 @@
     gap: 5rem;
 }
 
-.pic-1, .pic-2, .pic-3, .pic-4 {
+.pic-1,
+.pic-2,
+.pic-3,
+.pic-4 {
     width: 27%;
     padding-bottom: 22%;
 }
@@ -395,14 +400,16 @@
 .website-team-pictures-order-two {
     padding-top: 5rem;
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
     margin: 0 auto;
     padding: 2rem 0;
 }
 
-.pic-5, .pic-6, .pic-7 {
+.pic-5,
+.pic-6,
+.pic-7 {
     width: 24%;
     padding-bottom: 24%;
 }
@@ -421,7 +428,7 @@
     border-radius: 10%;
 }
 
-.pic-7 {    
+.pic-7 {
     padding-top: 2rem;
     background-image: url(../images/sampleTeamPic.jpg);
     background-size: cover;

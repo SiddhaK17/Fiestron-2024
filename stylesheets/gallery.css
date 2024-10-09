@@ -1,54 +1,59 @@
 /*'OUR GALLERY' FONT:*/
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 body {
-   align-content: center;
-   background-color: black;
+    align-content: center;
+    background-color: black;
     background-repeat: repeat;
 }
-    
 
-  /*HEADING*/
-  .h1 {
+/*HEADING*/
+.h1 {
     color: white;
     text-align: center;
     font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 700%;
-  }
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 700%;
+}
 
-
-  *{
+* {
     margin: 0;
     padding: 0;
-    }
-    
-    .card{
+}
+
+.card {
     margin: 0 auto;
-     padding: 2em;
-     height:29rem;
-     width: 60rem;
+    padding: 2em;
+    height: 29rem;
+    width: 60rem;
     background: rgb(34, 34, 34);
-     border-radius: 10px;
+    border-radius: 10px;
     position: relative;
-    }
-    
-    @property --angle{
+}
+
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-    }
-    
-    .card::after, .card::before{
-     content: '';
-     position: absolute;
+}
+
+.card::after,
+.card::before {
+    content: "";
+    position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #eb2feb, cyan, limegreen, greenyellow, #eb2feb);
+    background-image: conic-gradient(
+        from var(--angle),
+        #eb2feb,
+        cyan,
+        limegreen,
+        greenyellow,
+        #eb2feb
+    );
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -59,106 +64,106 @@ body {
     animation: 2s linear infinite;
     animation-name: spin;
     animation-iteration-count: infinite;
-    }
+}
 
-    .card::before{
+.card::before {
     filter: blur(1.5rem);
     opacity: 0.5;
-    }
-    
-    @keyframes spin{
-    from{
-    --angle: 0deg;
-    }
-    to{
-     --angle: 180deg;
-    }
-    }
-    
-    .img1 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-    }
+}
 
-    .img2 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      left: 23rem;
+@keyframes spin {
+    from {
+        --angle: 0deg;
     }
+    to {
+        --angle: 180deg;
+    }
+}
 
-    .img3 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      left: 44rem;
-    }
+.img1 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+}
 
-    .img4 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      top: 13rem;
-    }
+.img2 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    left: 23rem;
+}
 
-    .img5 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      top: 13rem;
-      left: 23rem;
-    }
+.img3 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    left: 44rem;
+}
 
-    .img6 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      top: 13rem;
-      left: 44rem;
-    }
+.img4 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    top: 13rem;
+}
 
-    .img7 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      top: 24rem;
-    }
+.img5 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    top: 13rem;
+    left: 23rem;
+}
 
-    .img8 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      top: 24rem;
-      left: 23rem;
-    }
+.img6 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    top: 13rem;
+    left: 44rem;
+}
 
-    .img9 {
-      border-radius: 15px;
-      height: 9rem;
-      width: 19rem;
-      position: absolute;
-      margin: -1rem;
-      top: 24rem;
-      left: 44rem;
-    }
+.img7 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    top: 24rem;
+}
 
-    img:hover {
-      opacity: 0.7;
-    }
+.img8 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    top: 24rem;
+    left: 23rem;
+}
+
+.img9 {
+    border-radius: 15px;
+    height: 9rem;
+    width: 19rem;
+    position: absolute;
+    margin: -1rem;
+    top: 24rem;
+    left: 44rem;
+}
+
+img:hover {
+    opacity: 0.7;
+}
