@@ -27,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .subintrotagline {
-    padding-top: 1.3rem;
+    padding-top: 0.5rem;
     text-align: center;
     color: white;
     font-size: 2.1rem;
@@ -67,7 +67,7 @@
 }
 
 .teachers {
-    padding-top: 8.5rem;
+    padding-top: 7.6rem;
     text-align: center;
     color: white;
     font-size: 4rem;
@@ -83,7 +83,7 @@
 }
 
 .row-one {
-    padding-top: 5rem;
+    padding-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,7 @@
 .teacher1 {
     width: 18%;
     padding-bottom: 18%;
-    background-image: url(../images/team/Dr.-Shalini-R.-Sinha.jpg);
+    background-image: url(../images/team/DrShaliniRSinha.jpg);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -109,7 +109,7 @@
 }
 
 .row-two {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -137,14 +137,16 @@
 
 .teacher2 {
     background-image: url(../images/team/geeta.jpg);
+    background-size: 170%;
+    background-position: center 15%;
 }
 
 .teacher3 {
-    background-image: url(../images/team/Mrs.-Beena-S.-Karutharan.jpg);
+    background-image: url(../images/team/MrsBeenaSKarutharan.jpg);
 }
 
 .teacher4 {
-    background-image: url(../images/team/Ms.-Jovairia-Ansari.png);
+    background-image: url(../images/team/MsJovairiaAnsari.png);
 }
 
 .teacher5 {
@@ -153,6 +155,8 @@
 
 .teacher6 {
     background-image: url(../images/team/shaliniM.jpg);
+    background-size: 92%;
+    background-position: center top;
 }
 
 .teacher7 {
@@ -175,7 +179,6 @@
 .teacher6-name,
 .teacher7-name {
     width: 15%;
-    padding-bottom: 15%;
     font-size: 1.3rem;
     color: white;
     text-align: center;
@@ -188,23 +191,46 @@
     text-align: center;
     color: white;
     font-size: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .coreadjusting {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+    width: 92%;
+    margin: 0 auto;
+    gap: 3rem;
 }
 
-.corepic {
-    width: 50%;
-    padding-bottom: 25%;
-    background-image: url(../images/sampleTeamPic.jpeg);
+.corepic1,
+.corepic2,
+.corepic3,
+.corepic4 {
+    width: 27%;
+    padding-bottom: 22%;
+    padding-top: 2rem;
     background-size: cover;
-    border-radius: 5% / 10%;
+    border-radius: 10%;
+    border: 0.2rem solid white;
+}
+
+.corepic1 {
+    background-image: url(../images/team/ruthran.jpg);
+}
+
+.corepic2 {
+    background-image: url(../images/team/Burhan.png);
+}
+
+.corepic3 {
+    background-image: url(../images/sampleTeamPic.jpeg);
+}
+
+.corepic4 {
+    background-image: url(../images/team/pakzad.jpg);
+    background-size: 105%;
+    background-position: center;
 }
 
 .core-names {
@@ -212,10 +238,24 @@
     text-align: center;
     font-size: 1.2rem;
     word-spacing: 0.4rem;
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.core-names-1,
+.core-names-2,
+.core-names-3,
+.core-names-4 {
+    width: 27%;
+    padding-top: 1rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .hodintroline {
-    padding-top: 8rem;
+    padding-top: 9rem;
     padding-bottom: 2rem;
     text-align: center;
     color: white;
@@ -237,7 +277,7 @@
 .first-order {
     display: flex;
     justify-content: space-between;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .admin,
@@ -247,7 +287,7 @@
 .design,
 .hospitality,
 .logistics,
-.security,
+.prandmarketing,
 .technical {
     font-size: 2rem;
     padding-top: 3rem;
@@ -266,12 +306,13 @@
 .design-pic,
 .hospitality-pic,
 .logistics-pic,
-.security-pic,
+.prandmarketing-pic,
 .technical-pic {
     width: 100%;
     padding-bottom: 65%;
     background-size: cover;
     border-radius: 10% / 15%;
+    border: 0.2rem solid white;
 }
 
 .admin-pic {
@@ -307,7 +348,7 @@
 .second-order {
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 .decor-pic {
@@ -315,11 +356,31 @@
 }
 
 .design-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/team/chandan.jpg);
+    background-size: 110%;
+    background-position: center 7%;
 }
 
 .hospitality-pic {
     background-image: url(../images/sampleTeamPic.jpeg);
+}
+
+.second-order-names {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.decor-name,
+.hospitality-name,
+.design-name {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    word-spacing: 0.4rem;
 }
 
 .third-order {
@@ -332,7 +393,7 @@
     background-image: url(../images/sampleTeamPic.jpeg);
 }
 
-.security-pic {
+.prandmarketing-pic {
     background-image: url(../images/sampleTeamPic.jpeg);
 }
 
@@ -340,32 +401,62 @@
     background-image: url(../images/sampleTeamPic.jpeg);
 }
 
-.fourth-order {
+.third-order-names {
     display: flex;
-    justify-content: center;
-    padding-top: 5rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 
-.prandmarketing {
-    font-size: 2rem;
-    padding: 3rem;
+.logistics-name,
+.prandmarketing-name,
+.technical-name {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
     color: white;
-    width: 40%;
+    font-size: 1.5rem;
+    word-spacing: 0.4rem;
+}
+
+.fourth-order {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.security {
+    font-size: 2rem;
+    padding: 3rem 0 0 0;
+    color: white;
+    width: 35%;
     text-align: center;
     word-spacing: 0.4rem;
 }
 
-.prandmarketing-pic {
+.security-pic {
     width: 100%;
-    padding-bottom: 50%;
+    padding-bottom: 65%;
     background-image: url(../images/sampleTeamPic.jpeg);
     background-size: cover;
     border-radius: 10% / 15%;
+    border: 0.2rem solid white;
+}
+
+#security-name {
+    text-align: center;
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    word-spacing: 0.4rem;
 }
 
 .website-team-intro {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
     color: white;
     text-align: center;
     font-size: 4rem;
@@ -381,7 +472,7 @@
     align-items: center;
     width: 92%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding-top: 2rem;
     gap: 5rem;
 }
 
@@ -394,6 +485,7 @@
     padding-top: 2rem;
     background-size: cover;
     border-radius: 10%;
+    border: 0.2rem solid white;
 }
 
 .pic-1 {
@@ -411,29 +503,50 @@
     background-image: url(../images/sampleTeamPic.jpeg);
 }
 
+.webteam-names-row-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin: 0 auto;
+    gap: 5rem;
+    padding-top: 1rem;
+}
+
+.website-team-names-1,
+.website-team-names-2,
+.website-team-names-3,
+.website-team-names-4 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    word-spacing: 0.2rem;
+    line-height: 1.3rem;
+    width: 27%;
+}
+
 .to-give-padding {
     padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 .website-team-pictures-order-two {
-    padding-top: 5rem;
+    padding-top: 1.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding: 2rem 0;
 }
 
 .pic-5,
 .pic-6,
 .pic-7 {
-    width: 24%;
-    padding-bottom: 25%;
+    width: 25%;
+    padding-bottom: 24%;
     padding-top: 2rem;
     background-size: cover;
     border-radius: 10%;
+    border: 0.2rem solid white;
 }
 
 .pic-5 {
@@ -446,4 +559,28 @@
 
 .pic-7 {
     background-image: url(../images/sampleTeamPic.jpeg);
+}
+
+.webteam-names-row-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    gap: 5rem;
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+}
+
+.website-team-names-5,
+.website-team-names-6,
+.website-team-names-7 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    word-spacing: 0.2rem;
+    line-height: 1.3rem;
+    width: 24%;
 }
