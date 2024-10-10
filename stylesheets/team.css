@@ -2,7 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(0, 0, 0);
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.content {
+    z-index: 1;
 }
 
 .ourteam {
@@ -63,22 +93,30 @@
 .teacher1 {
     width: 18%;
     padding-bottom: 18%;
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/team/Dr.-Shalini-R.-Sinha.jpg);
     background-size: cover;
     align-items: center;
     justify-content: center;
     border-radius: 10%;
+    border: 0.2rem solid rgb(255, 255, 255);
+}
+
+#name-shalini-sinha {
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
 }
 
 .row-two {
     padding-top: 10rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 92%;
     margin: 0 auto;
     gap: 1rem;
-    border-radius: 50%;
 }
 
 .teacher2,
@@ -94,30 +132,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0.3rem solid rgb(255, 255, 255);
 }
 
 .teacher2 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/team/geeta.jpg);
 }
 
 .teacher3 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/team/Mrs.-Beena-S.-Karutharan.jpg);
 }
 
 .teacher4 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/team/Ms.-Jovairia-Ansari.png);
 }
 
 .teacher5 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/team/Ms.-Ritika-Sharma.png);
 }
 
 .teacher6 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/team/shaliniM.jpg);
 }
 
 .teacher7 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
+}
+
+.row-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.teacher2-name,
+.teacher3-name,
+.teacher4-name,
+.teacher5-name,
+.teacher6-name,
+.teacher7-name {
+    width: 15%;
+    padding-bottom: 15%;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    word-spacing: 0.2rem;
+    line-height: 1.3rem;
 }
 
 .core {
@@ -139,9 +202,16 @@
 .corepic {
     width: 50%;
     padding-bottom: 25%;
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
     background-size: cover;
     border-radius: 5% / 10%;
+}
+
+.core-names {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    word-spacing: 0.4rem;
 }
 
 .hodintroline {
@@ -180,7 +250,9 @@
 .security,
 .technical {
     font-size: 2rem;
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     color: white;
     width: 35%;
     text-align: center;
@@ -203,64 +275,82 @@
 }
 
 .admin-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .accounts-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .coverage-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
+}
+
+.first-order-names {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.admin-name,
+.accounts-name,
+.coverage-name {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    word-spacing: 0.4rem;
 }
 
 .second-order {
     display: flex;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .decor-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .design-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .hospitality-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .third-order {
     display: flex;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .logistics-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .security-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .technical-pic {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .fourth-order {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .prandmarketing {
     font-size: 2rem;
     padding: 3rem;
     color: white;
-    width: 50%;
+    width: 40%;
     text-align: center;
     word-spacing: 0.4rem;
 }
@@ -268,7 +358,7 @@
 .prandmarketing-pic {
     width: 100%;
     padding-bottom: 50%;
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
     background-size: cover;
     border-radius: 10% / 15%;
 }
@@ -307,18 +397,18 @@
 }
 
 .pic-1 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 .pic-2 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .pic-3 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .pic-4 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .to-give-padding {
@@ -347,13 +437,13 @@
 }
 
 .pic-5 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .pic-6 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
 
 .pic-7 {
-    background-image: url(../images/sampleTeamPic.jpg);
+    background-image: url(../images/sampleTeamPic.jpeg);
 }
