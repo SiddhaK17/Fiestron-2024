@@ -21,9 +21,18 @@
     filter: blur(5px);
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
 .content {
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .ourteam {
@@ -129,7 +138,6 @@
 .teacher2 {
     background-image: url(../images/team/geeta.jpg);
 }
-
 
 .teacher3 {
     background-image: url(../images/team/Mrs.-Beena-S.-Karutharan.jpg);
