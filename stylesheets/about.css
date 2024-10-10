@@ -1,17 +1,173 @@
-h1 {
-    font-size:2.5rem;
-    color: #e22727;
-    text-align: center;
-    margin: 1.25rem 0;
-    font-family: 'Arial', sans-serif;
-    text-transform: uppercase;
-    letter-spacing:  0.125rem;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-size: 1.2rem;
-    color: #572424;
-    text-align: left;
-    margin: 0.625rem 1.25rem;
-    font-family: 'Arial', sans-serif;
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "titlefont";
+    src: url(fonts/Future\ Edge\ Italic.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "titlefont2";
+    src: url(fonts/Cakecafe.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "headfont";
+    src: url(fonts/KGBlankSpaceSolid.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "parafont";
+    src: url(fonts/Laurasia.ttf) format("truetype");
+    font-weight: normal;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #03011c;
+}
+
+/* NAV STYLING */
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 26%;
+    border: 0.2rem solid rgb(0, 0, 0);
+    border-radius: 0.625rem;
+    margin: 1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-list {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 1.625rem 1.875rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+    color: rgb(197, 194, 194);
+}
+
+.rightNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+.clg-logo {
+    margin: 1rem;
+}
+
+.clg-logo img {
+    max-height: 3.5rem;
+    width: auto;
+}
+
+/* FIRST PAGE STYLING */
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../images/background.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cd7ec7;
+    text-decoration: underline;
+    max-width: 90%;
+    margin: auto;
+    height: 80%;
+    text-align: center;
+}
+
+.background-text-big {
+    font-family: 'titlefont', Verdana;
+    font-size: 7rem;
+    margin: 0;
+}
+
+.background-text-small {
+    font-family: 'titlefont2', Verdana;
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+/* PARA SECTION STYLING */
+.section {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.text-box,
+.image-box {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.text-box {
+    background-color: #bc84c3;
+    border-radius: 3rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(89, 193, 167, 0.953);
+    font-family: 'headfont', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sectionSubTag.text-small {
+    font-family: 'parafont', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-box {
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.imgFluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
