@@ -9,25 +9,25 @@ html {
 
 @font-face {
     font-family: "titlefont";
-    src: url(fonts/Future\ Edge\ Italic.ttf) format("truetype");
+    src: url("../fonts/Future\ Edge\ Italic.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "titlefont2";
-    src: url(fonts/Cakecafe.ttf) format("truetype");
+    src: url("../fonts/Cakecafe.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "headfont";
-    src: url(fonts/KGBlankSpaceSolid.ttf) format("truetype");
+    src: url("../fonts/KGBlankSpaceSolid.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "parafont";
-    src: url(fonts/Laurasia.ttf) format("truetype");
+    src: url("../fonts/Laurasia.ttf") format("truetype");
     font-weight: normal;
 }
 
@@ -74,7 +74,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .nav-list li a:hover {
@@ -99,7 +99,7 @@ body {
 
 /* FIRST PAGE STYLING */
 .background {
-    background: rgba(0, 0, 0, 0.7) url('../images/background.jpeg');
+    background: rgba(0, 0, 0, 0.7) url("../images/background.jpeg");
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -122,13 +122,13 @@ body {
 }
 
 .background-text-big {
-    font-family: 'titlefont', Verdana;
+    font-family: "titlefont", Verdana;
     font-size: 7rem;
     margin: 0;
 }
 
 .background-text-small {
-    font-family: 'titlefont2', Verdana;
+    font-family: "titlefont2", Verdana;
     font-size: 3.3rem;
     margin: 0;
 }
@@ -142,7 +142,7 @@ body {
 
 .text-box,
 .image-box {
-    flex: 1; 
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,13 +152,14 @@ body {
 .text-box {
     background-color: #bc84c3;
     border-radius: 3rem;
+    flex-direction: column;
     padding: 2rem;
     box-shadow: 0 4px 10px rgba(89, 193, 167, 0.953);
-    font-family: 'headfont', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "headfont", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sectionSubTag.text-small {
-    font-family: 'parafont', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "parafont", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .image-box {
@@ -169,5 +170,5 @@ body {
 .imgFluid {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
