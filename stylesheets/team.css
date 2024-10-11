@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.teachers-wrapper,
+.core-wrapper,
+.hod-wrapper,
+.website-team-wrapper {
+    border: 0.2rem solid #ccc;
+    border-radius: 0.9rem;
+    padding: 0 2rem 5rem 2rem;
+    margin: 2rem 3.5rem 7rem 3.5rem;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgba(255,255,255,0.1);
+}
+
 .video-background {
     position: fixed;
     top: 0;
@@ -27,7 +40,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -40,20 +53,20 @@
     font-weight: 100;
     color: white;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 3rem 1.5rem 3rem;
     font-size: 5rem;
 }
 
 .tagline {
     font-family: "DM Sans", sans-serif;
-    font-weight: 480;
-    padding-top: 2rem;
+    font-weight: 400;
+    padding-top: 1rem;
     text-align: center;
     color: white;
     font-size: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     text-transform: capitalize;
     line-height: 3.7rem;
     word-spacing: 0.3rem;
@@ -61,24 +74,26 @@
 
 .subintrotagline {
     font-family: "Kanit", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 0.5rem;
+    padding-bottom: 3rem;
     text-align: center;
     color: white;
     font-size: 2.1rem;
-    width: 55%;
-    margin-left: 22.5%;
+    width: 53%;
+    margin: 0 auto;
     text-transform: capitalize;
     line-height: 3rem;
 }
 
 .teachers {
-    padding-top: 7.6rem;
+    padding-top: 4rem;
     text-align: center;
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-bottom: 2rem;
     width: 100%;
+    margin: 0 auto;
 }
 
 #styling-introducing-our {
@@ -99,9 +114,9 @@
 .second-para-adjusting {
     font-family: "Golos Text", sans-serif;
     font-weight: 500;
-    font-size: 3.2rem;
-    width: 70%;
-    margin-left: 14.8%;
+    font-size: 3rem;
+    width: 75%;
+    margin: 0 auto;
     line-height: 4rem;
 }
 
@@ -125,7 +140,51 @@
     align-items: center;
     justify-content: center;
     border-radius: 10%;
-    border: 0.2rem solid rgb(255, 255, 255);
+    border: 0.17rem solid #222222;
+}
+
+.teacher1,
+.teacher2,
+.teacher3,
+.teacher4,
+.teacher5,
+.teacher6,
+.teacher7 {
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.teacher1::after, .teacher1::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3.2%;
+    border-radius: 10%;
+    animation: 3s spin linear infinite;
+}
+
+.teacher1::before {
+    filter: blur(2rem);
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
 
 #name-shalini-sinha {
@@ -141,9 +200,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    width: 94%;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .teacher2,
@@ -159,8 +218,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.3rem solid rgb(255, 255, 255);
+    border: 0.17rem solid #222222;
+    animation: 2s spin linear infinite;
 }
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.teacher2::before, .teacher3::before, .teacher4::before,
+.teacher5::before, .teacher6::before, .teacher7::before,
+.teacher2::after, .teacher3::after, .teacher4::after,
+.teacher5::after, .teacher6::after, .teacher7::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3.7%;
+    border-radius: 50%;
+    animation: 3s spin linear infinite;
+}
+
+.teacher2::before, .teacher3::before, .teacher4::before,
+.teacher5::before, .teacher6::before, .teacher7::before {
+    filter: blur(2rem);
+    opacity: 0.4;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
 
 .teacher2 {
     background-image: url(../images/team/geeta.jpg);
@@ -211,6 +311,7 @@
     text-align: center;
     word-spacing: 0.2rem;
     line-height: 1.3rem;
+    padding-bottom: 2rem;
 }
 
 .core {
@@ -218,11 +319,13 @@
     font-style: italic;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: white;
-    padding-top: 9rem;
+    padding-top: 4rem;
     text-align: center;
     color: transparent;
     font-size: 4rem;
     padding-bottom: 4rem;
+    text-decoration: underline solid white 12%;
+    text-underline-offset: 0.8rem;
 }
 
 .coreadjusting {
@@ -243,7 +346,44 @@
     padding-top: 2rem;
     background-size: cover;
     border-radius: 10%;
-    border: 0.2rem solid white;
+    border: 0.17rem solid #222222;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.corepic1::before, .corepic2::before, .corepic3::before, .corepic4::before,
+.corepic1::after, .corepic2::after, .corepic3::after, .corepic4::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 2%;
+    border-radius: 10%;
+    animation: 3s spin linear infinite;
+}
+
+.corepic1::before, .corepic2::before, .corepic3::before, .corepic4::before {
+    filter: blur(2rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
 
 .corepic1 {
@@ -255,7 +395,8 @@
 }
 
 .corepic3 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/team/farhan.JPG);
+    background-position: center 4% ;
 }
 
 .corepic4 {
@@ -301,7 +442,7 @@
 }
 
 .hodintroline {
-    padding-top: 9rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     text-align: center;
     color: white;
@@ -325,7 +466,7 @@
 .first-order {
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .admin,
@@ -339,8 +480,7 @@
 .technical {
     font-size: 2rem;
     padding-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin: 0 auto;
     color: white;
     width: 35%;
     text-align: center;
@@ -348,6 +488,10 @@
     font-family: "Asap", sans-serif;
     font-weight: 600;
     
+}
+
+.name-adjust {
+    padding: 0 1.5rem 0rem 1.5rem;
 }
 
 .admin-pic,
@@ -359,11 +503,49 @@
 .logistics-pic,
 .prandmarketing-pic,
 .technical-pic {
-    width: 100%;
-    padding-bottom: 85%;
+    width: 63%;
+    padding-bottom: 66%;
+    margin: 0 auto;
     background-size: cover;
     border-radius: 10% / 15%;
-    border: 0.2rem solid white;
+    border: 0.17rem solid #222222;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.admin-pic::before, .accounts-pic::before, .coverage-pic::before, .decor-pic::before, .design-pic::before, .hospitality-pic::before, .logistics-pic::before, .prandmarketing-pic::before, .technical-pic::before,
+.admin-pic::after, .accounts-pic::after, .coverage-pic::after, .decor-pic::after, .design-pic::after, .hospitality-pic::after, .logistics-pic::after, .prandmarketing-pic::after, .technical-pic::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 2%;
+    border-radius: 10% / 15%;
+    animation: 3s spin linear infinite;
+}
+
+.admin-pic::before, .accounts-pic::before, .coverage-pic::before, .decor-pic::before, .design-pic::before, .hospitality-pic::before, .logistics-pic::before, .prandmarketing-pic::before, .technical-pic::before {
+    filter: blur(2rem);
+    opacity: 0.8;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
 
 .admin-pic {
@@ -439,7 +621,7 @@
 .third-order {
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 .logistics-pic {
@@ -478,14 +660,14 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
 }
 
 .security {
     font-size: 2rem;
     padding: 3rem 0 0 0;
     color: white;
-    width: 30%;
+    width: 27%;
     text-align: center;
     word-spacing: 0.4rem;
     font-family: "Asap", sans-serif;
@@ -493,12 +675,48 @@
 }
 
 .security-pic {
-    width: 100%;
+    width: 80.67%;
     padding-bottom: 85%;
+    margin: 0 auto;
     background-image: url(../images/sampleTeamPic.jpeg);
     background-size: cover;
     border-radius: 10% / 15%;
-    border: 0.2rem solid white;
+    border: 0.17rem solid #222222;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.security-pic::before, .security-pic::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 2%;
+    border-radius: 10% / 15%;
+    animation: 3s spin linear infinite;
+}
+
+.security-pic::before {
+    filter: blur(2rem);
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
 
 #security-name {
@@ -512,13 +730,13 @@
 }
 
 .website-team-intro {
-    padding-top: 9rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     color: white;
     text-align: center;
     font-size: 4rem;
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin: 0 auto;
     line-height: 5rem;
     text-transform: capitalize;
 }
@@ -557,7 +775,8 @@
     padding-top: 2rem;
     background-size: cover;
     border-radius: 10%;
-    border: 0.2rem solid white;
+    border: 0.17rem solid #222222;
+    position: relative;
 }
 
 .pic-1 {
@@ -599,7 +818,7 @@
 }
 
 .to-give-padding {
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 
 .website-team-pictures-order-two {
@@ -619,7 +838,8 @@
     padding-top: 2rem;
     background-size: cover;
     border-radius: 10%;
-    border: 0.2rem solid white;
+    border: 0.17rem solid #222222;
+    position: relative;
 }
 
 .pic-5 {
@@ -641,7 +861,7 @@
     width: 80%;
     margin: 0 auto;
     padding-top: 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 1.5rem;
     gap: 5rem;
     padding-left: 4.4rem;
     padding-right: 4.4rem;
@@ -658,3 +878,40 @@
     width: 24%;
     font-family: "Kanit", sans-serif;
 }
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.pic-1::before, .pic-2::before, .pic-3::before, .pic-4::before, .pic-5::before, .pic-6::before, .pic-7::before,
+.pic-1::after, .pic-2::after, .pic-3::after, .pic-4::after, .pic-5::after, .pic-6::after, .pic-7::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 2%;
+    border-radius: 10%;
+    animation: 3s spin linear infinite;
+}
+
+.pic-1::before, .pic-2::before, .pic-3::before, .pic-4::before, .pic-5::before, .pic-6::before, .pic-7::before {
+    filter: blur(2rem);
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
