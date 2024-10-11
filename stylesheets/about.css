@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -29,7 +32,6 @@ body {
   overflow-x: hidden;
   background-color: #0f0f0a;
 }
-
 
 /* /* NAV STYLING 
 .logo {
@@ -92,7 +94,6 @@ body {
   width: auto;
 } */
 
-
 /* FIRST PAGE STYLING */
 .background {
   background: rgba(0, 0, 0, 0.7) url("../images/background-about.jpeg");
@@ -109,12 +110,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #c5c2a5;
-  text-decoration: underline;
   text-shadow: #b8b8bd;
   max-width: 90%;
   margin: auto;
-  height: 80%;
+  height: 100%;
   text-align: center;
 }
 
@@ -122,12 +121,18 @@ body {
   font-family: "titlefont", Verdana;
   font-size: 7rem;
   margin: 0;
+  background-image: linear-gradient(to right, #e8de2b, #c5c2a5, #e8de2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .background-text-small {
   font-family: "titlefont2", Verdana;
   font-size: 3.3rem;
   margin: 0;
+  background-image: linear-gradient(to right, #e8de2b, #c5c2a5, #e8de2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* PARA SECTION STYLING */
@@ -143,19 +148,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 0.7rem;
   border: 0.47576rem solid transparent;
   border-radius: 1rem;
   border-image: linear-gradient(
       to right,
+      #e8de2b,
       #3d5260,
       #c5c2a5,
-      #3d5260,
+      #e8de2b,
       #c5c2a5,
-      #3d5260
+      #3d5260,
+      #e8de2b
     )
     1;
-    box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
+  box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
 }
 
 .text-box {
@@ -202,7 +209,7 @@ body {
 
 .sectionSubTag.text-big {
   font-family: "titlefont2", Verdana, Geneva, Tahoma, sans-serif;
-  color: #c5c2a5;
+  color: #e8de2b;
   text-decoration: underline;
 }
 
@@ -217,16 +224,16 @@ body {
   object-fit: cover;
 }
 
-/* Third pag styling */
+/* Third page styling */
 .focus-areas-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem; 
+  padding: 2rem;
 }
 
 .focus-areas-box {
-  width: 85%; 
+  width: 80%;
   border: 0.47576rem solid transparent;
   border-radius: 1rem;
   border-image: linear-gradient(
@@ -246,7 +253,61 @@ body {
   text-align: center;
   margin-bottom: 0.2rem;
   color: #e8de2b;
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-family: "titlefont", Verdana;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.focus-area-content {
+  overflow: hidden;
+  padding: 0.0625rem 0;
+  background: #e8de2b;
+  white-space: nowrap;
+  position: relative;
+}
+
+.focus-area-content:before,
+.focus-area-content:after {
+  position: absolute;
+  top: 0;
+  width: 12.5rem;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.focus-area-content:before {
+  left: 0;
+  background: linear-gradient(to left, #ffffff00, #0f0f0a);
+}
+
+.focus-area-content:after {
+  right: 0;
+  background: linear-gradient(to right, #ffffff00, #0f0f0a);
+}
+
+.focus-area-content:hover .content-slide {
+  animation-play-state: paused;
+}
+
+.content-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.content-slide span {
+  margin: 0 2.5rem;
+  color: #3d5260;
+  font-size: 4rem;
+  font-family: "Kanit", sans-serif;
+  text-decoration: underline;
 }
