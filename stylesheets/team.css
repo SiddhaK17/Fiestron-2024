@@ -15,6 +15,16 @@
     box-sizing: border-box;
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2.2rem rgba(238, 235, 235, 0.955);
+    transition: all 0.2s ease-in-out;
+}
+
+.teachers-wrapper:hover,
+.core-wrapper:hover,
+.hod-wrapper:hover,
+.website-team-wrapper:hover {
+    box-shadow: 0 0 3.5rem #f8cf04;
+    transition: all 0.25s ease-in-out;
 }
 
 .video-background {
@@ -40,7 +50,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -55,6 +65,9 @@
     text-align: center;
     padding: 3rem 3rem 1.5rem 3rem;
     font-size: 5rem;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.9);
 }
 
 .tagline {
@@ -105,10 +118,13 @@
 #styling-team-of-teachers {
     font-family: "Young Serif", serif;
     font-weight: 500;
+    color: black;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: white;
-    color: transparent;
     font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-shadow: 0 0 0.35rem rgba(255, 255, 255, 0.7);
 }
 
 .teacherimagesadjusting {
@@ -158,11 +174,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ff99,
-        #006aff,
-        #ff0095,
-        #ff4545
+        #fe0000,
+        #fd8f00,
+        #f6b709,
+        #ff220E
     );
     top: 50%;
     left: 50%;
@@ -174,7 +189,7 @@
 }
 
 .teacher1::before {
-    filter: blur(2rem);
+    filter: blur(2.5rem);
 }
 
 @keyframes spin {
@@ -246,16 +261,16 @@
     background-image: conic-gradient(
         from var(--angle),
         #ff4545,
-        #00ff99,
-        #006aff,
-        #ff0095,
+        #00ffd9,
+        #001aff,
+        #fc0b7f,
         #ff4545
     );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    padding: 3.7%;
+    padding: 3.9%;
     border-radius: 50%;
     animation: 3s spin linear infinite;
 }
@@ -267,7 +282,7 @@
 .teacher6::before,
 .teacher7::before {
     filter: blur(2rem);
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 @keyframes spin {
@@ -337,15 +352,16 @@
 .core {
     font-family: "Young Serif", serif;
     font-style: italic;
+    color: black;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: white;
     padding-top: 4rem;
     text-align: center;
-    color: transparent;
     font-size: 3.7rem;
     padding-bottom: 4rem;
     text-decoration: underline solid white 12%;
     text-underline-offset: 0.8rem;
+    text-shadow: 0 0 0.35rem rgba(255, 255, 255, 0.7);
 }
 
 .coreadjusting {
@@ -390,11 +406,11 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ff99,
-        #006aff,
-        #ff0095,
-        #ff4545
+        #CEA0AE,
+        #684551,
+        #D5B0AC,
+        #ff009d,
+        #CEA0AE
     );
     top: 50%;
     left: 50%;
@@ -445,7 +461,7 @@
     font-family: "Kanit", sans-serif;
     color: white;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     word-spacing: 0.4rem;
     display: flex;
     width: 92%;
@@ -473,8 +489,11 @@
     font-weight: 500;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: white;
-    color: transparent;
+    color: black;
     font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-shadow: 0 0 0.35rem rgba(255, 255, 255, 0.7);
 }
 
 .hodintroline {
@@ -569,11 +588,11 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ff99,
-        #006aff,
-        #ff0095,
-        #ff4545
+        #00a2ff,
+        #00bfff,
+        #00f375,
+        #01ff9e,
+        #00a2ff
     );
     top: 50%;
     left: 50%;
@@ -766,11 +785,11 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ff99,
-        #006aff,
-        #ff0095,
-        #ff4545
+        #00a2ff,
+        #00bfff,
+        #00f375,
+        #01ff9e,
+        #00a2ff
     );
     top: 50%;
     left: 50%;
@@ -828,10 +847,13 @@
     font-weight: 500;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: white;
-    color: transparent;
+    color: black;
     font-style: italic;
     font-size: 3.8;
     line-height: 3rem;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-shadow: 0 0 0.35rem rgba(255, 255, 255, 0.7);
 }
 
 .website-team-pictures-order-one {
@@ -915,8 +937,8 @@
 .pic-5,
 .pic-6,
 .pic-7 {
-    width: 25%;
-    padding-bottom: 24%;
+    width: 23%;
+    padding-bottom: 25%;
     padding-top: 2rem;
     background-size: cover;
     border-radius: 10%;
@@ -990,17 +1012,17 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ff99,
-        #006aff,
+        #fe0000,
+        #eaff00,
+        #0068fa,
         #ff0095,
-        #ff4545
+        #fe0000
     );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    padding: 2%;
+    padding: 2.5%;
     border-radius: 10%;
     animation: 3s spin linear infinite;
 }
