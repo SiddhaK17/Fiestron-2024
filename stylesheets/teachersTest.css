@@ -1,0 +1,81 @@
+.teachersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.teachersText {
+    font-family: "Young Serif", serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.teachersHOD, .teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teachersTeachers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.imageHOD {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid black; /* Small black border */
+    border-radius: 10%; /* Rounded corners */
+    position: relative;
+    z-index: 1;
+}
+
+.imageContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
+    z-index: 0;
+    padding: 3%;
+    border-radius: 10%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.teacher p, .teachersHOD p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: "Golos Text", sans-serif;
+    text-align: center;
+}

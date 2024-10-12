@@ -14,7 +14,7 @@
     margin: 2rem 3.5rem 7rem 3.5rem;
     box-sizing: border-box;
     position: relative;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .video-background {
@@ -99,7 +99,6 @@
 #styling-introducing-our {
     font-family: "Young Serif", serif;
     font-weight: 100;
-    
 }
 
 #stylinghod {
@@ -159,12 +158,20 @@
     inherits: false;
 }
 
-.teacher1::after, .teacher1::before {
-    content: '';
+.teacher1::after,
+.teacher1::before {
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -228,15 +235,30 @@
     inherits: false;
 }
 
-.teacher2::before, .teacher3::before, .teacher4::before,
-.teacher5::before, .teacher6::before, .teacher7::before,
-.teacher2::after, .teacher3::after, .teacher4::after,
-.teacher5::after, .teacher6::after, .teacher7::after {
-    content: '';
+.teacher2::before,
+.teacher3::before,
+.teacher4::before,
+.teacher5::before,
+.teacher6::before,
+.teacher7::before,
+.teacher2::after,
+.teacher3::after,
+.teacher4::after,
+.teacher5::after,
+.teacher6::after,
+.teacher7::after {
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -246,8 +268,12 @@
     animation: 3s spin linear infinite;
 }
 
-.teacher2::before, .teacher3::before, .teacher4::before,
-.teacher5::before, .teacher6::before, .teacher7::before {
+.teacher2::before,
+.teacher3::before,
+.teacher4::before,
+.teacher5::before,
+.teacher6::before,
+.teacher7::before {
     filter: blur(2rem);
     opacity: 0.4;
 }
@@ -260,7 +286,6 @@
         --angle: 360deg;
     }
 }
-
 
 .teacher2 {
     background-image: url(../images/team/geeta.jpg);
@@ -287,7 +312,8 @@
 }
 
 .teacher7 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .row-three {
@@ -356,13 +382,26 @@
     inherits: false;
 }
 
-.corepic1::before, .corepic2::before, .corepic3::before, .corepic4::before,
-.corepic1::after, .corepic2::after, .corepic3::after, .corepic4::after {
-    content: '';
+.corepic1::before,
+.corepic2::before,
+.corepic3::before,
+.corepic4::before,
+.corepic1::after,
+.corepic2::after,
+.corepic3::after,
+.corepic4::after {
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -372,7 +411,10 @@
     animation: 3s spin linear infinite;
 }
 
-.corepic1::before, .corepic2::before, .corepic3::before, .corepic4::before {
+.corepic1::before,
+.corepic2::before,
+.corepic3::before,
+.corepic4::before {
     filter: blur(2rem);
     opacity: 0.5;
 }
@@ -396,7 +438,7 @@
 
 .corepic3 {
     background-image: url(../images/team/farhan.JPG);
-    background-position: center 4% ;
+    background-position: center 4%;
 }
 
 .corepic4 {
@@ -453,7 +495,6 @@
 
 .line-one-adjusting {
     width: 100%;
-    
 }
 
 .line-two-adjusting {
@@ -487,7 +528,6 @@
     word-spacing: 0.4rem;
     font-family: "Asap", sans-serif;
     font-weight: 600;
-    
 }
 
 .name-adjust {
@@ -518,13 +558,36 @@
     inherits: false;
 }
 
-.admin-pic::before, .accounts-pic::before, .coverage-pic::before, .decor-pic::before, .design-pic::before, .hospitality-pic::before, .logistics-pic::before, .prandmarketing-pic::before, .technical-pic::before,
-.admin-pic::after, .accounts-pic::after, .coverage-pic::after, .decor-pic::after, .design-pic::after, .hospitality-pic::after, .logistics-pic::after, .prandmarketing-pic::after, .technical-pic::after {
-    content: '';
+.admin-pic::before,
+.accounts-pic::before,
+.coverage-pic::before,
+.decor-pic::before,
+.design-pic::before,
+.hospitality-pic::before,
+.logistics-pic::before,
+.prandmarketing-pic::before,
+.technical-pic::before,
+.admin-pic::after,
+.accounts-pic::after,
+.coverage-pic::after,
+.decor-pic::after,
+.design-pic::after,
+.hospitality-pic::after,
+.logistics-pic::after,
+.prandmarketing-pic::after,
+.technical-pic::after {
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -534,7 +597,15 @@
     animation: 3s spin linear infinite;
 }
 
-.admin-pic::before, .accounts-pic::before, .coverage-pic::before, .decor-pic::before, .design-pic::before, .hospitality-pic::before, .logistics-pic::before, .prandmarketing-pic::before, .technical-pic::before {
+.admin-pic::before,
+.accounts-pic::before,
+.coverage-pic::before,
+.decor-pic::before,
+.design-pic::before,
+.hospitality-pic::before,
+.logistics-pic::before,
+.prandmarketing-pic::before,
+.technical-pic::before {
     filter: blur(2rem);
     opacity: 0.8;
 }
@@ -549,15 +620,18 @@
 }
 
 .admin-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .accounts-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .coverage-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .first-order-names {
@@ -586,7 +660,8 @@
 }
 
 .decor-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/team/vedika.jpg);
+    background-position: center center;
 }
 
 .design-pic {
@@ -596,7 +671,8 @@
 }
 
 .hospitality-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .second-order-names {
@@ -625,15 +701,18 @@
 }
 
 .logistics-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .prandmarketing-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .technical-pic {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .third-order-names {
@@ -678,7 +757,8 @@
     width: 80.67%;
     padding-bottom: 85%;
     margin: 0 auto;
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
     background-size: cover;
     border-radius: 10% / 15%;
     border: 0.17rem solid #222222;
@@ -691,12 +771,20 @@
     inherits: false;
 }
 
-.security-pic::before, .security-pic::after {
-    content: '';
+.security-pic::before,
+.security-pic::after {
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -745,6 +833,7 @@
     font-family: "Young Serif", serif;
     font-weight: 100;
     font-size: 3.5rem;
+    text-transform: none;
 }
 
 #website-team-styling {
@@ -780,18 +869,22 @@
 }
 
 .pic-1 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 .pic-2 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .pic-3 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .pic-4 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .webteam-names-row-one {
@@ -843,15 +936,18 @@
 }
 
 .pic-5 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .pic-6 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .pic-7 {
-    background-image: url(../images/sampleTeamPic.jpeg);
+    background-image: url(../images/sampleTeam.png);
+    background-position: center center;
 }
 
 .webteam-names-row-two {
@@ -885,13 +981,32 @@
     inherits: false;
 }
 
-.pic-1::before, .pic-2::before, .pic-3::before, .pic-4::before, .pic-5::before, .pic-6::before, .pic-7::before,
-.pic-1::after, .pic-2::after, .pic-3::after, .pic-4::after, .pic-5::after, .pic-6::after, .pic-7::after {
-    content: '';
+.pic-1::before,
+.pic-2::before,
+.pic-3::before,
+.pic-4::before,
+.pic-5::before,
+.pic-6::before,
+.pic-7::before,
+.pic-1::after,
+.pic-2::after,
+.pic-3::after,
+.pic-4::after,
+.pic-5::after,
+.pic-6::after,
+.pic-7::after {
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background-image: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -901,7 +1016,13 @@
     animation: 3s spin linear infinite;
 }
 
-.pic-1::before, .pic-2::before, .pic-3::before, .pic-4::before, .pic-5::before, .pic-6::before, .pic-7::before {
+.pic-1::before,
+.pic-2::before,
+.pic-3::before,
+.pic-4::before,
+.pic-5::before,
+.pic-6::before,
+.pic-7::before {
     filter: blur(2rem);
     opacity: 0.6;
 }
@@ -914,4 +1035,3 @@
         --angle: 360deg;
     }
 }
-
