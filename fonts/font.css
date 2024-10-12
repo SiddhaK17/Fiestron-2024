@@ -1,0 +1,69 @@
+body{
+    background-color: #222222;
+    color: #F5F5F5;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.grid-item {
+    font-size: medium;
+    font-family: 'Roboto';
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.name-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  text-align: center;
+}
+
+.name-description .name {
+  font-weight: bold;
+  margin-bottom: 5px; 
+}
+
+.grid-item .text {
+  font-size: larger;
+}
+
+.name-description a {
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.name-description a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*Fonts designation --Kindly Don't Edit*/
+@font-face {
+    font-family:Beta54 ;
+    src: url(Beta54.otf);
+}
+
+@font-face {
+    font-family: Aladin;
+    src: url(Aladin.otf);
+}
+
+@font-face {
+    font-family: CarterOne;
+    src: url(CarterOne.otf);
+}
+@font-face {
+    font-family: Nautilus;
+    src: url(Nautilus.otf);
+}
