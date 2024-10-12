@@ -51,19 +51,19 @@ body{
 /*Fonts designation --Kindly Don't Edit*/
 @font-face {
     font-family:Beta54 ;
-    src: url(Beta54.otf);
+    src: url(otf--texts/Beta54.otf);
 }
 
 @font-face {
     font-family: Aladin;
-    src: url(Aladin.otf);
+    src: url(otf--texts/Aladin.otf);
 }
 
 @font-face {
     font-family: CarterOne;
-    src: url(CarterOne.otf);
+    src: url(otf--texts/CarterOne.otf);
 }
 @font-face {
     font-family: Nautilus;
-    src: url(Nautilus.otf);
+    src: url(otf--texts/Nautilus.otf);
 }
