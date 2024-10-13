@@ -317,7 +317,7 @@
 }
 
 .teacher7 {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
@@ -624,17 +624,17 @@
 }
 
 .admin-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
 .accounts-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
 .coverage-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
@@ -675,7 +675,7 @@
 }
 
 .hospitality-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
@@ -705,17 +705,17 @@
 }
 
 .logistics-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
 .prandmarketing-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
 .technical-pic {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
@@ -761,7 +761,7 @@
     width: 80.67%;
     padding-bottom: 85%;
     margin: 0 auto;
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 10% / 15%;
@@ -878,21 +878,21 @@
 }
 
 .pic-1 {
-    background-image: url(../images/sampleTeam.png);
-    background-position: center center;
+    background-image: url(../images/team/khushi.jpeg);
+    background-position: center center -0.2rem;
 }
 .pic-2 {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/team/rukaiya.jpeg);
     background-position: center center;
 }
 
 .pic-3 {
-    background-image: url(../images/sampleTeam.png);
-    background-position: center center;
+    background-image: url(../images/team/kritika.jpeg);
+    background-position: center center -0.2rem;
 }
 
 .pic-4 {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/team/krishika.jpeg);
     background-position: center center;
 }
 
@@ -900,9 +900,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    text-align: center;
+    width: 96%;
     margin: 0 auto;
-    gap: 5rem;
+    gap: 2rem;
     padding-top: 1rem;
 }
 
@@ -910,11 +911,11 @@
 .website-team-names-2,
 .website-team-names-3,
 .website-team-names-4 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
-    word-spacing: 0.2rem;
-    line-height: 1.3rem;
+    word-spacing: 0.4rem;
+    line-height: 2rem;
     width: 27%;
     font-family: "Kanit", sans-serif;
 }
@@ -945,42 +946,41 @@
 }
 
 .pic-5 {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/team/avalon.jpeg);
     background-position: center center;
 }
 
 .pic-6 {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/team/siddha.jpeg);
     background-position: center center;
+    background-size: 180%;
 }
 
 .pic-7 {
-    background-image: url(../images/sampleTeam.png);
+    background-image: url(../images/sampleTeam.jpg);
     background-position: center center;
 }
 
 .webteam-names-row-two {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    text-align: center;
+    width: 81%;
+    gap: 3.8rem;
     margin: 0 auto;
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
-    gap: 5rem;
-    padding-left: 4.4rem;
-    padding-right: 4.4rem;
 }
 
 .website-team-names-5,
 .website-team-names-6,
 .website-team-names-7 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
-    word-spacing: 0.2rem;
-    line-height: 1.3rem;
-    width: 24%;
+    word-spacing: 0.4rem;
+    line-height: 2rem;
+    width: 27%;
     font-family: "Kanit", sans-serif;
 }
 
@@ -1020,7 +1020,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    padding: 2.5%;
+    padding: 2.6%;
     border-radius: 10%;
     animation: 3s spin linear infinite;
 }
