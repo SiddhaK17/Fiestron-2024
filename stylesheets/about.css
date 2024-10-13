@@ -1,5 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
+@font-face {
+  font-family: "Nautilus";
+  src: url("../fonts/otf--texts/Nautilus.otf");
+  format: ("OpenTypefont");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Aladin";
+  src: url("../fonts/otf--texts/Aladin.otf");
+  format: ("OpenTypefont");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CarterOne";
+  src: url("../fonts/otf--texts/CarterOne.otf");
+  format: ("OpenTypefont");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Beta54";
+  src: url("../fonts/Beta54.otf");
+  format: ("OpenTypefont");
+  font-weight: normal;
+}
 
 * {
   margin: 0;
@@ -9,24 +36,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: "titlefont";
-  src: url("../fonts/Future\ Edge\ Italic.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "titlefont2";
-  src: url("../fonts/KGBlankSpaceSolid.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "parafont";
-  src: url("../fonts/Laurasia.ttf") format("truetype");
-  font-weight: normal;
 }
 
 body {
@@ -118,7 +127,7 @@ body {
 }
 
 .background-text-big {
-  font-family: "gally";
+  font-family: "Beta54";
   font-size: 7rem;
   background-image: radial-gradient(circle at center, #c2c5a5, #e8de2b);
   background-clip: text;
@@ -127,19 +136,20 @@ body {
 }
 
 .background-text-small {
-  font-family: "titlefont2", Verdana;
-  font-size: 3.3rem;
+  font-family: "CarterOne", Verdana;
+  font-size: 4.1rem;
   background-image: radial-gradient(circle at center, #c2c5a5, #e8de2b);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* PARA SECTION STYLING */
+/* PARA SECTION STYLING  */
 .section {
   display: flex;
   width: 100%;
   height: 50vh;
+  position: relative;
 }
 
 .text-box,
@@ -149,40 +159,24 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0.7rem;
-  border: 0.47576rem solid transparent;
-  border-radius: 1rem;
-  border-image: linear-gradient(
-      to right,
-      #e8de2b,
-      #3d5260,
-      #c5c2a5,
-      #e8de2b,
-      #c5c2a5,
-      #3d5260,
-      #e8de2b
-    )
-    1;
+  position: relative;
   box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
 }
 
 .text-box {
-  color: #0d0d0d;
-  position: relative;
-  background-image: url("../images/boximage.png");
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 1.123rem;
+  background-color:rgba(62, 83, 96, 0.374);
+  backdrop-filter: blur(1rem);
   flex-direction: column;
   padding: 1rem;
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.953);
-  font-family: "headfont", Verdana, Geneva, Tahoma, sans-serif;
-  height: auto;
-  max-width: 100%;
-  word-wrap: break-word;
+  font-family: "headfont", Verdana, Tahoma, sans-serif;
 }
 
+.image-box {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Rotating Border for Text Box */
 .text-box::before {
   content: "";
   position: absolute;
@@ -190,43 +184,78 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../images/boximage.png");
-  background-size: cover;
-  background-position: right;
-  filter: blur(0.66rem);
-  z-index: 0;
-  border-radius: 1rem;
+  border: 0.3rem solid transparent;
+  border-image: conic-gradient(
+      from var(--angle),
+      #eb2feb,
+      cyan,
+      limegreen,
+      greenyellow,
+      #eb2feb
+    )
+    1;
+  z-index: -1;
+  animation: spin 5s linear infinite;
+  box-shadow: 7rem;
 }
 
-.text-box > * {
-  position: relative;
-  z-index: 1;
+.image-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.3rem solid transparent;
+  border-image: conic-gradient(
+      from var(--angle),
+      #eb2feb,
+      cyan,
+      limegreen,
+      greenyellow,
+      #eb2feb
+    )
+    1;
+  animation: spin 5s linear infinite;
+  box-shadow: 7rem;
 }
 
-.sectionSubTag.text-small {
-  font-family: "parafont", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.sectionSubTag.text-big {
-  font-family: "titlefont2", Verdana, Geneva, Tahoma, sans-serif;
-  color: #e8de2b;
-  text-decoration: underline;
-}
-
-.thirdsection{
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.image-box {
-  flex: 1;
-  overflow: hidden;
-}
-
-.imgFluid {
+.image-box > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.sectionSubTag.text-small {
+  font-family: "Radio+Canada+Big", sans-serif;
+  font-size: 1.22rem;
+  color: rgb(225, 212, 212);
+}
+
+.sectionSubTag.text-big {
+  font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
+  color: #e8de2b;
+  text-decoration: underline;
+  font-size: 2.2rem;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+.thirdsection {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 /* Third page styling */
@@ -258,9 +287,10 @@ body {
   text-align: center;
   margin-bottom: 0.2rem;
   color: #e8de2b;
-  font-size: 3rem;
-  font-family: "titlefont", Verdana;
+  font-size: 3.5rem;
+  font-family: "Nautilus", Verdana;
   letter-spacing: 0.3rem;
+  text-decoration: underline;
 }
 
 @keyframes slide {
@@ -307,12 +337,14 @@ body {
 .content-slide {
   display: inline-block;
   animation: 35s slide infinite linear;
+  font-size: 3rem;
+  color: #3d5260;
 }
 
 .content-slide span {
   margin: 0 2.5rem;
   color: #3d5260;
   font-size: 4rem;
-  font-family: "Kanit", sans-serif;
+  font-family: "Aladin", sans-serif;
   text-decoration: underline;
 }
