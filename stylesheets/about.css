@@ -160,12 +160,10 @@ body {
   align-items: center;
   margin: 0.7rem;
   position: relative;
-  box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
 }
 
 .text-box {
   background-color:rgba(62, 83, 96, 0.374);
-  backdrop-filter: blur(1rem);
   flex-direction: column;
   padding: 1rem;
   font-family: "headfont", Verdana, Tahoma, sans-serif;
@@ -290,7 +288,6 @@ body {
   font-size: 3.5rem;
   font-family: "Nautilus", Verdana;
   letter-spacing: 0.3rem;
-  text-decoration: underline;
 }
 
 @keyframes slide {

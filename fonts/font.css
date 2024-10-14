@@ -1,56 +1,55 @@
-body{
+body {
     background-color: #222222;
-    color: #F5F5F5;
+    color: #f5f5f5;
 }
+
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr; 
-  gap: 20px;
-  max-width: 800px;
-  margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .grid-item {
     font-size: medium;
-    font-family: 'Roboto';
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto";
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .name-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; 
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .name-description .name {
-  font-weight: bold;
-  margin-bottom: 5px; 
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .grid-item .text {
-  font-size: larger;
+    font-size: larger;
 }
 
 .name-description a {
-  margin-top: 10px;
-  color: #0066cc;
-  text-decoration: none;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
 }
 
 .name-description a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-
-
-/*Fonts designation --Kindly Don't Edit*/
+/* Fonts designation -- Kindly Don't Edit */
 @font-face {
-    font-family:Beta54 ;
+    font-family: Beta54;
     src: url(otf--texts/Beta54.otf);
 }
 
@@ -63,6 +62,7 @@ body{
     font-family: CarterOne;
     src: url(otf--texts/CarterOne.otf);
 }
+
 @font-face {
     font-family: Nautilus;
     src: url(otf--texts/Nautilus.otf);
