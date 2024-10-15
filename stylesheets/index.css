@@ -36,9 +36,9 @@ color:white;}
    color:White;
 line-height:2cm;}
 
-.slogan {position: Absolute;
-   top:60%;
-   font-size: large;
-   font-family: 'Golos text';
-   color:white;}
 
+   .slogan {position: Absolute;
+      top:65%;
+      font-size: 1.4rem;
+      font-family: 'Golos text';
+      color:white;}
