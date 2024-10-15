@@ -1,33 +1,5 @@
-body {
-    align-content: center;
-    background-color: rgb(34, 34, 34);
-    background-repeat: repeat;
-}
-
-h1 {
-    text-align: center;
-    color: transparent;
-    -webkit-text-stroke: 3px cyan;
-    position: relative;
-    font-size: 8rem;
-}
-
-h1::before {
-    content: 'CL Meet';
-    position: absolute;
-    width: 0%;
-    height: 100;
-    overflow: hidden;
-    color: cyan;
-    border-right: 0px solid cyan;
-    transition: 0.5s ease-in-out;
-}
-
-h1:hover::before {
-    width: 38%;
-    border-right: 2px solid cyan;
-    filter: drop-shadow(0 0 25px cyan);
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
 
 
 * {
@@ -35,41 +7,68 @@ h1:hover::before {
     padding: 0;
 }
 
-.card {
+body {
+    align-content: center;
+    background-color: rgb(34, 34, 34);
+    
+    background-repeat: no-repeat;
+}
+
+.h1 {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+
+h1 {
+    color: transparent;
+    -webkit-text-stroke: 3px #383d52;
+    font-size: 7rem;
+    font-family: "Sancreek", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+h1:hover {
+   
+    filter: drop-shadow(0 0 25px cyan);
+    -webkit-text-stroke: 3px cyan
+}
+
+
+.gallerydiv{
     margin: 0 auto;
-    padding: 2em;
-    height: 32rem;
-    width: 55rem;
+    padding: 2rem;
+    height: 10rem;
+    width: 45rem;
     background: rgb(34, 34, 34);
     border-radius: 10px;
     position: relative;
+    top: 2rem;
+   
 }
 
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-.card::after,
-.card::before {
+.gallerydiv::after,
+.gallerydiv::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #eb2feb, cyan, limegreen, greenyellow, #eb2feb);
+    background-image: conic-gradient(from var(--angle), #eb2feb, #00ffff, #32cd32, #adff2f, #eb2feb);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 3px;
     border-radius: 10px;
-    animation: 2s linear infinite;
+    animation: 4s linear infinite;
     animation-name: spin;
     animation-iteration-count: infinite;
 }
 
-.card::before {
+.gallerydiv:before {
     filter: blur(1.5rem);
     opacity: 0.5;
 }
@@ -84,27 +83,102 @@ h1:hover::before {
     }
 }
 
+.ourgallery {
+position: relative;
+max-width: 48rem;
+margin: 0 auto;
+}
+
+.galleryheading {
+    color: white;
+}
+
+.event-img {
+    border-radius: 50%;
+}
+
+.event-nav {
+position: relative;
+left: 3rem;
+
+}
+
+
+
+.container{
+    margin: 0 auto;
+    padding: 2rem;
+    height: 35rem;
+    width: 55rem;
+    background: rgb(34, 34, 34);
+    border-radius: 10px;
+    position: relative;
+   
+}
+
+.container::after,
+.container::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #eb2feb, #00ffff, #32cd32, #adff2f, #eb2feb);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 4s linear infinite;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+}
+
+.container:before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 180deg;
+    }
+}
+
+.card {
+position: relative;
+max-width: 48rem;
+margin: 0 auto;
+}
+
 
 
 .image-carousel {
     display: flex;
-    aspect-ratio: 16/9.5;
+    aspect-ratio: 16/9;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
     border-radius: 0.5rem;
 }
 
-.image carousel img {
-    flex-shrink: 0;
-    flex-grow: 1;
-    flex-basis: 100%;
+
+
+.image-carousel img {
+    flex: 1 0 100%;
+    object-fit: cover;
+
 }
 
 .img-nav {
     display: flex;
     column-gap: 1rem;
-    position: absolute;
-    bottom: 3rem;
+   position: absolute;
+    bottom: 10rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -124,6 +198,41 @@ a:hover {
 
 
 p {
-    color: white;
+    color: cyan;
     text-align: center;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
+
+.h2 {
+        margin: auto;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .h3 {
+        margin: auto;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .h4, .h5 {
+        margin: auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+
+
+    .h5 h1 {
+        font-family: "Playfair", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+      

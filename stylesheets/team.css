@@ -893,10 +893,7 @@
 .website-team-names-1,
 .website-team-names-2,
 .website-team-names-3,
-.website-team-names-4,
-.website-team-names-5,
-.website-team-names-6,
-.website-team-names-7 {
+.website-team-names-4 {
     font-size: 1.5rem;
     color: white;
     text-align: center;
@@ -952,10 +949,22 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 81%;
-    gap: 3.8rem;
+    width: 80%;
     margin: 0 auto;
     padding-top: 1rem;
+}
+
+.website-team-names-5,
+.website-team-names-6,
+.website-team-names-7 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    word-spacing: 0.4rem;
+    line-height: 2rem;
+    width: 23%;
+    margin: 0 auto;
+    font-family: "Kanit", sans-serif;
 }
 
 @property --angle {
