@@ -1,44 +1,57 @@
+
 .bgimg { width:100%;
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;}
+   background-size:cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;}
 
 .bgimg img {width:100%;
-   height: 100%;}
-.tclogo {position: Absolute;
-   top:1.7rem;
-   left:1rem;
-   width: 2rem;
-   height:2rem;}
+  height: 100vh;}
+.tclogo {position: fixed;
+  top:1.7rem;
+  left:1rem;
+  width: 3rem;
+  height:3rem;}
 
-  
-.nav-floatleft {position: Absolute;
+ 
+.nav-floatleft {position: fixed;
 top:2rem;
 right:1.3rem;
 font-size: 1.6rem;
 }
-nav a:hover { letter-spacing:0.2rem;
-padding:2rem 3rem;
-display:ruby;
-transition: all 0.3s ease;
+
+nav a:hover {
+  letter-spacing:0.2rem;
+  padding:2rem 3rem;
 }
+ nav{
+  display:flex;
+justify-content: space-between;
+align-items:center;
+background: transparent;
+transition: all 0.4s ease;
+ }
 
 nav a {text-decoration:none;
 padding :2rem;
-color:white;}
+color:white;
+}
 
+.heading {
+  font-size: 5rem;
+  font-family: 'Young Serif';
+  color:White;
+  line-height:3cm;}
 
-.heading {position: Absolute;
-   top:10%;
-   left:5%;
-   font-size: 4rem;
-   font-family: 'Young Serif';
-   color:White;
-line-height:2cm;}
+.slogan {
+  font-size: 2rem;
+  font-family: 'Golos text';
+  color:white;
+   position:fixed;
+   top:55%;
+  }
 
-
-   .slogan {position: Absolute;
-      top:65%;
-      font-size: 1.4rem;
-      font-family: 'Golos text';
-      color:white;}
+section{
+    position:fixed;
+    top:10%;
+    left:5%;
+}
