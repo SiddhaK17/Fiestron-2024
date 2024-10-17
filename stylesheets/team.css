@@ -86,7 +86,7 @@
 
 .tagline {
     font-family: "Kanit", sans-serif;
-    font-weight: 500;
+    font-weight: 370;
     padding-top: 1rem;
     text-align: center;
     color: white;
@@ -97,20 +97,6 @@
     text-transform: capitalize;
     line-height: 4rem;
     word-spacing: 0.3rem;
-}
-
-.subintrotagline {
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    padding-top: 0.5rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    color: white;
-    font-size: 2.1rem;
-    width: 53%;
-    margin: 0 auto;
-    text-transform: capitalize;
-    line-height: 3rem;
 }
 
 .teachers {
@@ -1027,3 +1013,131 @@
         --angle: 360deg;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .teachers-wrapper,
+    .core-wrapper,
+    .hod-wrapper,
+    .website-team-wrapper {
+    border: calc(0.25rem + 0.1vw) solid #ccc; 
+    border-radius: calc(0.7rem + 0.2vw); 
+    padding: calc(1rem + 0.5vw) calc(1.5rem + 1vw) calc(4rem + 1vw) calc(1.5rem + 1vw); 
+    margin: calc(1.5rem + 0.5vw) calc(3rem + 1vw) calc(5rem + 1vw) calc(3rem + 1vw);
+    box-shadow: 0 0 calc(1.8rem + 0.5vw) rgba(238, 235, 235, 0.955); 
+}
+
+.ourteam {
+    padding: calc(2rem + 0.5vw) calc(2rem + 0.5vw) calc(1rem + 0.5vw) calc(2rem + 0.5vw); 
+    font-size: calc(3rem + 1vw); 
+    text-underline-offset: calc(0.5rem + 0.2vw); 
+    text-shadow: 0 0 calc(0.3rem + 0.1vw) rgba(255, 255, 255, 0.9); 
+}
+
+.tagline {
+    padding-top: calc(0.5rem + 0.5vw); 
+    font-size: calc(2rem + 1vw); 
+    padding-bottom: calc(1.5rem + 0.5vw); 
+    width: calc(70% + 5vw); 
+    line-height: calc(3rem + 0.5vw);
+    word-spacing: calc(0.2rem + 0.1vw); 
+}
+
+.teachers {
+    padding-top: calc(2rem + 1vw); 
+    font-size: calc(3rem + 0.5vw); 
+    padding-bottom: calc(1rem + 1vw); 
+    width: calc(90% + 5vw); 
+}
+
+.styling-introducing-our-dedicated {
+    font-family: "Young Serif", serif;
+    font-weight: 100;
+    font-size: calc(3rem + 1vw); 
+}
+    
+.row-one {
+    padding-top: calc(2rem + 1vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.teacher1 {
+    width: calc(15% + 1vw); 
+    padding-bottom: calc(15% + 1vw); 
+    border-radius: calc(8% + 0.5vw); 
+}
+
+.teacher1::after,
+.teacher1::before {
+    padding: calc(1.4% + 0.5vw); 
+    border-radius: calc(8% + 0.5vw); 
+}
+
+.teacher1::before {
+    filter: blur(calc(2rem + 0.5vw)); 
+}
+
+.name-shalini-sinha {
+    color: white;
+    text-align: center;
+    padding-top: calc(0.8rem + 0.5vw); 
+    font-size: calc(1rem + 0.5vw); 
+}
+
+.row-two {
+    padding-top: calc(4rem + 1vw); 
+    padding-bottom: calc(1rem + 0.5vw); 
+    gap: calc(1rem + 1vw); 
+    width: 96%;
+}
+
+.teacher2,
+.teacher3,
+.teacher4,
+.teacher5,
+.teacher6,
+.teacher7 {
+    width: calc(15% + 1vw); 
+    padding-bottom: calc(12% + 1vw); 
+    border: calc(0.15rem + 0.05vw) solid #222222; 
+}
+
+.teacher2::before, .teacher3::before, .teacher4::before, .teacher5::before, .teacher6::before, .teacher7::before, .teacher2::after, .teacher3::after, .teacher4::after, .teacher5::after, .teacher6::after, .teacher7::after {
+    height: calc(100% + 2vw); 
+    width: calc(100% + 2vw); 
+    padding: 0.001rem;
+    border-radius: 50%;
+}
+
+.teacher2::before,
+.teacher3::before,
+.teacher4::before,
+.teacher5::before,
+.teacher6::before,
+.teacher7::before {
+filter: blur(calc(2rem + 0.2vw)); 
+}
+
+.row-three {
+    gap: calc(1rem + 1vw); 
+    padding-top: calc(0.5rem + 0.2vw); 
+    margin: 0 auto;
+}
+
+.teacher2-name,
+.teacher3-name,
+.teacher4-name,
+.teacher5-name,
+.teacher6-name,
+.teacher7-name {
+    width: calc(15% + 1vw); 
+    font-size: calc(0.9rem + 0.1vw); 
+    word-spacing: calc(0.1rem + 0.1vw); 
+    line-height: calc(1.3rem + 0.2vw);
+    padding-bottom: calc(1rem + 0.3vw); 
+}
+
+}
+
