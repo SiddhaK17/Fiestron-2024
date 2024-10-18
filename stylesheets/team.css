@@ -1044,9 +1044,10 @@
 
 .teachers {
     padding-top: calc(2rem + 1vw); 
-    font-size: calc(3rem + 0.5vw); 
+    font-size: calc(2.8rem + 0.5vw); 
     padding-bottom: calc(1rem + 1vw); 
-    width: calc(90% + 5vw); 
+    width: calc(100% + 5vw); 
+    max-width: 600px;
 }
 
 .styling-introducing-our-dedicated {
@@ -1088,7 +1089,7 @@
 
 .row-two {
     padding-top: calc(4rem + 1vw); 
-    padding-bottom: calc(1rem + 0.5vw); 
+    padding-bottom: calc(0.5rem + 0.5vw); 
     gap: calc(1rem + 1vw); 
     width: 96%;
 }
@@ -1099,7 +1100,7 @@
 .teacher5,
 .teacher6,
 .teacher7 {
-    width: calc(15% + 1vw); 
+    width: calc(15% + 1.5vw); 
     padding-bottom: calc(12% + 1vw); 
     border: calc(0.15rem + 0.05vw) solid #222222; 
 }
@@ -1107,7 +1108,7 @@
 .teacher2::before, .teacher3::before, .teacher4::before, .teacher5::before, .teacher6::before, .teacher7::before, .teacher2::after, .teacher3::after, .teacher4::after, .teacher5::after, .teacher6::after, .teacher7::after {
     height: calc(100% + 2vw); 
     width: calc(100% + 2vw); 
-    padding: 0.001rem;
+    padding: calc(0.00000000000000000000000001rem + 0.0000000000000000000000001vw);
     border-radius: 50%;
 }
 
@@ -1121,9 +1122,10 @@ filter: blur(calc(2rem + 0.2vw));
 }
 
 .row-three {
-    gap: calc(1rem + 1vw); 
-    padding-top: calc(0.5rem + 0.2vw); 
+    gap: calc(1.2rem + 1vw); 
+    padding-top: calc(0.09rem + 0.1vw); 
     margin: 0 auto;
+    min-width: 100px;
 }
 
 .teacher2-name,
@@ -1132,11 +1134,310 @@ filter: blur(calc(2rem + 0.2vw));
 .teacher5-name,
 .teacher6-name,
 .teacher7-name {
-    width: calc(15% + 1vw); 
-    font-size: calc(0.9rem + 0.1vw); 
-    word-spacing: calc(0.1rem + 0.1vw); 
-    line-height: calc(1.3rem + 0.2vw);
+    width: calc(14% + 2vw); 
+    font-size: calc(0.8rem + 0.1vw); 
+    word-spacing: calc(0.09rem + 0.1vw); 
+    line-height: calc(1.1rem + 0.2vw);
     padding-bottom: calc(1rem + 0.3vw); 
+    min-width: 70px;
+}
+
+.core {
+    padding-top: calc(1.6rem + 1vw);
+    font-size: calc(2.5rem + 1vw); 
+    padding-bottom: calc(3.4rem + 1vw); 
+}
+
+.core-pic-adjusting {
+    gap: calc(1.5rem + 1vw); 
+}
+
+.corepic1,
+.corepic2,
+.corepic3,
+.corepic4 {
+    width: calc(25% + 1vw); 
+    padding-bottom: calc(20% + 1vw); 
+    padding-top: calc(1rem + 0.5vw); 
+    border: calc(0.12rem + 0.03vw) solid #222222; 
+}
+
+.corepic1::before,
+.corepic2::before,
+.corepic3::before,
+.corepic4::before,
+.corepic1::after,
+.corepic2::after,
+.corepic3::after,
+.corepic4::after {
+    height: calc(100% + 1.5vw); 
+    width: calc(100% + 1.5vw);  
+    padding: calc(0.002rem + 0.1vw); 
+}
+
+.corepic1::before,
+.corepic2::before,
+.corepic3::before,
+.corepic4::before {
+    filter: blur(calc(1.5rem + 0.5vw)); 
+    opacity: 0.5;
+}
+
+.core-names {
+    font-size: calc(1rem + 0.2vw); 
+    word-spacing: calc(0.2rem + 0.1vw); 
+    width: calc(92% - 1vw); 
+    gap: calc(1.5rem + 0.5vw); 
+    min-width: 400px;
+}
+
+.core-names-1,
+.core-names-2,
+.core-names-3,
+.core-names-4 {
+    width: calc(27% + 0.5vw); 
+    padding-top: calc(1rem + 0.3vw); 
+    min-width: 100px;
+}
+
+.meet-our-styling {
+    font-size: calc(3rem + 0.2vw); 
+}
+
+.dept-hod-styling {
+    text-shadow: 0 0 calc(0.35rem + 0.05vw) rgba(255, 255, 255, 0.7); 
+}
+
+.hodintroline {
+    padding-top: calc(2rem + 1vw); 
+    padding-bottom: calc(1rem + 0.5vw); 
+    font-size: calc(2.3rem + 0.3vw); 
+}
+
+.line-one-adjusting {
+    width: 100%; 
+}
+
+.first-order {
+    display: flex;
+    justify-content: space-between;
+    padding-top: calc(1rem + 0.5vw); 
+    gap: calc(1rem + 0.5vw); 
+}
+
+.admin,
+.accounts,
+.coverage,
+.decor,
+.design,
+.hospitality,
+.logistics,
+.prandmarketing,
+.technical {
+    font-size: calc(1.3rem + 0.2vw); 
+    padding-top: calc(2.5rem + 0.2vw); 
+    width: calc(30.5% + 1vw); 
+    word-spacing: calc(0.4rem + 0.1vw); 
+}
+
+.name-adjust {
+    padding: calc(0rem + 0.2vw) calc(1.5rem + 0.2vw); 
+}
+
+.admin-pic,
+.accounts-pic,
+.coverage-pic,
+.decor-pic,
+.design-pic,
+.hospitality-pic,
+.logistics-pic,
+.prandmarketing-pic,
+.technical-pic {
+    width: calc(63% + 2vw); 
+    padding-bottom: calc(66% + 3vw); 
+    border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
+    border: calc(0.17rem + 0.05vw) solid #222222; 
+}
+
+
+.first-order-names {
+    padding-bottom: calc(2rem + 0.5vw); 
+    gap: calc(2.1rem + 0.5vw); 
+}
+
+.admin-name,
+.accounts-name,
+.coverage-name {
+    width: calc(39.33% + 3vw);
+    padding-top: calc(2rem + 0.2vw); 
+    font-size: calc(1.2rem + 0.1vw); 
+    word-spacing: calc(0.1rem + 0.1vw); 
+    margin: 0 0.5rem;
+}
+
+.second-order {
+    padding-top: calc(0.2rem + 1vw);
+}
+
+.second-order-names {
+    padding-bottom: calc(2rem + 0.5vw); 
+    gap: calc(0.2rem + 0.5vw); 
+}
+
+.decor-name,
+.hospitality-name,
+.design-name {
+    width: calc(39.33% + 3vw);
+    padding-top: calc(2rem + 0.2vw); 
+    font-size: calc(1.2rem + 0.1vw); 
+    word-spacing: calc(0.1rem + 0.1vw); 
+    margin: 0 0.5rem;
+}
+
+.hospitality-topic-adjust {
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.third-order {
+    padding-top: calc(0.4rem + 1vw); 
+}
+
+.third-order-names {
+    padding-bottom: calc(2rem + 0.5vw); 
+    gap: calc(0.2rem + 0.5vw); 
+}
+
+.logistics-name,
+.prandmarketing-name,
+.technical-name {
+    width: calc(39.33% + 3vw);
+    padding-top: calc(2rem + 0.2vw); 
+    font-size: calc(1.2rem + 0.1vw); 
+    word-spacing: calc(0.1rem + 0.1vw); 
+    margin: 0 0.5rem;
+}
+
+.prandmarketing-topic-adjust {
+    width: 80%;
+    margin-left: 0.95rem;
+}
+
+.fourth-order {
+    padding-top: calc(0.5rem + 1vw); 
+}
+
+.security {
+    font-size: calc(1.3rem + 0.5vw); 
+    padding: calc(1.5rem + 0.2vw) 0 0 0; 
+    width: calc(27.6% + 1vw); 
+    word-spacing: calc(0.4rem + 0.1vw); 
+}
+
+.security-pic {
+    width: calc(80.67% + 1vw);
+    padding-bottom: calc(85% + 1vw); 
+    border: calc(0.17rem + 0.05vw) solid #222222; 
+}
+
+.security-pic::before,
+.security-pic::after {
+    padding: calc(2% + 0.2vw); 
+    border-radius: 10% / 15%;
+    }
+
+.security-pic::before {
+    filter: blur(calc(1.5rem + 0.2vw)); 
+}
+
+.security-name {
+    margin-left: calc(0.5rem + 0.2vw); 
+    padding-top: calc(1rem + 0.2vw); 
+    font-size: calc(1.2rem + 0.1vw); 
+    word-spacing: calc(0.4rem + 0.05vw); 
+}
+
+.website-team-intro { 
+    padding-top: calc(2rem + 1vw);
+    padding-bottom: calc(2rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
+    width: calc(80% + 5vw);
+    line-height: calc(4rem + 1vw);
+}
+
+.meet-the-rising-stars-of-our-styling {
+    font-size: calc(2.8rem + 1vw);
+}
+
+.website-team-styling {
+    font-size: calc(3rem + 1vw);
+    line-height: calc(2.5rem + 0.5vw);
+}
+
+.website-team-pictures-row-one {
+    width: calc(90% + 2vw);
+    gap: calc(1.5rem + 1vw);
+    padding-top: calc(1rem + 1vw);
+}
+
+.pic-1,
+.pic-2,
+.pic-3,
+.pic-4 {
+    width: calc(37% + 2vw);
+    padding-bottom: calc(23% + 1vw);
+    padding-top: calc(1.5rem + 0.5vw);
+    border-radius: calc(8% + 0.5vw);
+    border: calc(0.12rem + 0.05vw) solid #222222;
+}
+
+.webteam-names-row-one {
+    width: calc(90% + 4vw); 
+    gap: calc(1rem + 1vw); 
+    padding-top: calc(1rem + 0.5vw); 
+}
+
+.website-team-names-1,
+.website-team-names-2,
+.website-team-names-3,
+.website-team-names-4 {
+    font-size: calc(1rem + 0.5vw); 
+    line-height: calc(1.2rem + 0.5vw);
+    word-spacing: calc(0.3rem + 0.1vw); 
+    width: calc(22% + 2vw); 
+}
+
+.to-give-padding {
+    padding-top: calc(2.5rem + 1vw);
+}
+
+.website-team-pictures-row-two {
+    padding-top: calc(1rem + 0.5vw);
+    width: calc(83% + 5vw); 
+}
+
+.pic-5,
+.pic-6,
+.pic-7 {
+    width: calc(22% + 2vw);
+    padding-bottom: calc(24% + 2vw); 
+    padding-top: calc(1.2rem + 0.5vw); 
+    border-radius: calc(8% + 1vw); 
+    border: calc(0.15rem + 0.05vw) solid #222222;
+}
+
+.webteam-names-row-two {
+    width: calc(83% + 5vw); 
+    padding-top: calc(1rem + 0.5vw); 
+}
+
+.website-team-names-5,
+.website-team-names-6,
+.website-team-names-7 {
+    font-size: calc(1rem + 0.5vw); 
+    line-height: calc(1.2rem + 0.5vw); 
+    word-spacing: calc(0.3rem + 0.1vw); 
+    width: calc(22% + 2vw); 
 }
 
 }
