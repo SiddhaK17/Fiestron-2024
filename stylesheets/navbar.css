@@ -1,0 +1,117 @@
+/* Glassmorphism navbar styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(3, 12, 38, 0.1); /* Primary color with transparency */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #6387f2; /* Secondary color */
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-link:hover {
+    font-size: 20px;
+    color: #0df205; /* Accent color on hover */
+}
+
+.nav-link.active {
+    color: #0df205; /* Accent color when active */
+}
+
+.team-link a {
+    text-decoration: none;
+    color: #6387f2; /* Secondary color */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.team-link a:hover {
+    color: #0df205; /* Accent color on hover */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #6387f2; /* Secondary color */
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: rgba(3, 12, 38, 0.1); /* Primary color with transparency */
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Background for neutral color elements */
+body {
+    background-color: #27418c; /* Neutral color */
+}
