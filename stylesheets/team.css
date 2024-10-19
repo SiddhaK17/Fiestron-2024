@@ -1442,3 +1442,118 @@ filter: blur(calc(2rem + 0.2vw));
 
 }
 
+
+@media (min-width: 320px) and (max-width: 768px) {
+.teachers-wrapper,
+.core-wrapper,
+.hod-wrapper,
+.website-team-wrapper {
+    border: calc(0.2rem + 0.1vw) solid #ccc;
+    border-radius: calc(0.5rem + 0.1vw);
+    padding: calc(0.8rem + 0.5vw) calc(1.2rem + 0.5vw) calc(2rem + 0.8vw) calc(1.2rem + 0.5vw);
+    margin: calc(1rem + 0.5vw) calc(2rem + 1vw) calc(3rem + 1vw) calc(2rem + 1vw);
+    box-shadow: 0 0 calc(1rem + 0.5vw) rgba(238, 235, 235, 0.955);
+}
+
+.ourteam {
+    padding: calc(1.5rem + 0.5vw) calc(1.5rem + 0.5vw) calc(0.5rem + 0.5vw) calc(1.5rem + 0.5vw);
+    font-size: calc(2.5rem + 1vw);
+    text-underline-offset: calc(0.3rem + 0.2vw);
+    text-shadow: 0 0 calc(0.2rem + 0.1vw) rgba(255, 255, 255, 0.9);
+}
+
+.tagline {
+    padding-top: calc(0.9rem + 0.3vw);
+    font-size: calc(1.3rem + 0.5vw);
+    padding-bottom: calc(1rem + 0.5vw);
+    width: calc(80% + 3vw);
+    line-height: calc(2rem + 0.5vw);
+    word-spacing: calc(0.1rem + 0.1vw);
+}
+
+.teachers {
+    padding-top: calc(1rem + 0.5vw);  
+    font-size: calc(2rem + 0.5vw);    
+    padding-bottom: calc(0.5rem + 0.5vw);  
+    width: calc(100% + 3vw);         
+    max-width: 100%;        
+    line-height: calc(3.3rem + 0.5vw);        
+}
+
+.styling-introducing-our-dedicated {
+    font-size: calc(2rem + 0.5vw);  
+}
+
+.row-one {
+    padding-top: calc(1rem + 0.5vw); 
+}
+
+.teacher1 {
+    width: 45%;  
+    padding-bottom: 45%;  
+    border-radius: calc(10% + 0.5vw); 
+    margin-bottom: 10px;  
+}
+
+.teacher1::after,
+.teacher1::before {
+    padding: calc(1.5% + 0.5vw);       
+    border-radius: calc(10% + 0.5vw); 
+}
+
+.teacher1::before {
+    filter: blur(calc(1rem + 0.5vw)); 
+}
+
+.name-shalini-sinha {
+    padding-top: calc(0.5rem + 0.3vw); 
+    font-size: calc(0.8rem + 0.4vw);   
+}
+
+.teachers-name-adjusting-for-mobile {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.row-two {
+    padding-top: calc(3rem + 0.5vw);   
+    padding-bottom: calc(1.5rem + 0.5vw); 
+    gap: 1rem; 
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.teacher2, .teacher3, .teacher4, .teacher5, .teacher6, .teacher7  {
+    width: 45%; 
+    padding-bottom: 45%; 
+    margin-bottom: 20%; 
+}
+
+.row-three {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: calc(2rem + 1vw); 
+    padding-top: calc(0.09rem + 0.1vw); 
+    margin: 0 auto 0 auto;
+    top: calc(22.5% + 8vw);
+    width: 100%; 
+}
+
+.teacher2-name, .teacher3-name, .teacher4-name,
+.teacher5-name, .teacher6-name, .teacher7-name {
+    width: 40%;  
+    text-align: center;  
+    font-size: calc(0.8rem + 0.1vw); 
+    word-spacing: calc(0.09rem + 0.1vw); 
+    line-height: calc(1.1rem + 0.2vw);
+    padding-bottom: calc(5rem + 1vw);
+    padding-top: 1%;  
+}
+
+}
+
