@@ -145,7 +145,7 @@ left: 1rem;
     }
 }
 
-.carousel-slide {
+#carouselExampleAutoplaying {
 position: relative;
 max-width: 48rem;
 margin: 0 auto;
@@ -156,9 +156,6 @@ margin: 0 auto;
 .carousel-inner {
     display: flex;
     aspect-ratio: 16/9;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
     border-radius: 0.5rem;
 }
 
