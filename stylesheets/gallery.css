@@ -53,13 +53,7 @@ h1:hover {
     height: 100%;
     width: 100%;
     background-image: conic-gradient(
-        from var(--angle),
-        #0000e3,
-        #8b058b,
-        #00bfff,
-        #0c61f5,
-        #0000e3
-    );
+    from var(--angle),  #0000e3,  #8b058b, #ffffff,  #00bfff,  #0c61f5, #0000e3 );
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -88,12 +82,13 @@ h1:hover {
 
 .ourgallery {
     position: relative;
-    max-width: 48rem;
+    width: 48rem;
     margin: 0 auto;
 }
 
 .event-img {
     border-radius: 50%;
+    color: transparent;
 }
 
 .event-nav {
@@ -121,6 +116,7 @@ h1:hover {
         from var(--angle),
         #0000e3,
         #8b058b,
+        #ffffff,
         #00bfff,
         #0c61f5,
         #0000e3
@@ -151,6 +147,7 @@ h1:hover {
     }
 }
 
+
 .carousel-inner {
     display: flex;
     aspect-ratio: 16/9;
@@ -164,6 +161,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.8rem;
 }
 
 .h2 {
@@ -171,6 +169,7 @@ p {
     width: 60%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .h3 {
@@ -178,6 +177,7 @@ p {
     width: 40%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .h4,
@@ -193,4 +193,6 @@ p {
     font-family: "Convergence", sans-serif;
     font-weight: 900;
     font-style: normal;
+    justify-content: center;
+    text-align: center;
 }
