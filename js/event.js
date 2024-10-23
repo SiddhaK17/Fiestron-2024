@@ -266,13 +266,13 @@ observer1.observe(hidden0);
 
 
 //Repo KE Liye start ko hi use bhai dekho wan
-const screenWidth = window.screen.width;
-        const screenHeight = window.screen.height;
+// const screenWidth = window.screen.width;
+//         const screenHeight = window.screen.height;
 
-        const viewportWidth = window.innerWidth;
-        const viewportHeight = window.innerHeight;
+//         const viewportWidth = window.innerWidth;
+//         const viewportHeight = window.innerHeight;
 
-        document.getElementById('resolution').innerHTML = `
-            Screen Resolution: ${screenWidth} x ${screenHeight}<br>
-            Viewport Size: ${viewportWidth} x ${viewportHeight}
-        `;
+//         document.getElementById('resolution').innerHTML = `
+//             Screen Resolution: ${screenWidth} x ${screenHeight}<br>
+//             Viewport Size: ${viewportWidth} x ${viewportHeight}
+//         `;
