@@ -1,15 +1,9 @@
-@font-face {
-    font-family: Beta54;
-    src: url(/fonts/otf--texts/Beta54.otf);
-    font-display: swap;
-
-}
 html{
     font-size: 16px;
 }
-/*FOCUS ON FONTS AND ALL LATER --sundar*/
+/* PRIMARY SET */
 body{
-    background-color: #222222;
+    background-color: #030C26;
     color:#F5F5F5; 
     font-family:'Roboto','sans-serif' ;
 }
@@ -17,7 +11,7 @@ body{
 /* ANIMATIONS RELATED */
 .hidden0{
     opacity: 0;
-    transition: all 2s;
+    transition: all 0.5s;
     transform: translateZ(-100%);
 }
 .show0{
@@ -46,24 +40,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 30px;
 }
 .event-card{
-    min-height: 21.5dvh;
-    background-color: #1E1E2F;
+    min-height: 21.5vh;
+    background: #6327f2;/*SECONDARY SET*/
     margin: 10px;
     display: flex;
-    width: 95%;
+    width: 85%;
     font-size: 2rem;
     box-sizing: border-box;
     padding: 1rem;
     border-radius: 1rem;
+    color: #0e0b0b;
     box-shadow:0 4px 10px rgba(0,0,0,0.9);
-    color: #F5F5F5;
     transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .event-card:hover{
-    background-color: #101031;
+    background-color:#4e04fc;
     transform: translateY(-5px);
     box-shadow:0 6px 15px rgba(0,0,0,0.9);
 }
@@ -76,7 +70,7 @@ body{
 }
 .EventI img{
     max-width: 100%;
-    max-height: 100%;
+    max-height:21.5vh;
     object-fit: cover;
     border-radius:0.5rem;
 }
@@ -85,11 +79,12 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: auto;
     padding: 5px;
     padding-left:1rem;
+    justify-content: center;
+    row-gap: 0.1em;
 }
 .TitleDate{
     display: flex;
@@ -97,89 +92,84 @@ body{
     width: 100%;
 }
 .TitleDate .Title{
-    font-size: 0.9em;
+    font-size:0.75em;
     display: flex;
     flex: 1;
-    color: #DC143C; 
-    font-family: "Radio Canada Big", sans-serif;
-    font-weight: lighter;
+    font-family: "Convergence", sans-serif;
+    font-weight: 900;
 }
 .TitleDate .Date{
+    font-family: "Convergence", sans-serif;
+    font-weight: 700;
     font-size: 0.7em;
     display: flex;
-    color:#B22222;
 }
 .Description{
     max-width: 100%;
     overflow: hidden;
-    font-size: 0.55em;
-    line-height: calc(0.55*1.2)em;
+    font-size: 0.575em;
+    line-height: calc(0.575*1.2)em;
     transition: height 0.9s ease;
     font-family: "Assistant", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 .Description.active{
     height: auto;
 }
 .Description.deactive{
-    height: 64px;
+    height: 2.4em;
 }
 .ReadRegister{
     justify-content: space-between;
     display: flex;
     width: 100%;
-    margin-top: -5px;
-    padding-left: -0.5rem;
-    font-family: "Assistant", sans-serif;
-
+    margin-left: 10px;
+    font-family: "Convergence", sans-serif;
 }
 .ReadRegister .Read{
     display: flex;
     flex: 1;
-    font-size: 0.7em;
     max-width: fit-content;
 }
 .ReadRegister .Read button{
-    font-size: 0.8em;
+    font-size: 1.16rem;
     border: 0;
-    color: #B22222;;
     background-color: transparent;
     margin-left: -5px;
+    font-weight: bold;
 }
 .ReadRegister .Register{
     display: flex;
     flex: 1;
-    font-size: 0.7em;
     justify-content: end;
     max-width: fit-content;
 }
 .ReadRegister .Register button{
-    font-size: 0.9em;
+    font-size: 1.4rem;
     border-radius: 0.8rem;
     border: 0;
     margin-top: 0.5rem;
     padding: 0.1rem 0.6rem 0.1rem 0.7rem;
-    background-color:#008080;
-    color: #F5F5F5;
+    background-color:#0df205;
+    color: #ffffff;
 }
 .ReadRegister .Register button:hover{
-    background-color: #029281;
+    background-color: #0bb204;
 }
 
 /* CANVAS RELATED */
 .Wrapped{
-    background-color: #1f1f1f;
-    width: 90%;
-    height: 55vh;
+    background-color:#010924;
+    width: 80%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 80px;
     border-radius: 30px;
-    font-family: "Beta54";
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 16px rgba(68, 5, 185, 0.5);
     
 }
 .canvas{
@@ -188,3 +178,4 @@ body{
 }
 
 
+/*************************************** The secondary color shade has been taken for better visuals can be reverted as needed.At your own prefrence ****************************************/
