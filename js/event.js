@@ -1,8 +1,7 @@
 //READ MORE BUTTON EASY LOGIC CAN BE MODIFIED IF SOME1 WISHES
 
 document.addEventListener('DOMContentLoaded', function() {
-
-
+    
     const readMoreBtns = document.querySelectorAll('.ReadMoreBtn');
 
     readMoreBtns.forEach(btn => {
@@ -37,15 +36,21 @@ window.addEventListener('DOMContentLoaded', function() {
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
 
+    
     class Particle {
         constructor(effect, x, y, color) {
             this.effect = effect;
-            this.x = Math.random() * this.effect.canvasWidth;
-            this.y =0;
+            if (Math.random() < 0.5) {
+                this.x = this.effect.canvasWidth; 
+                this.y = this.effect.canvasHeight; 
+            } else {
+                this.x = 0;
+                this.y = this.effect.canvasHeight;
+            }
             this.color = color;
             this.originX = x;
             this.originY = y;
-            this.size = this.effect.gap -1;//All changes here have effect so mostly dont change unless wanna have fun
+            this.size = this.effect.gap+1;//All changes here have effect so mostly dont change unless wanna have fun
             this.dx = 0;
             this.dy = 0;
             this.vx = 0;
@@ -53,8 +58,8 @@ window.addEventListener('DOMContentLoaded', function() {
             this.force = 0;
             this.angle = 0;
             this.distance = 0;
-            this.friction = Math.random() * 0.1 + 0.15;
-            this.ease = Math.random() *0.5 + 0.005;
+            this.friction = Math.random() *0.3 + 0.15;
+            this.ease = Math.random() *1 + 0.005;
         }
         draw() {
             this.effect.context.fillStyle = this.color;
@@ -83,12 +88,12 @@ window.addEventListener('DOMContentLoaded', function() {
             this.textX = this.canvasWidth / 2;//Position of texts
             this.textY = this.canvasHeight / 2;
             let baseSize = Math.min(this.canvasWidth, this.canvasHeight);
-            this.fontSize = baseSize * 0.2;
+            this.fontSize = baseSize * .18;
             this.lineHeight = this.fontSize * 1.2;
             this.maxTextWidth = canvasWidth * 0.8;
 
             this.particles = [];
-            this.gap = 2;//designer
+            this.gap = 1;//designer
             this.mouse = {
                 radius: 2500,
                 x: 0,
@@ -101,7 +106,7 @@ window.addEventListener('DOMContentLoaded', function() {
             this.mouse.y = e.clientY - rect.top;  
             });
 
-            //For phone 
+            // Touch event listeners
             window.addEventListener("touchmove", (e) => {
                 e.preventDefault();
                 const rect = canvas.getBoundingClientRect();
@@ -121,15 +126,18 @@ window.addEventListener('DOMContentLoaded', function() {
 //NAAM PE MAT JAO IT HANDLES ALL STUFF TBH
         wrapText(text) {
             const gradient = this.context.createLinearGradient(0, 0, this.canvasWidth, this.canvasHeight);
-            gradient.addColorStop(0.3, "#d9534f");
-            gradient.addColorStop(0.5, "#4a90e2");
-            gradient.addColorStop(0.7, "#7a5b9d");
+            gradient.addColorStop(0.3, 'rgba(255, 0, 0, 1)');
+            gradient.addColorStop(0.5, 'rgba(0, 0, 255, 1)');
+            gradient.addColorStop(0.7, 'rgba(128, 0, 128, 1)');
+
+            
+
             this.context.textAlign = "center";
             this.context.textBaseline = "alphabetic";
             this.context.lineWidth = 1;
             this.context.strokeStyle = "#F2F2F2";
             this.context.fillStyle = gradient;
-            this.context.font = this.fontSize + "px Beta54";
+            this.context.font = this.fontSize + "px convergence";
 
             let linesArray = [];
             let words = text.split(" ");
@@ -154,7 +162,7 @@ window.addEventListener('DOMContentLoaded', function() {
             this.convertToParticles();
         }
 
-//Avoid any changes just a looper looping through a complex grid to get array for updater and render
+//Avoid any changes just a looper looping through a complex grid
         convertToParticles() {
             this.particles = [];
             const pixels = this.context.getImageData(0, 0, this.canvasWidth, this.canvasHeight).data;
@@ -187,7 +195,7 @@ window.addEventListener('DOMContentLoaded', function() {
             this.textX = this.canvasWidth / 2;
             this.textY = this.canvasHeight / 2;
             let baseSize = Math.min(this.canvasWidth, this.canvasHeight);
-            this.fontSize = baseSize * 0.2; 
+            this.fontSize = baseSize * 0.19; 
             this.lineHeight = this.fontSize * 1.2; 
             this.maxTextWidth = this.canvasWidth * 0.8;
             
@@ -198,7 +206,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const displayText = "WELCOME TO FIESTRON EVENTS"; // Idhr text ayega
     effect.wrapText(displayText);
     effect.render();
-    //Looper
+    //Loops 
     function animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         effect.render();
@@ -206,10 +214,9 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     animate();
 
-    //INITIAL FONT INITIALIZER SINCE FONT SOME EVEN NO PRELOAD GO WORK
     setTimeout(() => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height); 
-        effect.wrapText(displayText); 
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+        effect.wrapText(displayText); // Re-draw the text
     }, 10);
     
     let resizeTimeout;
@@ -219,10 +226,9 @@ window.addEventListener('DOMContentLoaded', function() {
             canvas.width = canvas.clientWidth;
             canvas.height = canvas.clientHeight;
 
-            //RESIZE PE FONT ARRANGE SYNCHROMISED
-            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
             effect.resize(canvas.width, canvas.height);
-            effect.wrapText(displayText); 
+            effect.wrapText(displayText); // Re-draw the text
         }, 3000);
     });
 });
@@ -237,9 +243,6 @@ const observer0 = new IntersectionObserver((entries) => {
             
         }
     })
-},{
-    threshold:0
-
 });
 
 
@@ -260,3 +263,16 @@ const observer1 =new IntersectionObserver((entries) => {
     })
 })
 observer1.observe(hidden0);
+
+
+//Repo KE Liye start ko hi use bhai dekho wan
+// const screenWidth = window.screen.width;
+//         const screenHeight = window.screen.height;
+
+//         const viewportWidth = window.innerWidth;
+//         const viewportHeight = window.innerHeight;
+
+//         document.getElementById('resolution').innerHTML = `
+//             Screen Resolution: ${screenWidth} x ${screenHeight}<br>
+//             Viewport Size: ${viewportWidth} x ${viewportHeight}
+//         `;
