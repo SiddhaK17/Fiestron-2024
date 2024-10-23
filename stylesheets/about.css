@@ -1,32 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
-@font-face {
-  font-family: "Nautilus";
-  src: url("../fonts/otf--texts/Nautilus.otf");
-  format: ("OpenTypefont");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Aladin";
-  src: url("../fonts/otf--texts/Aladin.otf");
-  format: ("OpenTypefont");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "CarterOne";
-  src: url("../fonts/otf--texts/CarterOne.otf");
-  format: ("OpenTypefont");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Beta54";
-  src: url("../fonts/Beta54.otf");
-  format: ("OpenTypefont");
-  font-weight: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 * {
   margin: 0;
@@ -40,7 +14,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #0f0f0a;
+  background-color: #030c26;
 }
 
 /* /* NAV STYLING 
@@ -105,11 +79,11 @@ body {
 } */
 
 /* FIRST PAGE STYLING */
-.background {
+/* .background {
   background: rgba(0, 0, 0, 0.7) url("../images/background-about.jpeg");
   background-size: cover;
   background-blend-mode: darken;
-}
+} */
 
 .firstSection {
   height: 100vh;
@@ -127,21 +101,33 @@ body {
 }
 
 .background-text-big {
-  font-family: "Beta54";
+  font-family: "Convergence", sans-serif;
   font-size: 7rem;
-  background-image: radial-gradient(circle at center, #c2c5a5, #e8de2b);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #6387f2;
+  -webkit-text-stroke: 1px #6387f2;
+  filter: drop-shadow(0 0 5px #6387f2);
+  transition: color 0.3s, -webkit-text-stroke 0.3s;
+}
+
+.background-text-big:hover {
+  color: transparent;
+  filter: drop-shadow(0 0 7px #3f63f5);
+  -webkit-text-stroke: 3px #3f63f5;
 }
 
 .background-text-small {
-  font-family: "CarterOne", Verdana;
+  font-family: "Convergence", Verdana;
   font-size: 4.1rem;
-  background-image: radial-gradient(circle at center, #c2c5a5, #e8de2b);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #6387f2;
+  -webkit-text-stroke: 1px #6387f2;
+  filter: drop-shadow(0 0 5px #6387f2);
+  transition: color 0.3s, -webkit-text-stroke 0.3s;
+}
+
+.background-text-small:hover {
+  color: transparent;
+  filter: drop-shadow(0 0 7px #3f63f5);
+  -webkit-text-stroke: 3px #3f63f5;
 }
 
 /* PARA SECTION STYLING  */
@@ -152,6 +138,7 @@ body {
   position: relative;
 }
 
+/* Box Styling */
 .text-box,
 .image-box {
   flex: 1;
@@ -159,11 +146,14 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0.7rem;
+  border-radius: 0rem;
   position: relative;
+  box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
 }
 
 .text-box {
-  background-color:rgba(62, 83, 96, 0.374);
+  background-color: rgba(62, 83, 96, 0.374);
+  backdrop-filter: blur(10px);
   flex-direction: column;
   padding: 1rem;
   font-family: "headfont", Verdana, Tahoma, sans-serif;
@@ -182,14 +172,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 3rem;
   border: 0.3rem solid transparent;
   border-image: conic-gradient(
       from var(--angle),
-      #eb2feb,
-      cyan,
-      limegreen,
-      greenyellow,
-      #eb2feb
+      #0000e3,
+      #0df205,
+      #00bfff,
+      #0df205,
+      #0000e3
     )
     1;
   z-index: -1;
@@ -197,6 +188,7 @@ body {
   box-shadow: 7rem;
 }
 
+/* Rotating Border for Image Box */
 .image-box::before {
   content: "";
   position: absolute;
@@ -204,14 +196,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 3rem;
   border: 0.3rem solid transparent;
   border-image: conic-gradient(
       from var(--angle),
-      #eb2feb,
-      cyan,
-      limegreen,
-      greenyellow,
-      #eb2feb
+      #0000e3,
+      #0df205,
+      #00bfff,
+      #0df205,
+      #0000e3
     )
     1;
   animation: spin 5s linear infinite;
@@ -225,18 +218,19 @@ body {
 }
 
 .sectionSubTag.text-small {
-  font-family: "Radio+Canada+Big", sans-serif;
+  font-family: "Assistant", sans-serif;
   font-size: 1.22rem;
-  color: rgb(225, 212, 212);
+  color: #6387f2;
 }
 
 .sectionSubTag.text-big {
-  font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
-  color: #e8de2b;
+  font-family: "Convergence", Verdana, Geneva, Tahoma, sans-serif;
+  color: #0df205;
   text-decoration: underline;
   font-size: 2.2rem;
 }
 
+/* Keyframes for Spin Animation */
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -256,8 +250,8 @@ body {
   padding-bottom: 10%;
 }
 
-/* Third page styling */
-.focus-areas-section {
+/* Third page styling - I have removed the slide for the time being*/
+/* .focus-areas-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,8 +280,9 @@ body {
   margin-bottom: 0.2rem;
   color: #e8de2b;
   font-size: 3.5rem;
-  font-family: "Nautilus", Verdana;
+  font-family: "Convergence", Verdana;
   letter-spacing: 0.3rem;
+  text-decoration: underline;
 }
 
 @keyframes slide {
@@ -342,6 +337,7 @@ body {
   margin: 0 2.5rem;
   color: #3d5260;
   font-size: 4rem;
-  font-family: "Aladin", sans-serif;
+  font-family: "Assistant", sans-serif;
   text-decoration: underline;
 }
+ */
