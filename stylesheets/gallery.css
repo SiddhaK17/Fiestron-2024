@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&display=swap");
 
 * {
     margin: 0;
@@ -18,7 +17,7 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
-  }
+}
 
 h1 {
     color: #6387f2;
@@ -26,18 +25,17 @@ h1 {
     filter: drop-shadow(0 0 5px #3f63f5);
     font-size: 7rem;
     font-family: "Convergence", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+    font-weight: 900;
+    font-style: normal;
 }
 
 h1:hover {
-   color: transparent;
+    color: transparent;
     filter: drop-shadow(0 0 7px #3f63f5);
     -webkit-text-stroke: 3px #3f63f5;
 }
 
-
-.gallerydiv{
+.gallerydiv {
     margin: 0 auto;
     padding: 2rem;
     height: 13rem;
@@ -46,16 +44,22 @@ h1:hover {
     border-radius: 10px;
     position: relative;
     top: 2rem;
-   
 }
 
 .gallerydiv::after,
 .gallerydiv::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #0000e3, #8b058b, #00bfff, #0c61f5, #0000e3);
+    background-image: conic-gradient(
+        from var(--angle),
+        #0000e3,
+        #8b058b,
+        #00bfff,
+        #0c61f5,
+        #0000e3
+    );
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -83,42 +87,44 @@ h1:hover {
 }
 
 .ourgallery {
-position: relative;
-max-width: 48rem;
-margin: 0 auto;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
 }
-
 
 .event-img {
     border-radius: 50%;
 }
 
 .event-nav {
-position: relative;
-left: 1rem;
-
+    position: relative;
+    left: 1rem;
 }
 
-
-
-.container{
+.container {
     margin: 0 auto;
     padding: 2rem;
-    height: 38rem;
+    height: auto;
     width: 55rem;
     background: #030c26;
     border-radius: 10px;
     position: relative;
-   
 }
 
 .container::after,
 .container::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #0000e3, #8b058b, #00bfff, #0c61f5, #0000e3);
+    background-image: conic-gradient(
+        from var(--angle),
+        #0000e3,
+        #8b058b,
+        #00bfff,
+        #0c61f5,
+        #0000e3
+    );
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -145,23 +151,11 @@ left: 1rem;
     }
 }
 
-#carouselExampleAutoplaying {
-position: relative;
-max-width: 48rem;
-margin: 0 auto;
-}
-
-
-
 .carousel-inner {
     display: flex;
     aspect-ratio: 16/9;
     border-radius: 0.5rem;
 }
-
-
-
-
 
 p {
     color: #6387f2;
@@ -173,31 +167,30 @@ p {
 }
 
 .h2 {
-        margin: auto;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-      }
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
 
-      .h3 {
-        margin: auto;
-        width: 40%;
-        display: flex;
-        justify-content: center;
-      }
+.h3 {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
 
-      .h4, .h5 {
-        margin: auto;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-      }
+.h4,
+.h5 {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
-
-    .h5 h1 {
-        font-family: "Convergence", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    }
-    
-      
+.h5 h1 {
+    font-family: "Convergence", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
