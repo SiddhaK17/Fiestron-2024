@@ -6,18 +6,7 @@ body, html {
   overflow: hidden;
 }
 
-.svg-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-svg {
-  width: 100%;
-  height: 100%;
-}
 .tclogo {position: fixed;
   top:1.7rem;
   left:1rem;
@@ -42,7 +31,6 @@ nav a:hover {
   display:flex;
 justify-content: space-between;
 align-items:center;
-background: transparent;
 transition: all 0.4s ease;
 z-index: 10;
  }
@@ -71,7 +59,58 @@ z-index: 10;}
 
 section{
     position:fixed;
-    top:10%;
+    top:20%;
     left:5%;
     z-index: 10;
 }
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for background */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #030c26, #0c39bd); /* Gradient base */
+    overflow: hidden;
+}
+
+/* Create diagonal overlapping shapes */
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: fixed;
+    background: #3a02022d; /* Slight transparency for shape effect */
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform-origin: center;
+    pointer-events: none;
+}
+
+/* First diagonal overlay */
+.overlay::before {
+    transform: rotate(45deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+}
+
+/* Second diagonal overlay */
+.overlay::after {
+    transform: rotate(135deg);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+
