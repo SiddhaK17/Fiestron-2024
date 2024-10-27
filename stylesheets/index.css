@@ -1,88 +1,96 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif; /* Set a default font */
 }
 
+.tclogo {
+    position: fixed;
+    top: 1.7rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 10;
+}
 
-.tclogo {position: fixed;
-  top:1.7rem;
-  left:1rem;
-  width: 3rem;
-  height:3rem;
-  z-index: 10;}
+.nav-floatleft {
+    position: fixed;
+    top: 2rem;
+    right: 1.3rem;
+    font-size: 1.6rem;
+    z-index: 10;
+}
 
- 
-.nav-floatleft {position: fixed;
-top:2rem;
-right:1.3rem;
-font-size: 1.6rem;
-z-index: 10;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    color: #f0f0f0; /* Light color for better contrast */
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
 
 nav a:hover {
-  letter-spacing:0.2rem;
-  padding:2rem 3rem;
-  z-index: 10;
-}
- nav{
-  display:flex;
-justify-content: space-between;
-align-items:center;
-transition: all 0.4s ease;
-z-index: 10;
- }
-
-nav a {text-decoration:none;
-padding :2rem;
-color:white;
-z-index: 10;
+    letter-spacing: 0.2rem;
+    color: #007bff; /* Hover color */
 }
 
 .heading {
-  font-size: 5rem;
-  font-family: 'convergence';
-  color:White;
-  line-height:3cm;
-  z-index: 10;}
+    font-size: 5rem;
+    font-family: "Convergence", sans-serif;
+    color: white;
+    line-height: 3cm;
+    z-index: 10;
+}
 
 .slogan {
-  font-size: 2rem;
-  font-family: 'assistant';
-  color:white;
-   position:fixed;
-   top:55%;
-   z-index: 10;
-  }
-
-.text{
- border-right: 2px solid;
- overflow:hidden;
- white-space: nowrap;
- width:40ch;
- animation: typing 3s steps(44, end) forwards, blink 0.7s step-end infinite ;
+    font-size: 2rem;
+    color: white;
+    position: fixed;
+    top: 55%;
+    z-index: 10;
 }
 
-/*typing effect*/
+.text {
+    border-right: 2px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40ch;
+    animation: typing 3s steps(44, end) forwards, blink 0.7s step-end infinite;
+}
+
+/* Typing effect */
 @keyframes typing {
-  from {width:0;}
-  to {width:100%;}
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
-/* blinking cursor blinkin*/
+/* Blinking cursor effect */
 @keyframes blink {
-  50% {border-right-color: transparent;}
-  
+    50% {
+        border-right-color: transparent;
+    }
 }
 
-
-section{
-  position:fixed;
-  top:20%;
-  left:5%;
-  z-index: 10;
+section {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    z-index: 10;
 }
 
 /* General reset */
@@ -92,28 +100,30 @@ section{
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
 /* Container for background */
 .background {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #030c26, #0c39bd); /* Gradient base */
+    background: linear-gradient(135deg, #001f3f, #007bff); Diagonal gradient
     overflow: hidden;
 }
 
-/* Create diagonal overlapping shapes */
-.overlay::before,
-.overlay::after {
-    content: '';
+/* Overlay shapes */
+.overlay {
     position: fixed;
-    background: #3a02022d; /* Slight transparency for shape effect */
     top: 0;
     left: 0;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+}
+
+.overlay::before,
+.overlay::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency for shape effect */
     width: 200%;
     height: 200%;
     transform-origin: center;
@@ -132,5 +142,25 @@ body, html {
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/* 3d model container */
+.model-container {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  width: 40vw; /* adjust width as needed */
+  height: 60vh; /*adjust height as needed */
+  z-index: 5; /* place it below the nav and header elements */
+  overflow: hidden;
+  background: transparent; /*ensure the background is transparent */
+  border-radius: 15px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); Optional: adjust shadow if needed */
+}
 
-/*--------*/
+/*responsive */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 4rem; /* Adjust heading size for smaller screens */
+    }
+
+    .slogan {
+        font-size: 1.5rem; /* Adjust slogan size
