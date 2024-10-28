@@ -1552,11 +1552,10 @@ filter: blur(calc(2rem + 0.2vw));
 
 .row-three {
     position: absolute;
-    display: flex;
     flex-wrap: wrap;  
     gap: calc(2rem + 1vw); 
     padding-top: calc(0.09rem + 0.1vw); 
-    margin: 0 auto 0 auto;
+    margin: auto;
     top: calc(22.5% + 8vw);
     width: 100%; 
 }
@@ -1568,9 +1567,8 @@ filter: blur(calc(2rem + 0.2vw));
     font-size: calc(0.8rem + 0.1vw); 
     word-spacing: calc(0.09rem + 0.1vw); 
     line-height: calc(1.1rem + 0.2vw);
-    padding-bottom: calc(5rem + 1vw);
+    padding-bottom: calc(7rem + 1vw);
     padding-top: 1%;  
 }
 
 }
-
