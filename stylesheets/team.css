@@ -979,7 +979,7 @@
     .website-team-wrapper {
         border: calc(0.25rem + 0.1vw) solid #25a9dd;
         border-radius: calc(0.9rem + 0.3vw);
-        padding: 0 calc(1.5rem + 0.5vw) calc(5rem + 0.5vw) calc(1.5rem + 0.5vw);
+        padding: 0 calc(1.5rem + 0.5vw) calc(2rem + 0.5vw) calc(1.5rem + 0.5vw);
         margin: calc(1.5rem + 0.5vw) calc(3rem + 1vw) calc(5rem + 1vw) calc(3rem + 1vw);
         background-color: rgba(8, 28, 90, 0.4);
         box-shadow: 0 0 calc(2rem + 0.5vw) rgba(41, 181, 220, 0.955);
@@ -1047,7 +1047,7 @@
     }
     
     .row-two {
-        padding-top: calc(4rem + 1vw); 
+        padding-top: calc(2.5rem + 1vw); 
         padding-bottom: calc(0.5rem + 0.5vw); 
         gap: calc(1rem + 1vw); 
         width: 96%;
@@ -1111,11 +1111,11 @@
         text-align: center;
         word-spacing: calc(0.09rem + 0.1vw);
         line-height: calc(1.3rem + 0.1vw);
-        margin-top: calc(1.5rem + 0.3vw);
+        margin-top: calc(1rem + 0.3vw);
     }
 
     .core {
-        padding-top: calc(1.6rem + 1vw);
+        padding-top: calc(2rem + 1vw);
         font-size: calc(2.5rem + 1vw); 
         padding-bottom: calc(3.4rem + 1vw); 
     }
@@ -1171,9 +1171,9 @@
     padding-top: calc(1rem + 0.2vw);
     margin: 0 calc(2rem + 0.5vw);
     color: rgb(40, 226, 236);
-    font-size: calc(1.2rem + 0.2vw);
+    font-size: calc(1rem + 0.2vw);
     word-spacing: calc(0.3rem + 0.1vw);
-    line-height: calc(1.5rem + 0.1vw);
+    line-height: calc(1.2rem + 0.1vw);
     }
 
     .meet-our-styling {
@@ -1185,15 +1185,19 @@
     }
     
     .hodintroline {
-        padding-top: calc(2rem + 1vw); 
+        padding-top: calc(2.7rem + 1vw); 
         padding-bottom: calc(1rem + 0.5vw); 
         font-size: calc(2.3rem + 0.3vw); 
+    }
+
+    .name-adjust {
+        width: calc(63% + 1vw);
+        margin: 0 auto;
     }
     
     .first-order {
         display: flex;
         justify-content: space-between;
-        padding-top: calc(2rem + 0.5vw);
     }
 
     .admin,
@@ -1206,7 +1210,7 @@
     .prandmarketing,
     .technical {
         font-size: calc(1.5rem + 0.3vw);
-        padding-top: calc(3rem + 0.5vw);
+        padding-top: calc(2.2rem + 0.5vw);
         margin: 0 auto;
         color: rgb(99, 135, 242);
         width: calc(35% + 2vw);
@@ -1324,6 +1328,7 @@
     font-family: "Kanit", sans-serif;
 }
 
+
 .fourth-order {
     width: 100%;
     margin: 0 auto;
@@ -1440,7 +1445,7 @@
     }    
 
     .to-give-padding {
-        padding-top: calc(6rem + 1vw);
+        padding-top: calc(2.5rem + 1vw);
     }    
 
     .website-team-pictures-row-two {
@@ -1511,3 +1516,31 @@
     }
 
 }
+
+@media (min-width: 769px) and (max-width: 1400px) {
+    .styling-team-of-teachers {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1124px) and (max-width: 1154px) {
+    .meet-our-styling, 
+    .dept-hod-styling {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 839px) and (max-width: 1093px) {
+    .meet-the-rising-stars-of-our-styling {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .website-team-styling {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
