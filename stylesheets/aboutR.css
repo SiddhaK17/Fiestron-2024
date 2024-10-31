@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+body {
+    background-color: #030c26;
+}
+
+.titleSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title {
+    font-family: "Convergence", sans-serif;
+    font-size: 7rem;
+    color: #6387f2;
+    -webkit-text-stroke: 1px #6387f2;
+    filter: drop-shadow(0 0 5px #6387f2);
+    line-height: 70%;
+}
+
+#titleBig {
+    transition: color 0.3s, -webkit-text-stroke 0.3s;
+    line-height: 100%;
+}
+
+#titleBig:hover {
+    color: transparent;
+    filter: drop-shadow(0 0 7px #3f63f5);
+    -webkit-text-stroke: 3px #3f63f5;
+}
+
+#titleSmall {
+    font-size: 4.1rem;
+    transition: color 0.3s, -webkit-text-stroke 0.3s;
+}
+
+#titleSmall:hover {
+    color: transparent;
+    filter: drop-shadow(0 0 7px #3f63f5);
+    -webkit-text-stroke: 3px #3f63f5;
+}
+
+.gridSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    padding: 1%;
+}
+
+.gridItem {
+    border: 2px white solid;
+    /* padding: 5%; */
+    background-color: #19273c;
+}
+
+.gridTitle {
+    font-family: "Convergence", Verdana, Geneva, Tahoma, sans-serif;
+    color: #0df205;
+    text-decoration: underline;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.gridText {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.22rem;
+    color: #6387f2;
+}
+
+.imgFluid {
+    width: 100%;
+}
