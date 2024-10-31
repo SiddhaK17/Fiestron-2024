@@ -6,7 +6,6 @@ html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Arial', sans-serif; /* Set a default font */
 }
 
 /* General reset */
@@ -40,6 +39,7 @@ html {
     top: 2rem;
     right: 1.3rem;
     font-size: 1.7rem;
+    font-family: "Assistant";
     z-index: 10;
 }
 
@@ -54,7 +54,7 @@ nav {
 nav a {
     text-decoration: none;
     padding: 1.5rem 2rem;
-    color: #fff; /* Light color for better contrast */
+    color: #39ff14; /* Light color for better contrast */
     transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
 
@@ -65,7 +65,7 @@ nav a:hover {
 
 .heading {
     font-size: 3.5rem;
-    font-family: "Convergence", sans-serif;
+    font-family: "Convergence";
     color: #0ff0ff;
     line-height: 3cm;
     position: fixed;
@@ -76,6 +76,7 @@ nav a:hover {
 
 .slogan {
     font-size: 2rem;
+    font-family: "Assistant";
     color: #ffffff;
     position: fixed;
     top: 55%;
@@ -86,20 +87,17 @@ nav a:hover {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
     line-height: 1;
     outline: none;
-    animation: animates 5s linear infinite;
+    animation: fade 2s ease-in-out infinite;
 }
-@keyframes animates
-{
-    0%,18%,20%,50.1%,60%,80%,90.1%,92.1%
-    {
-        color:#030c26;
-        box-shadow: none;
+
+@keyframes fade {
+    0%,21%,40%,58%,90%,100% {
+        color: #ffffff;
+        opacity: 1;
     }
-    18%,20%,30%,50%,60%,65%,80.1%,90%,92.15%,100%
-    {
-        color:#fff;
-        text-shadow: 0 0 10px #09777f,
-        0 0 10px #0c555a;
+    25%,46%,72%,79%,50% {
+        color: #0fefff6a;
+        opacity: 0.3;
     }
 }
 
@@ -127,80 +125,85 @@ nav a:hover {
         border-right-color: transparent;
     }
 }
-/*
-.content {
-    position: fixed;
-    top: 25%;
-    left: 5%;
-    z-index: 10;
-    width:50%;
-    height:100%;
-}
-*/
 /*-----bg-----*/
-.boxes
-{
-    width:100%;
-    height:70%;
+.boxes {
+    width: 100%;
+    height: 70%;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
-.box-area li
-{
+.box-area li {
     position: fixed;
     display: block;
     list-style-type: none;
-    width: 25px;
-    height: 25px;
     border: 0.2em solid #0fefff70;
-    animation: animations 20s linear infinite;
     bottom: -150px;
     border-radius: 10px;
-}
-.box-area li:nth-child(1)
-{
-    left: 90%;width:80px;
-    height: 80px;animation-delay: 0s;
-    
-}
-.box-area li:nth-child(2)
-{
-    left: 8%;width:30px;
-    height: 30px;animation-delay: 1.5s; animation-duration: 10s;
-}
-.box-area li:nth-child(3)
-{
-    left: 80%;width:90px;
-    height: 90px;animation-delay: 5.5s; 
-    
-}
-.box-area li:nth-child(4)
-{
-    left: 42%;width:150px;
-    height: 150px;animation-delay: 0s; animation-duration: 15s;
-}
-.box-area li:nth-child(5)
-{
-    left: 65%;width:40px;
-    height: 40px;animation-delay: 0s;
-
-}
-.box-area li:nth-child(6)
-{
-    left: 15%;width:110px;
-    height: 110px;animation-delay: 3.5s;
-}
-@keyframes animations 
-{
-    0%{transform: translateY(0) rotate(0);
-       opacity: 1;}
-    100% {transform: translateY(-800px) rotate(360deg);
-        opacity: 0;}   
+    animation: animations 20s linear infinite;
+    animation-timing-function: linear;
 }
 
+.box-area li:nth-child(1) {
+    left: 90%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 18s;
+}
+
+.box-area li:nth-child(2) {
+    left: 8%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 11s;
+}
+
+.box-area li:nth-child(3) {
+    left: 80%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 4.5s;
+    animation-duration: 21s;
+}
+
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 14s;
+}
+
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 6.5s;
+    animation-duration: 13s;
+}
+
+@keyframes animations {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(720deg);
+        opacity: 0;
+    }
+}
 
 /*----------*/
 
