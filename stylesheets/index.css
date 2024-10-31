@@ -1,3 +1,4 @@
+
 body,
 html {
     margin: 0;
@@ -7,6 +8,23 @@ html {
     overflow: hidden;
     font-family: 'Arial', sans-serif; /* Set a default font */
 }
+
+/* General reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for background */
+.background {
+   
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    overflow: hidden;
+} 
 
 .tclogo {
     position: fixed;
@@ -21,7 +39,7 @@ html {
     position: fixed;
     top: 2rem;
     right: 1.3rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     z-index: 10;
 }
 
@@ -36,37 +54,41 @@ nav {
 nav a {
     text-decoration: none;
     padding: 1.5rem 2rem;
-    color: #f0f0f0; /* Light color for better contrast */
+    color: #fff; /* Light color for better contrast */
     transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
 
 nav a:hover {
     letter-spacing: 0.2rem;
-    color: #6387f2; /* Hover color */
+    color: #ffd300; /* Hover color */
 }
 
 .heading {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-family: "Convergence", sans-serif;
-    color: white;
+    color: #0ff0ff;
     line-height: 3cm;
+    position: fixed;
+    top: 20%;
+    left: 4%;
     z-index: 10;
 }
 
 .slogan {
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     position: fixed;
     top: 55%;
+    left: 4%;
     z-index: 10;
 }
 .one {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
     line-height: 1;
     outline: none;
-    animation: animate 5s linear infinite;
+    animation: animates 5s linear infinite;
 }
-@keyframes animate
+@keyframes animates
 {
     0%,18%,20%,50.1%,60%,80%,90.1%,92.1%
     {
@@ -76,8 +98,8 @@ nav a:hover {
     18%,20%,30%,50%,60%,65%,80.1%,90%,92.15%,100%
     {
         color:#fff;
-        text-shadow: 0 0 10px #27148c,
-        0 0 10px #27148c;
+        text-shadow: 0 0 10px #09777f,
+        0 0 10px #0c555a;
     }
 }
 
@@ -105,30 +127,80 @@ nav a:hover {
         border-right-color: transparent;
     }
 }
-
-section {
+/*
+.content {
     position: fixed;
-    top: 20%;
+    top: 25%;
     left: 5%;
     z-index: 10;
+    width:50%;
+    height:100%;
+}
+*/
+/*-----bg-----*/
+.boxes
+{
+    width:100%;
+    height:70%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
 }
 
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.box-area li
+{
+    position: fixed;
+    display: block;
+    list-style-type: none;
+    width: 25px;
+    height: 25px;
+    border: 0.2em solid #0fefff70;
+    animation: animations 20s linear infinite;
+    bottom: -150px;
+    border-radius: 10px;
+}
+.box-area li:nth-child(1)
+{
+    left: 90%;width:80px;
+    height: 80px;animation-delay: 0s;
+    
+}
+.box-area li:nth-child(2)
+{
+    left: 8%;width:30px;
+    height: 30px;animation-delay: 1.5s; animation-duration: 10s;
+}
+.box-area li:nth-child(3)
+{
+    left: 80%;width:90px;
+    height: 90px;animation-delay: 5.5s; 
+    
+}
+.box-area li:nth-child(4)
+{
+    left: 42%;width:150px;
+    height: 150px;animation-delay: 0s; animation-duration: 15s;
+}
+.box-area li:nth-child(5)
+{
+    left: 65%;width:40px;
+    height: 40px;animation-delay: 0s;
+
+}
+.box-area li:nth-child(6)
+{
+    left: 15%;width:110px;
+    height: 110px;animation-delay: 3.5s;
+}
+@keyframes animations 
+{
+    0%{transform: translateY(0) rotate(0);
+       opacity: 1;}
+    100% {transform: translateY(-800px) rotate(360deg);
+        opacity: 0;}   
 }
 
-/* Container for background */
-.background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background:  #030c26;
-    overflow: hidden;
-} 
-/*----------*/
 
 /*----------*/
 
@@ -143,7 +215,7 @@ section {
   overflow: hidden;
   background: transparent; /*ensure the background is transparent */
   border-radius: 15px;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); Optional: adjust shadow if needed */
+ /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); Optional: adjust shadow if needed */
 }
 
 /*responsive */
