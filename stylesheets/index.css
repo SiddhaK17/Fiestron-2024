@@ -87,25 +87,26 @@ nav a:hover {
     left: 4%;
     z-index: 10;
 }
-/*.one {
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-  line-height: 1;
-  outline: none;
-  animation: fade 2s ease-in-out infinite;
+.one {
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 1;
+    outline: none;
+    animation: animates 5s linear infinite;
 }
-@keyframes fade
+@keyframes animates
 {
     0%,18%,20%,50.1%,60%,80%,90.1%,92.1%
     {
-        color:#fff;
-        opacity:1;
+        color:#030c26;
+        box-shadow: none;
     }
     18%,20%,30%,50%,60%,65%,80.1%,90%,92.15%,100%
     {
-        color:#0fefff78;
-        opacity:0.3;
+        color:#fff;
+        text-shadow: 0 0 10px #09777f,
+        0 0 10px #0c555a;
     }
-}*/
+}
 
 .text {
     border-right: 2px solid;
@@ -221,7 +222,6 @@ nav a:hover {
       opacity: 0;
   }
 }
-
 /*----------*/
 
 /* 3d model container */
@@ -238,3 +238,76 @@ nav a:hover {
 }
 
 /*responsive */
+
+/*320px - 768px; 769px - 1024px; 1024px..*/
+@media (max-width: 360px) {
+    /* Adjustments for smaller screens */
+    .tclogo {
+      top: 0.8rem;
+      left: 0.8rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    
+    nav a {
+      padding: 0.5rem 1rem;
+    }
+    .nav-floatleft {
+      top: 1rem;
+      right: 0.9rem;
+      font-size: 0.7rem;
+    }
+  
+    .model-container {
+      position: fixed;
+      top: 2rem;
+      width:90vw;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      transform: translateX(-60);
+      
+    }
+  
+    .heading {
+      font-size: 1.8rem;
+      line-height: 2cm;
+      margin-top: 16rem;
+      margin-left: 1rem;
+      text-align: center;
+    }
+  
+    .slogan {
+      font-size: 1rem;
+      margin-top: 11rem;
+      margin-left: 1rem;
+      text-align: center;
+    }
+    .box-area li {
+      border: 0.2em solid #0fefff3b;
+    }
+    .box-area li:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    }
+    .box-area li:nth-child(2) {
+      width: 55px;
+      height: 55px;
+    }
+    .box-area li:nth-child(3) {
+      width: 45px;
+      height: 45px;
+    }
+    .box-area li:nth-child(4) {
+      width: 75px;
+      height: 75px;
+    }
+    .box-area li:nth-child(5) {
+      width: 30px;
+      height: 30px;
+    }
+    .box-area li:nth-child(6) {
+      width: 55px;
+      height: 55px;
+    }
+  }
