@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 
 body,
 html {
@@ -84,20 +88,22 @@ nav a:hover {
     z-index: 10;
 }
 .one {
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-    line-height: 1;
-    outline: none;
-    animation: fade 2s ease-in-out infinite;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 1;
+  outline: none;
+  animation: fade 2s ease-in-out infinite;
 }
-
-@keyframes fade {
-    0%,21%,40%,58%,90%,100% {
-        color: #ffffff;
-        opacity: 1;
+@keyframes fade
+{
+    0%,18%,20%,50.1%,60%,80%,90.1%,92.1%
+    {
+        color:#fff;
+        opacity:1;
     }
-    25%,46%,72%,79%,50% {
-        color: #0fefff6a;
-        opacity: 0.3;
+    18%,20%,30%,50%,60%,65%,80.1%,90%,92.15%,100%
+    {
+        color:#0fefff78;
+        opacity:0.3;
     }
 }
 
@@ -125,119 +131,105 @@ nav a:hover {
         border-right-color: transparent;
     }
 }
-/*-----bg-----*/
-.boxes {
-    width: 100%;
-    height: 70%;
+
+/*.content {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    top: 25%;
+    left: 5%;
+    z-index: 10;
+    width:50%;
+    height:100%;
+}*/
+
+/*-----bg-----*/
+
+.boxes {
+  width: 100%;
+  height: 70%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .box-area li {
-    position: fixed;
-    display: block;
-    list-style-type: none;
-    border: 0.2em solid #0fefff70;
-    bottom: -150px;
-    border-radius: 10px;
-    animation: animationsAlt 22s linear infinite;
-    animation-timing-function: linear;
+  position: fixed;
+  display: block;
+  list-style-type: none;
+  border: 0.2em solid #0fefff70;
+  bottom: -150px;
+  border-radius: 10px;
+  animation: animations 20s linear infinite;
+  animation-timing-function: linear;
 }
 
 .box-area li:nth-child(1) {
-    left: 90%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 2s;
-    animation-duration: 20s;
+  left: 90%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 2s;
+  animation-duration: 18s;
 }
 
 .box-area li:nth-child(2) {
-    left: 8%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 1.5s;
-    animation-duration: 13s;
+  left: 8%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 11s;
 }
 
 .box-area li:nth-child(3) {
-    left: 80%;
-    width: 90px;
-    height: 90px;
-    animation-delay: 7.5s;
-    animation-duration: 23s;
+  left: 80%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 7.5s;
+  animation-duration: 21s;
 }
 
 .box-area li:nth-child(4) {
-    left: 42%;
-    width: 150px;
-    height: 150px;
-    animation-delay: -1s;
-    animation-duration: 16s;
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 14s;
 }
 
 .box-area li:nth-child(5) {
-    left: 65%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 5s;
-    animation-duration: 12s;
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 1s;
+  animation-duration: 10s;
 }
 
 .box-area li:nth-child(6) {
-    left: 15%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 4.5s;
-    animation-duration: 10s;
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 6.5s;
+  animation-duration: 13s;
 }
 
-@keyframes animationsAlt {
-    0% {
-        transform: translateY(0) rotate(0deg) scale(1);
-        opacity: 1;
-    }
-    15% {
-        transform: translateY(-150px) rotate(120deg) scale(1.5);
-        opacity: 0.9;
-    }
-    30% {
-        transform: translateY(-300px) rotate(240deg) scale(0.6);
-        opacity: 0.8;
-    }
-    45% {
-        transform: translateY(-450px) rotate(360deg) scale(1.3);
-        opacity: 0.6;
-    }
-    60% {
-        transform: translateY(-600px) rotate(480deg) scale(0.7);
-        opacity: 0.5;
-    }
-    75% {
-        transform: translateY(-700px) rotate(600deg) scale(1.2);
-        opacity: 0.4;
-    }
-    90% {
-        transform: translateY(-750px) rotate(720deg) scale(0.8);
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateY(-800px) rotate(840deg) scale(1.4);
-        opacity: 0;
-    }
+@keyframes animations {
+  0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-800px) rotate(720deg);
+      opacity: 0;
+  }
 }
 
-/*---------*/
+/*----------*/
 
 /* 3d model container */
 .model-container {
   position: fixed;
   top: 20%;
   right: 5%;
-  width: 40vw; /* adjust width as needed */
-  height: 60vh; /*adjust height as needed */
+  width: 40vw; /* adjust width as needed *right: 60vh; /*adjust height as needed */
   z-index: 5; /* place it below the nav and header elements */
   overflow: hidden;
   background: transparent; /*ensure the background is transparent */
@@ -246,162 +238,3 @@ nav a:hover {
 }
 
 /*responsive */
-/* Responsive adjustments for smaller screens */
-@media (max-width: 1024px) {
-    /* Adjust nav font size and padding */
-    .nav-floatleft {
-      font-size: 1.3rem;
-    }
-  
-    nav a {
-      padding: 1rem 1.5rem;
-      font-size: 1.2rem;
-    }
-  
-    /* Scale down the heading and slogan */
-    .heading {
-      font-size: 3rem;
-      top: 18%;
-    }
-  
-    .slogan {
-      font-size: 1.5rem;
-      top: 50%;
-    }
-  
-    /* Adjust the 3D model container size */
-    .model-container {
-      width: 50vw;
-      height: 50vh;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    /* Further adjustments for smaller screens */
-    .nav-floatleft {
-      font-size: 1.2rem;
-    }
-  
-    nav a {
-      padding: 0.8rem 1.2rem;
-      font-size: 1rem;
-    }
-  
-    .heading {
-      font-size: 2.5rem;
-      top: 15%;
-      left: 3%;
-    }
-  
-    .slogan {
-      font-size: 1.2rem;
-      top: 45%;
-      left: 3%;
-    }
-  
-    .tclogo {
-      width: 2.5rem;
-      height: 2.5rem;
-      top: 1.2rem;
-    }
-  
-    .model-container {
-      width: 60vw;
-      height: 45vh;
-      right: 3%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    /* Adjustments for very small screens, like iPhones 7, 8, etc. */
-    .nav-floatleft {
-      font-size: 1rem;
-    }
-  
-    nav a {
-      padding: 0.6rem 1rem;
-      font-size: 0.9rem;
-    }
-  
-    .heading {
-      font-size: 2rem;
-      top: 12%;
-      left: 2%;
-    }
-  
-    .slogan {
-      font-size: 1rem;
-      top: 40%;
-      left: 2%;
-    }
-  
-    .tclogo {
-      width: 2rem;
-      height: 2rem;
-      top: 1rem;
-    }
-  
-    .model-container {
-      width: 70vw;
-      height: 40vh;
-      right: 2%;
-    }
-  
-    .boxes {
-      height: 50%;
-    }
-  }
-  
-  @media (max-width: 375px) {
-    /* Adjustments for smaller devices like iPhone SE */
-    .nav-floatleft {
-      font-size: 0.9rem;
-    }
-  
-    nav a {
-      padding: 0.5rem 0.8rem;
-      font-size: 0.8rem;
-    }
-  
-    .heading {
-      font-size: 1.8rem;
-      top: 10%;
-    }
-  
-    .slogan {
-      font-size: 0.9rem;
-      top: 35%;
-    }
-  
-    .tclogo {
-      width: 1.8rem;
-      height: 1.8rem;
-    }
-  
-    .model-container {
-      width: 80vw;
-      height: 35vh;
-    }
-  }
-  
-  @media (min-width: 1025px) and (max-width: 1366px) {
-    /* Adjustments for tablets */
-    .heading {
-      font-size: 3.2rem;
-      top: 18%;
-      left: 3%;
-    }
-  
-    .slogan {
-      font-size: 1.8rem;
-      top: 48%;
-      left: 3%;
-    }
-  
-    .model-container {
-      width: 45vw;
-      height: 50vh;
-      right: 4%;
-    }
-  }
-  
