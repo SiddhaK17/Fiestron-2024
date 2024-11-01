@@ -231,7 +231,7 @@ nav a:hover {
   right: 5%;
   width: 40vw; /* adjust width as needed *right: 60vh; /*adjust height as needed */
   z-index: 5; /* place it below the nav and header elements */
-  overflow: hidden;
+  overflow: visible;
   background: transparent; /*ensure the background is transparent */
   border-radius: 15px;
  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); Optional: adjust shadow if needed */
