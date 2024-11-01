@@ -17,21 +17,21 @@ scene.background = null; // Set background to null for transparency
 const camera = new THREE.PerspectiveCamera(
   35,
   window.innerWidth / window.innerHeight,
-  1,
+  0.1, // Near plane
   1000
 );
-camera.position.set(0, 1, 5); // Adjusted for a better view of the model
+camera.position.set(0, 1, 5); // Camera positioned slightly back and above the model
 
 // Set up the controls
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.enablePan = false;
-controls.minDistance = 5;
+controls.minDistance = 2; // Adjust the min distance to avoid cutting off the model
 controls.maxDistance = 20;
-controls.minPolarAngle = 0.5;
-controls.maxPolarAngle = 1.5;
+controls.minPolarAngle = 0; // Allow viewing from below
+controls.maxPolarAngle = Math.PI; // Allow viewing from above
 controls.autoRotate = false;
-controls.target = new THREE.Vector3(0, 0, 0);
+controls.target.set(0, 0, 0); // Make sure the target is set correctly
 controls.update();
 
 // Set up the lighting
@@ -47,8 +47,8 @@ loader.load(
   "scene.gltf",
   (gltf) => {
     model = gltf.scene;
-    model.position.set(-2, 0, 0);
-    model.scale.set(0.65, 0.65, 0.65);
+    model.position.set(-2, 0, 0); // Center the model
+    model.scale.set(0.65, 0.65, 0.65); // Scale down the model as needed
     scene.add(model);
   },
   (xhr) => {
