@@ -10,14 +10,14 @@
 .core-wrapper,
 .hod-wrapper,
 .website-team-wrapper {
-    border: 0.27rem solid #25a9dd;
+    border: 0.27rem solid #FFFFFF;
     border-radius: 0.9rem;
     padding: 0 2rem 5rem 2rem;
     margin: 2rem 5rem 7rem 5rem;
     box-sizing: border-box;
     position: relative;
-    background-color: rgba(8, 28, 90, 0.4);
-    box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
+    background-color: rgba(48, 52, 63, 0.5);
+    box-shadow: 0 0 2.2rem rgba(255, 255, 255, 0.955);
     transition: all 0.5s ease-in-out;
 }
 
@@ -25,8 +25,8 @@
 .core-wrapper:hover,
 .hod-wrapper:hover,
 .website-team-wrapper:hover {
-    border-color: #000000;
-    box-shadow: 0 0 4rem #b210f2;
+    border-color: #FFD300;
+    box-shadow: 0 0 4rem #FF1493;
     transition: all 0.25s ease-in-out;
 }
 
@@ -38,7 +38,7 @@
     font-family: "Young Serif", serif;
     font-weight: 500;
     -webkit-text-stroke-width: 0.1rem;
-    -webkit-text-stroke-color: rgb(40, 226, 236);
+    -webkit-text-stroke-color: #30343F;
     color:rgb(40, 226, 236);
     font-style: italic;
     text-decoration: underline solid rgb(40, 226, 236) 12%;
@@ -47,7 +47,7 @@
 }
 
 .background {
-    background-color: #030c26;
+    background-color: #121212;
     z-index: 0;
     top: 0;
     left: 0;
@@ -65,14 +65,14 @@
     font-family: "Young Serif", serif;
     font-weight: 500;
     -webkit-text-stroke-width: 0.1rem;
-    -webkit-text-stroke-color: rgb(40, 226, 236);
-    color: rgb(40, 226, 236);
+    -webkit-text-stroke-color: rgb(15, 240, 255);
+    color: rgb(15, 240, 255);
     text-align: center;
     padding: 3rem 3rem 1.5rem 3rem;
     font-size: 5rem;
-    text-decoration: underline solid rgb(40, 226, 236) 12%;
+    text-decoration: underline solid rgb(15, 240, 255) 12%;
     text-underline-offset: 0.8rem;
-    text-shadow: 0 0 0.39rem rgba(40, 226, 236, 0.7);
+    text-shadow: 0 0 4rem rgba(15, 240, 255, 0.7);
 }
 
 .tagline {
@@ -80,7 +80,7 @@
     font-weight: 380;
     padding-top: 1rem;
     text-align: center;
-    color: rgb(99, 135, 242);
+    color: rgb(15, 240, 255);
     font-size: 3rem;
     padding-bottom: 2rem;
     width: 80%;
@@ -93,7 +93,7 @@
 .teachers {
     padding-top: 4rem;
     text-align: center;
-    color: rgb(99, 135, 242);
+    color: rgb(15, 240, 255);
     font-size: 4rem;
     padding-bottom: 2rem;
     width: 100%;
@@ -107,7 +107,7 @@
 }
 
 .styling-team-of-teachers {
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .teacherimagesadjusting {
@@ -186,7 +186,7 @@
 }
 
 .name-shalini-sinha {
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
@@ -322,7 +322,7 @@
     width: 94%;
     padding-bottom: 94%;
     font-size: 1.3rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     text-align: center;
     word-spacing: 0.2rem;
     line-height: 1.7rem;
@@ -445,7 +445,7 @@
     text-align: center;
     margin: 0 2rem;
     font-family: "Kanit", sans-serif;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     font-size: 1.4rem;
     word-spacing: 0.3rem;
     line-height: 1.8rem;
@@ -457,14 +457,14 @@
 }
 
 .dept-hod-styling {
-    text-shadow: 0 0 0.35rem rgba(40, 226, 236, 0.7);
+    text-shadow: 0 0 0.35rem rgba(15, 240, 255, 0.7);
 }
 
 .hodintroline {
     padding-top: 5rem;
     padding-bottom: 1rem;
     text-align: center;
-    color: rgb(99, 135, 242);
+    color: rgb(15, 240, 255);
     font-size: 4rem;
     width: 100%;
     text-transform: capitalize;
@@ -488,7 +488,7 @@
     font-size: 2rem;
     padding-top: 3rem;
     margin: 0 auto;
-    color: rgb(99, 135, 242);
+    color: rgb(15, 240, 255);
     width: 35%;
     text-align: center;
     word-spacing: 0.4rem;
@@ -602,7 +602,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -637,7 +637,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -671,7 +671,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -688,7 +688,7 @@
 .security {
     font-size: 2rem;
     padding: 2.5rem 0 0 0;
-    color: rgb(99, 135, 242);
+    color: rgb(15, 240, 255);
     width: 35%;
     text-align: center;
     word-spacing: 0.4rem;
@@ -754,7 +754,7 @@
     text-align: center;
     width: 100%;
     padding-top: 1rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -764,7 +764,7 @@
 .website-team-intro {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    color: rgb(99, 135, 242);
+    color: rgb(15, 240, 255);
     text-align: center;
     font-size: 4rem;
     width: 70%;
@@ -839,7 +839,7 @@
 .website-team-names-3,
 .website-team-names-4 {
     font-size: 1.5rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     text-align: center;
     word-spacing: 0.4rem;
     line-height: 2rem;
@@ -898,7 +898,7 @@
 .website-team-names-5,
 .website-team-names-6 {
     font-size: 1.5rem;
-    color: rgb(40, 226, 236);
+    color: #FFFFFF;
     text-align: center;
     word-spacing: 0.4rem;
     line-height: 2rem;
@@ -976,15 +976,16 @@
         border-radius: calc(0.9rem + 0.3vw);
         padding: 0 calc(1.5rem + 0.5vw) calc(2rem + 0.5vw) calc(1.5rem + 0.5vw);
         margin: calc(1.5rem + 0.5vw) calc(3rem + 1vw) calc(5rem + 1vw) calc(3rem + 1vw);
-        background-color: rgba(8, 28, 90, 0.4);
         box-shadow: 0 0 calc(2rem + 0.5vw) rgba(41, 181, 220, 0.955);
+        background-color: rgba(8, 28, 90, 0.4);
     }
 
     .ourteam {
         padding: calc(2rem + 0.5vw) calc(2rem + 0.5vw) calc(1rem + 0.5vw) calc(2rem + 0.5vw); 
         font-size: calc(3rem + 1vw); 
         text-underline-offset: calc(0.5rem + 0.2vw); 
-        text-shadow: 0 0 calc(0.3rem + 0.1vw) rgba(255, 255, 255, 0.9); 
+        text-shadow: 0 0 calc(0.3rem + 0.1vw) rgba(40, 226, 236, 0.7);
+        color: rgb(40, 226, 236); 
     }
     
     .tagline {
@@ -1026,7 +1027,7 @@
     
     .teacher1::after,
     .teacher1::before {
-        padding: calc(1.4% + 0.5vw); 
+        padding: calc(1.8% + 0.3vw); 
         border-radius: calc(8% + 0.5vw); 
     }
     
@@ -1035,7 +1036,6 @@
     }
     
     .name-shalini-sinha {
-        color: rgb(40, 226, 236);
         text-align: center;
         padding-top: calc(0.8rem + 0.5vw); 
         font-size: calc(1rem + 0.5vw); 
@@ -1073,7 +1073,7 @@
     .teacher7::after {
         height: calc(90% + 2vw); 
         width: calc(90% + 2vw); 
-        padding: calc(0.01rem + 0.1vw);
+        padding: calc(0.001rem + 0.0001vw);
         border-radius: 50%;
     }
     
@@ -1102,7 +1102,6 @@
         width: calc(96% + 1vw);
         padding-bottom: calc(2rem + 1vw);
         font-size: calc(0.7rem + 0.2vw);
-        color: rgb(40, 226, 236);
         text-align: center;
         word-spacing: calc(0.09rem + 0.1vw);
         line-height: calc(1.3rem + 0.1vw);
@@ -1176,7 +1175,7 @@
     }
     
     .dept-hod-styling {
-        text-shadow: 0 0 calc(0.35rem + 0.05vw) rgba(255, 255, 255, 0.7); 
+        text-shadow: 0 0 calc(0.35rem + 0.05vw) rgba(40, 226, 236, 0.7); 
     }
     
     .hodintroline {
@@ -1366,7 +1365,7 @@
     padding-bottom: 1.5rem;
 }
 
-.security-pic::before,
+    .security-pic::before,
     .security-pic::after {
         height: calc(95.5% + 1vw);
         width: calc(95.5% + 1vw);
@@ -1466,6 +1465,13 @@
     .pic-6 {
         background-position: center center;
         background-size: 180%;
+    }    
+
+    .webteam-names-wrapper2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(26% + 2vw);
     }    
 
     .website-team-names-5,
