@@ -56,3 +56,19 @@ hiddenElements.forEach((element) => {
 //             Screen Resolution: ${screenWidth} x ${screenHeight}<br>
 //             Viewport Size: ${viewportWidth} x ${viewportHeight}
 //         `;
+
+//testing
+function updateContent() {
+    const span = document.getElementById("mySpan");
+    if (window.innerWidth < 420) {
+        span.textContent = "FIESTRON EVENTS"; // Change content for smaller screens
+    } else {
+        span.textContent = "Welcome to Fiestron Events"; // Reset content for larger screens
+    }
+}
+
+// Check on initial load
+updateContent();
+
+// Check on resize
+window.addEventListener('resize', updateContent);
