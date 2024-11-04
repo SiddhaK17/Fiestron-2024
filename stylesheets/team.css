@@ -25,8 +25,8 @@
 .core-wrapper:hover,
 .hod-wrapper:hover,
 .website-team-wrapper:hover {
-    border-color: #FFD300;
-    box-shadow: 0 0 4rem #FF1493;
+    border-color: #FF1493;
+    box-shadow: 0 0 4rem #B03060;
     transition: all 0.25s ease-in-out;
 }
 
@@ -38,12 +38,12 @@
     font-family: "Young Serif", serif;
     font-weight: 500;
     -webkit-text-stroke-width: 0.1rem;
-    -webkit-text-stroke-color: #30343F;
-    color:rgb(40, 226, 236);
+    -webkit-text-stroke-color: #000000;
+    color:#FFFFFF;
     font-style: italic;
     text-decoration: underline solid rgb(40, 226, 236) 12%;
     text-underline-offset: 0.6rem;
-    text-shadow: 0 0 0.30rem rgba(40, 226, 236, 0.7);
+    text-shadow: 0 0 0.30rem rgba(0, 0, 0, 0.7);
 }
 
 .background {
@@ -80,7 +80,7 @@
     font-weight: 380;
     padding-top: 1rem;
     text-align: center;
-    color: rgb(15, 240, 255);
+    color: #FFFFFF;
     font-size: 3rem;
     padding-bottom: 2rem;
     width: 80%;
@@ -457,7 +457,7 @@
 }
 
 .dept-hod-styling {
-    text-shadow: 0 0 0.35rem rgba(15, 240, 255, 0.7);
+    text-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.7);
 }
 
 .hodintroline {
