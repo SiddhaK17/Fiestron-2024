@@ -86,26 +86,32 @@ nav a:hover {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
   line-height: 1;
   outline: none;
-  animation: fade 2s ease-in-out infinite;
+  animation: animates 5s linear infinite;
 }
-
-@keyframes fade {
+@keyframes animates {
   0%,
-  21%,
-  40%,
-  58%,
-  90%,
-  100% {
-    color: #ffffff;
-    opacity: 1;
+  18%,
+  20%,
+  50.1%,
+  60%,
+  80%,
+  90.1%,
+  92.1% {
+    color: #030c26;
+    box-shadow: none;
   }
-  25%,
-  46%,
-  72%,
-  79%,
-  50% {
-    color: #0fefff6a;
-    opacity: 0.3;
+  18%,
+  20%,
+  30%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.15%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #09777f, 0 0 10px #0c555a;
   }
 }
 
@@ -237,8 +243,7 @@ nav a:hover {
     opacity: 0;
   }
 }
-
-/*---------*/
+/*----------*/
 
 /* 3d model container */
 .model-container {
@@ -249,7 +254,7 @@ nav a:hover {
   width: 40vw; /* adjust width as needed */
   height: 70vh; /*adjust height as needed */
   z-index: 5; /* place it below the nav and header elements */
-  overflow: hidden;
+  overflow: visible;
   background: transparent; /*ensure the background is transparent */
   border-radius: 15px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
@@ -258,21 +263,75 @@ nav a:hover {
 }
 
 /*responsive */
-/* Responsive adjustments for mobile devices */
-@media (max-width: 768px) {
+
+/*320px - 768px; 769px - 1024px; 1024px..*/
+@media (max-width: 360px) {
+  /* Adjustments for smaller screens */
+  .tclogo {
+    top: 0.8rem;
+    left: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+  .nav-floatleft {
+    top: 1rem;
+    right: 0.9rem;
+    font-size: 0.7rem;
+  }
+
   .model-container {
-    width: 90vw; /* Full width on mobile */
-    height: 60vh; /* Adjust height for mobile */
-    top: 10%; /* Adjust vertical position */
+    position: fixed;
+    top: 2rem;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-60);
   }
 
   .heading {
-    font-size: 2.5rem; /* Adjust heading font size */
-    top: 10%; /* Adjust position for smaller screens */
+    font-size: 1.8rem;
+    line-height: 2cm;
+    margin-top: 16rem;
+    margin-left: 1rem;
+    text-align: center;
   }
 
   .slogan {
-    font-size: 1.5rem; /* Adjust slogan font size */
-    top: 50%; /* Adjust position for smaller screens */
+    font-size: 1rem;
+    margin-top: 11rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  .box-area li {
+    border: 0.2em solid #0fefff3b;
+  }
+  .box-area li:nth-child(1) {
+    width: 80px;
+    height: 80px;
+  }
+  .box-area li:nth-child(2) {
+    width: 55px;
+    height: 55px;
+  }
+  .box-area li:nth-child(3) {
+    width: 45px;
+    height: 45px;
+  }
+  .box-area li:nth-child(4) {
+    width: 75px;
+    height: 75px;
+  }
+  .box-area li:nth-child(5) {
+    width: 30px;
+    height: 30px;
+  }
+  .box-area li:nth-child(6) {
+    width: 55px;
+    height: 55px;
   }
 }

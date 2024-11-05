@@ -78,3 +78,26 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+//responsive 
+function adjustCameraForSmallScreens() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 370) { // For smaller screens
+    camera.position.set(0, 1, 7); // Slightly back for smaller screens
+    model.position.set(-2, 0, 0); // Center the model for smaller screens
+  } else if (screenWidth > 360 && screenWidth <= 768) { // For medium screens
+    camera.position.set(0, 1, 6); // Adjust for medium screen sizes
+    model.position.set(-1, 0, 0); // Adjust slightly for medium screens
+  } else {
+    camera.position.set(0, 1, 5); // Default position for larger screens
+    model.position.set(-2, 0, 0); // Default position for desktop
+  }
+
+  // Center the model horizontally
+  camera.lookAt(0, 1, 0); // Adjusting the camera's lookAt target to ensure it's centered
+}
+
+// Call the function once and also on window resize
+adjustCameraForSmallScreens();
+window.addEventListener("resize", adjustCameraForSmallScreens);
