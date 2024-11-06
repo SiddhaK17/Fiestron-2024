@@ -166,11 +166,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
+        #5416B4,
+        #E400E0,
+        #F493F2,
+        #5416B4
     );
     top: 50%;
     left: 50%;
@@ -252,11 +251,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
+        #5416B4,
+        #E400E0,
+        #F493F2,
+        #5416B4
     );
     top: 50%;
     left: 50%;
@@ -388,11 +386,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
+        #ff0000,
+        #ED020B,
+        #F46528,
+        #db3107
     );
     top: 50%;
     left: 50%;
@@ -407,8 +404,8 @@
 .corepic2::before,
 .corepic3::before,
 .corepic4::before {
-    filter: blur(2rem);
-    opacity: 0.5;
+    filter: blur(1.4rem);
+    opacity: 0.8;
 }
 
 @keyframes spin {
@@ -553,11 +550,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
+        #ff0000,
+        #ED020B,
+        #F46528,
+        #db3107
     );
     top: 50%;
     left: 50%;
@@ -731,11 +727,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
+        #ff0000,
+        #ED020B,
+        #F46528,
+        #db3107
     );
     top: 50%;
     left: 50%;
@@ -942,11 +937,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
+        #ff0000,
+        #ED020B,
+        #F46528,
+        #db3107
     );
     top: 50%;
     left: 50%;
@@ -963,7 +957,7 @@
 .pic-4::before,
 .pic-5::before,
 .pic-6::before {
-    filter: blur(2rem);
+    filter: blur(1.6rem);
     opacity: 0.6;
 }
 
@@ -986,7 +980,7 @@
         padding: 0 calc(1.5rem + 0.5vw) calc(2rem + 0.5vw) calc(1.5rem + 0.5vw);
         margin: calc(1.5rem + 0.5vw) calc(3rem + 1vw) calc(5rem + 1vw) calc(3rem + 1vw);
         box-shadow: 0 0 calc(2rem + 0.5vw) rgba(41, 181, 220, 0.955);
-        background-color: rgba(48, 52, 63, 0.5);
+        background-color: rgba(48, 52, 63, 0.2);
     }
 
     .ourteam {
@@ -1042,6 +1036,7 @@
     
     .teacher1::before {
         filter: blur(calc(2rem + 0.5vw)); 
+        opacity: 0.4;
     }
     
     .name-shalini-sinha {
@@ -1092,7 +1087,8 @@
     .teacher5::before,
     .teacher6::before,
     .teacher7::before {
-    filter: blur(calc(2rem + 0.2vw)); 
+    filter: blur(calc(1.5rem + 0.2vw)); 
+    opacity: 0.4;
     }
     
     .teacher-names-wrapper {
@@ -1156,8 +1152,8 @@
 .corepic2::before,
 .corepic3::before,
 .corepic4::before {
-    filter: blur(calc(1.5rem + 0.5vw)); 
-    opacity: 0.5;
+    filter: blur(calc(1.8rem + 0.5vw)); 
+    opacity: 0.3;
 }
 
 .core-names-wrapper {
@@ -1274,8 +1270,8 @@
     .logistics-pic::before,
     .prandmarketing-pic::before,
     .technical-pic::before {
-        filter: blur(calc(1.6rem + 0.1vw));
-        opacity: calc(0.8 + 0.05); 
+        filter: blur(calc(1.2rem + 0.1vw));
+        opacity: calc(0.7 + 0.05); 
     }
 
 
@@ -1388,7 +1384,8 @@
     }
 
     .security-pic::before {
-        filter: blur(calc(1.5rem + 0.1vw)); 
+        filter: blur(calc(1.2rem + 0.1vw)); 
+        opacity: calc(0.7 + 0.05); 
     }
 
 .website-team-intro { 
@@ -1527,8 +1524,16 @@
     .pic-5::before,
     .pic-6::before,
     .pic-7::before {
-        filter: blur(calc(2rem + 0.2vw)); 
-        opacity: calc(0.6 + 0.05); 
+        filter: blur(calc(1.2rem + 0.2vw)); 
+        opacity: calc(0.5 + 0.05); 
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1450px) {
+    .styling-team-of-teachers {
+        font-size: calc(2.2rem + 0.5vw); 
+        -webkit-text-stroke-width: 0.01rem;
     }
 
 }
@@ -1587,7 +1592,7 @@
         margin: calc(1rem + 0.5vw) calc(2rem + 1vw) calc(3rem + 1vw) calc(2rem + 1vw);
         box-sizing: border-box;
         position: relative;
-        background-color: rgba(48, 52, 63, 0.5);
+        background-color: rgba(48, 52, 63, 0.2);
         box-shadow: 0 0 calc(1.5rem + 0.7vw) rgba(41, 181, 220, 0.955);
         transition: all 0.5s ease-in-out;
     }
@@ -1666,7 +1671,7 @@
     }
 
     .name-shalini-sinha {
-        padding-top: calc(0.5rem + 0.3vw); 
+        padding-top: calc(0.7rem + 0.3vw); 
         font-size: calc(0.8rem + 0.7vw);   
     }
 
@@ -1713,7 +1718,7 @@
         padding-bottom: 1rem;
         line-height: calc(1.2rem + 0.2vw);
         padding-bottom: calc(1.5rem + 0.5vw);
-        margin-top: calc(0.4rem + 0.5vw);
+        margin-top: calc(0.7rem + 0.5vw);
         word-spacing: calc(0.1rem + 0.1vw);
     }
 
@@ -1785,7 +1790,7 @@
     .core-names-3,
     .core-names-4 {
         font-size: calc(0.7rem + 0.7vw);
-        padding-top: calc(0.5rem + 0.2vw);
+        padding-top: calc(0.8rem + 0.2vw);
         margin: 0;
         word-spacing: calc(0.1rem + 0.1vw); 
         line-height: calc(1.1rem + 0.2vw); 
@@ -1801,18 +1806,6 @@
     .corepic4::after {
         height: 100%;
         width: 100%;
-        background-image: conic-gradient(
-            from var(--angle),
-            #ff4545,
-            #00ffd9,
-            #001aff,
-            #fc0b7f,
-            #ff4545
-        );
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
         padding: calc(2.5% + 0.3vw);
         border-radius: calc(9% + 0.01vw);
         animation: 2.5s spin linear infinite;
@@ -1823,7 +1816,7 @@
     .corepic3::before,
     .corepic4::before {
         filter: blur(calc(1rem + 0.5vw)); 
-        opacity: 0.5; 
+        opacity: 0.7; 
     }
 
     .hodintroline {
@@ -1904,7 +1897,7 @@
     .coverage-name {
         width: 100%; 
         text-align: center;
-        padding-top: calc(0.4rem + 1vw); 
+        padding-top: calc(0.6rem + 1vw); 
         padding-bottom: calc(1.5rem + 1vw); 
         color: #FFFFFF;
         font-size: calc(0.7rem + 0.8vw);
@@ -1926,7 +1919,7 @@
 .design-name {
     width: 100%;
     text-align: center;
-    padding-top: calc(0.4rem + 1vw); 
+    padding-top: calc(0.6rem + 1vw); 
     color: #FFFFFF;
     font-size: calc(0.7rem + 0.8vw);
     word-spacing: 0.2rem;
@@ -1947,7 +1940,7 @@
 .technical-name {
     width: 100%;
     text-align: center;
-    padding-top: calc(0.4rem + 1vw); 
+    padding-top: calc(0.6rem + 1vw); 
     padding-bottom: calc(1.5rem + 1vw); 
     color: #FFFFFF;
     font-size: calc(0.7rem + 0.8vw);
@@ -1973,22 +1966,8 @@
 .logistics-pic::after,
 .prandmarketing-pic::after,
 .technical-pic::after {
-    content: "";
-    position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(
-        from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
-    );
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
     padding: calc(2.4% + 0.2vw); 
     border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
     animation: spin 3s linear infinite; 
@@ -2043,7 +2022,7 @@
 .security-name {
     text-align: center;
     width: 100%;
-    padding-top: calc(0.5rem + 1vw); 
+    padding-top: calc(0.6rem + 1vw); 
     padding-bottom: calc(1.5rem + 1vw); 
     color: #FFFFFF;
     font-size: calc(0.7rem + 0.8vw);
@@ -2054,22 +2033,8 @@
 
 .security-pic::before,
 .security-pic::after {
-    content: "";
-    position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(
-        from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
-    );
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
     padding: calc(2.4% + 0.2vw);
     border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
     animation: spin 3s linear infinite; 
@@ -2142,7 +2107,7 @@
     line-height: calc(1rem + 0.2vw);
     width: 100%;
     font-family: "Kanit", sans-serif;
-    margin-top: calc(0.7rem + 0.2vw);
+    margin-top: calc(0.8rem + 0.2vw);
 }
 
 .webteam-names-wrapper {
@@ -2201,7 +2166,7 @@
     width: 100%;
     margin: 0 auto;
     font-family: "Kanit", sans-serif;
-    margin-top: calc(0.7rem + 0.2vw);
+    margin-top: calc(0.9rem + 0.2vw);
     padding-bottom: calc(1rem + 0.5vw); 
 }
 
@@ -2217,22 +2182,8 @@
 .pic-4::after,
 .pic-5::after,
 .pic-6::after {
-    content: "";
-    position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(
-        from var(--angle),
-        #ff4545,
-        #00ffd9,
-        #001aff,
-        #fc0b7f,
-        #ff4545
-    );
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
     padding: calc(2.4% + 0.2vw);
     border-radius: calc(10% + 0.2vw); 
     animation: spin 3s linear infinite; 
@@ -2244,8 +2195,8 @@
 .pic-4::before,
 .pic-5::before,
 .pic-6::before {
-    filter: blur(calc(2rem + 0.2vw)); 
-    opacity: 0.6; 
+    filter: blur(calc(1.4rem + 0.2vw)); 
+    opacity: 0.4; 
 }
 
 }
@@ -2415,7 +2366,7 @@
 .pic-4::after,
 .pic-5::after,
 .pic-6::after {
-    padding: calc(2.5% + 0.5vw);
+    padding: calc(2.7% + 0.5vw);
     border-radius: calc(10% + 0.2vw); 
     animation: spin 3s linear infinite; 
 }
@@ -2426,8 +2377,8 @@
 .pic-4::before,
 .pic-5::before,
 .pic-6::before {
-    filter: blur(calc(2rem + 0.2vw)); 
-    opacity: 0.6; 
+    filter: blur(calc(1.4rem + 0.2vw)); 
+    opacity: 0.4; 
 } 
 
 }
