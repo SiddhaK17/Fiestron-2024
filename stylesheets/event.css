@@ -5,19 +5,9 @@ html{
 body{
     background-color: #121212;
     color:#F5F5F5; 
-    font-family:'Roboto','sans-serif' ;
 }
 
 /* ANIMATIONS RELATED */
-.hidden0{
-    opacity: 0;
-    transition: all 0.5s;
-    transform: translateZ(-100%);
-}
-.show0{
-    opacity: 1;
-    transform: translateZ(0);
-}
 
 .hidden{
     opacity: 0;
@@ -28,11 +18,7 @@ body{
     opacity: 1;
     transform: translate(0);
 }
-.slide{
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
-}
+
 
 /* EVENT RELATED */
 .event{
@@ -54,11 +40,20 @@ body{
     border-radius: 1rem;
     box-shadow:0 4px 10px rgba(0,0,0,0.9);
     transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.07), 
+    inset 0 -4px 8px rgba(255, 255, 255, 0.07), 
+    inset 4px 0 8px rgba(255, 255, 255, 0.07), 
+    inset -4px 0 8px rgba(255, 255, 255, 0.07);
 }
 .event-card:hover{
     background-color:#22252c;
     transform: translateY(-5px);
     box-shadow:0 6px 15px rgba(0,0,0,0.9);
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.075), 
+                inset 0 -4px 8px rgba(255, 255, 255, 0.075), 
+                inset 4px 0 8px rgba(255, 255, 255, 0.075), 
+                inset -4px 0 8px rgba(255, 255, 255, 0.075);
+
 }
 .EventI{
     display: flex;
@@ -140,9 +135,11 @@ body{
     margin-left: -5px;
     font-weight: normal;
     color: #FF00FF;
+    transition: transform 0.25ss ease-in, color 0.25s ease-in;
 }
 .ReadRegister .Read button:hover{
     color: #FFD300;
+    transform: scale(1.07);
 }
 .ReadRegister .Register{
     display: flex;
@@ -155,7 +152,7 @@ body{
     border-radius: 0.8rem;
     border: 0;
     margin-top: 0.5rem;
-    padding: 0.1rem 0.6rem 0.1rem 0.7rem;
+    padding: 0.1rem 0.6rem;
     background-color:#39FF14;
     color: #FFFFFF;
 }
@@ -163,6 +160,7 @@ body{
     background-color: #FF1493;
 }
 
+/*ANIMATIONS*/
 /*BADA TEXT KA CSS*/
 *, *::before, *::after {
     box-sizing: border-box;
@@ -228,10 +226,6 @@ span::after {
     -webkit-text-stroke: rgba(255,255,255,0);
     will-change: width;
     animation: grow 7s cubic-bezier(0.86, 0, 0.07, 1) 2.15s infinite alternate both;
-    /* background: linear-gradient(to bottom, rgba(255, 215, 0, 0.85) 0%, rgba(255, 215, 0, 0.65) 100%); Gold*/
-    /* background: linear-gradient(to bottom, rgba(255, 0, 128, 0.85) 0%, rgba(255, 0, 128, 0.65) 100%); Fuschia*/
-    /* background: linear-gradient(to bottom, rgba(57, 255, 20, 0.85) 0%, rgba(57, 255, 20, 0.65) 100%); Neon Green */
-    /* background: linear-gradient(to bottom, rgba(130, 0, 255, .85) 0%, rgba(130, 0, 255, .65) 100%); Purple*/
     background: linear-gradient(to bottom, rgba(0,255,255,.85) 0%, rgba(0,255,255,.65) 100%); /*Electric blue gradient*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -246,11 +240,37 @@ span::after {
     }
 }
 
+/*REGISTER BUTTON*/
+.ReadRegister .Register button{
+    background-color:#39FF14;
+    color: #FF00FF;
+    border-radius: 1.5rem;
+    font-family: "Assistant", sans-serif;
+    font-weight: 550;
+    transition: 0.5s ease-in-out;
+}
+
+.ReadRegister .Register button:hover,.ReadRegister .Register button:focus{
+    border-color: #FF1493;
+    color: #FFD300;
+    transform:scale(1.05)
+}
+
+.RegisterAnimation button:hover,
+.RegisterAnimation button:focus{
+    box-shadow: inset 0 0 0 30px #FF1493;
+}
+
+
 /* Mobile resp */
 @media (max-width:420px) {
+    .event{
+        margin-top: -10px;
+    }
     .event-card{
         flex-direction:column;
         padding-top: 10px;
+        margin-right: 0;
     }
     .EventI{
         justify-content: center;
@@ -260,9 +280,30 @@ span::after {
         max-width: 80%;
         margin:0.6rem;
     }
+    .TitleDate .Title{
+        font-size: 1.35rem;
+        font-weight: 700;
+    }
+    .TitleDate .Date{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .Description{
+        font-size: 1.10rem;
+        font-weight: 400;
+    }
+    .EventD{
+        padding-left: 5px;
+    }
+    .Description.deactive{
+        height: 3.7em;
+    }
+    .EventI img{
+        box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.08);
+    }
     .font-apply{
         font-size: 4.9vw;
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 30px;
     }
     span::after{

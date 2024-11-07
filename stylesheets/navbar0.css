@@ -39,55 +39,6 @@ font-size: 3vw;
 }
 
 
-/* @media (max-width: 1920px) {
-  .menu-content ul {
-      font-size: 3.5rem;
-  }
-  .tclogo {
-      width: 75px;
-      height: 75px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .menu-content ul {
-      font-size: 2.7rem;
-  }
-  .tclogo {
-      width: 60px;
-      height: 60px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .menu-content ul {
-      font-size: 1.9rem;
-  }
-  .tclogo {
-      height: 50px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .menu-content ul {
-      font-size: 2.4rem;
-  }
-  .tclogo {
-      width: 60px;
-      height: 60px;
-  }
-}
-
-@media (max-width: 720px) {
-  .menu-content ul {
-      font-size: 1.8rem;
-  }
-  .tclogo {
-      width: 50px;
-      height: 50px;
-  }
-} */
-
 @media (max-width: 1280px) {
 .menu-content ul {
     font-size: 1.5rem;
