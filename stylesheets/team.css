@@ -26,7 +26,7 @@
 .hod-wrapper:hover,
 .website-team-wrapper:hover {
     border-color: #FFD300;
-    box-shadow: 0 0 4rem #fa0085;
+    box-shadow: 0 0 4rem #FF1493;
     transition: all 0.9s ease-in-out;
 }
 
