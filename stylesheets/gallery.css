@@ -8,7 +8,7 @@
 
 body {
     align-content: center;
-    background-color: #030c26;
+    background-color: #121212;
     background-repeat: no-repeat;
 }
 
@@ -20,9 +20,9 @@ body {
 }
 
 h1 {
-    color: #6387f2;
-    -webkit-text-stroke: 1px #3f63f5;
-    filter: drop-shadow(0 0 5px #3f63f5);
+    color: #0FF0FF;
+    -webkit-text-stroke: 1px #0FF0FF;
+    filter: drop-shadow(0 0 1.5px #0FF0FF);
     font-size: 7rem;
     font-family: "Convergence", sans-serif;
     font-weight: 900;
@@ -31,58 +31,24 @@ h1 {
 
 h1:hover {
     color: transparent;
-    filter: drop-shadow(0 0 7px #3f63f5);
-    -webkit-text-stroke: 3px #3f63f5;
+    filter: drop-shadow(0 0 1.5px #0FF0FF);
+    -webkit-text-stroke: 1.5px #0FF0FF;
 }
 
 .gallerydiv {
     margin: 0 auto;
     padding: 2rem;
-    height: 13rem;
+    height: auto;
     width: 45rem;
-    background: #030c26;
-    border-radius: 10px;
+    background: #30343F;
+    border-radius: 35px;
     position: relative;
     top: 2rem;
-}
-
-.gallerydiv::after,
-.gallerydiv::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(
-    from var(--angle),  #0000e3,  #8b058b, #ffffff,  #00bfff,  #0c61f5, #0000e3 );
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 10px;
-    animation: 4s linear infinite;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-}
-
-.gallerydiv:before {
-    filter: blur(0.5rem);
-    opacity: 0.5;
-}
-
-@keyframes spin {
-    from {
-        --angle: 0deg;
-    }
-
-    to {
-        --angle: 180deg;
-    }
+    box-shadow: 0 0 1rem #8200ff;
 }
 
 .ourgallery {
     position: relative;
-    width: 48rem;
     margin: 0 auto;
 }
 
@@ -100,53 +66,12 @@ h1:hover {
     margin: 0 auto;
     padding: 2rem;
     height: auto;
-    width: 65rem;
-    background: #030c26;
+    width: auto;
+    background: #30343F;
+    box-shadow: 0 0 1rem #8200ff;
     border-radius: 10px;
     position: relative;
 }
-
-.container::after,
-.container::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(
-        from var(--angle),
-        #0000e3,
-        #8b058b,
-        #ffffff,
-        #00bfff,
-        #0c61f5,
-        #0000e3
-    );
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 10px;
-    animation: 4s linear infinite;
-    animation-name: spin;
-    animation-iteration-count: infinite;
-}
-
-.container::before {
-    filter: blur(0.5rem);
-    opacity: 0.5;
-}
-
-@keyframes spin {
-    from {
-        --angle: 0deg;
-    }
-
-    to {
-        --angle: 180deg;
-    }
-}
-
 
 .carousel-inner {
     display: flex;
@@ -155,7 +80,7 @@ h1:hover {
 }
 
 p {
-    color: #6387f2;
+    color: #ffffff;
     text-align: center;
     font-family: "Assistant", sans-serif;
     font-optical-sizing: auto;
@@ -196,3 +121,8 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+a {
+    color: transparent;
+}
+
