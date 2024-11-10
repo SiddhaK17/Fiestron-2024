@@ -3,21 +3,11 @@ html{
 }
 /* PRIMARY SET */
 body{
-    background-color: #030C26;
+    background-color: #121212;
     color:#F5F5F5; 
-    font-family:'Roboto','sans-serif' ;
 }
 
 /* ANIMATIONS RELATED */
-.hidden0{
-    opacity: 0;
-    transition: all 0.5s;
-    transform: translateZ(-100%);
-}
-.show0{
-    opacity: 1;
-    transform: translateZ(0);
-}
 
 .hidden{
     opacity: 0;
@@ -28,11 +18,7 @@ body{
     opacity: 1;
     transform: translate(0);
 }
-.slide{
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
-}
+
 
 /* EVENT RELATED */
 .event{
@@ -44,7 +30,7 @@ body{
 }
 .event-card{
     min-height: 21.5vh;
-    background: #6327f2;/*SECONDARY SET*/
+    background: #30343F;/*SECONDARY SET*/
     margin: 10px;
     display: flex;
     width: 85%;
@@ -52,14 +38,22 @@ body{
     box-sizing: border-box;
     padding: 1rem;
     border-radius: 1rem;
-    color: #0e0b0b;
     box-shadow:0 4px 10px rgba(0,0,0,0.9);
     transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.07), 
+    inset 0 -4px 8px rgba(255, 255, 255, 0.07), 
+    inset 4px 0 8px rgba(255, 255, 255, 0.07), 
+    inset -4px 0 8px rgba(255, 255, 255, 0.07);
 }
 .event-card:hover{
-    background-color:#4e04fc;
+    background-color:#22252c;
     transform: translateY(-5px);
     box-shadow:0 6px 15px rgba(0,0,0,0.9);
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.075), 
+                inset 0 -4px 8px rgba(255, 255, 255, 0.075), 
+                inset 4px 0 8px rgba(255, 255, 255, 0.075), 
+                inset -4px 0 8px rgba(255, 255, 255, 0.075);
+
 }
 .EventI{
     display: flex;
@@ -85,6 +79,7 @@ body{
     padding-left:1rem;
     justify-content: center;
     row-gap: 0.1em;
+    color: #FFFFFF;
 }
 .TitleDate{
     display: flex;
@@ -97,13 +92,14 @@ body{
     flex: 1;
     font-family: "Convergence", sans-serif;
     font-weight: 900;
-    color:#FFFFFF;
+    color: #0FF0FF;
 }
 .TitleDate .Date{
     font-family: "Convergence", sans-serif;
     font-weight: 700;
     font-size: 0.7em;
     display: flex;
+    color: #0FF0FF;
 }
 .Description{
     max-width: 100%;
@@ -112,13 +108,13 @@ body{
     line-height: calc(0.575*1.2)em;
     transition: height 0.9s ease;
     font-family: "Assistant", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 .Description.active{
     height: auto;
 }
 .Description.deactive{
-    height: 2.4em;
+    height: 2.5em;
 }
 .ReadRegister{
     justify-content: space-between;
@@ -137,7 +133,13 @@ body{
     border: 0;
     background-color: transparent;
     margin-left: -5px;
-    font-weight: bold;
+    font-weight: normal;
+    color: #FF00FF;
+    transition: transform 0.25ss ease-in, color 0.25s ease-in;
+}
+.ReadRegister .Read button:hover{
+    color: #FFD300;
+    transform: scale(1.07);
 }
 .ReadRegister .Register{
     display: flex;
@@ -150,53 +152,166 @@ body{
     border-radius: 0.8rem;
     border: 0;
     margin-top: 0.5rem;
-    padding: 0.1rem 0.6rem 0.1rem 0.7rem;
-    background-color:#0df205;
-    color: #ffffff;
+    padding: 0.1rem 0.6rem;
+    background-color:#39FF14;
+    color: #FFFFFF;
 }
 .ReadRegister .Register button:hover{
-    background-color: #0bb204;
+    background-color: #FF1493;
 }
 
-/* CANVAS RELATED */
-.Wrapped{
-    background-color:#010924;
-    width: 80%;
-    height: 50vh;
+/*ANIMATIONS*/
+/*BADA TEXT KA CSS*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-apply {
+    font-family: "Convergence", sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    justify-content: center;
     margin-top: 80px;
-    border-radius: 30px;
-    box-shadow: 4px 4px 16px rgba(68, 5, 185, 0.5);
-    
+    margin-bottom: 40px;
+    font-size: 3.5vw;
+
 }
-.canvas{
-    width: 100%;
-    height: 100%;
+h1 {
+    display: inline-flex;
+    position: relative;
+    font-weight: 400;
+    line-height: 1.1;   
+    margin: 0;
+    padding: 0;
+    color:#0FF0FF;
 }
 
+h1::after {
+    position: absolute;
+    top: 0;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 0%;
+    white-space: pre;
+    content: attr(data-text);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #0FF0FF;
+    will-change: width;
+    animation: grow 7s cubic-bezier(0.86, 0, 0.07, 1) .4s infinite alternate both;
+}
 
-/*************************************** The secondary color shade has been taken for better visuals can be reverted as needed.At your own prefrence ****************************************/
+span {
+    display: inline-block;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+span::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 0%;
+    white-space: pre;
+    content: attr(data-text);
+    -webkit-text-stroke: rgba(255,255,255,0);
+    will-change: width;
+    animation: grow 7s cubic-bezier(0.86, 0, 0.07, 1) 2.15s infinite alternate both;
+    background: linear-gradient(to bottom, rgba(0,255,255,.85) 0%, rgba(0,255,255,.65) 100%); /*Electric blue gradient*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes grow {
+    0%, 10%, 90%, 100% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+/*REGISTER BUTTON*/
+.ReadRegister .Register button{
+    background-color:#39FF14;
+    color: #FF00FF;
+    border-radius: 1.5rem;
+    font-family: "Assistant", sans-serif;
+    font-weight: 550;
+    transition: 0.5s ease-in-out;
+}
+
+.ReadRegister .Register button:hover,.ReadRegister .Register button:focus{
+    border-color: #FF1493;
+    color: #FFD300;
+    transform:scale(1.05)
+}
+
+.RegisterAnimation button:hover,
+.RegisterAnimation button:focus{
+    box-shadow: inset 0 0 0 30px #FF1493;
+}
 
 
 /* Mobile resp */
 @media (max-width:420px) {
+    .event{
+        margin-top: -10px;
+    }
     .event-card{
         flex-direction:column;
+        padding-top: 10px;
+        margin-right: 0;
     }
     .EventI{
         justify-content: center;
         align-items:center;
-       
     }
     .EventI img{
         max-width: 80%;
         margin:0.6rem;
     }
-    
+    .TitleDate .Title{
+        font-size: 1.35rem;
+        font-weight: 700;
+    }
+    .TitleDate .Date{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .Description{
+        font-size: 1.10rem;
+        font-weight: 400;
+    }
+    .EventD{
+        padding-left: 5px;
+    }
+    .Description.deactive{
+        height: 3.7em;
+    }
+    .EventI img{
+        box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.08);
+    }
+    .font-apply{
+        font-size: 4.9vw;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    span::after{
+        content: "FIESTRON EVENTS";
+    }
+    h1::after{
+        content: "FIESTRON EVENTS";
+    }
 }
 
 /* Dekstop resp */
@@ -287,4 +402,3 @@ body{
         border-radius: 1.6rem;
     }
 }
-

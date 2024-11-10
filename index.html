@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KCxTECHCLUB</title>
-  
-    <link rel="stylesheet" href="./stylesheets/index.css">
-    <!-- <link rel="stylesheet" href="index1.css"> -->
-</head>
-<body> 
 
-   
-    <header> 
-    <!-- navigation -->  
-        <nav>
-        <img src="./images/tclogo.jpeg" alt="techclublogo" class="tclogo"  >
+    <link rel="stylesheet" href="./stylesheets/index.css" />
 
+    <!-- Import map for module resolution -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.153.0/build/three.module.js",
+          "three/examples/jsm/": "https://unpkg.com/three@0.153.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/tclogo.png" alt="techclublogo" class="tclogo" />
         <div class="nav-floatleft">
-  
-        <a href="./about.html"> About </a>
-        <a href="./gallery.html"> Gallery </a>
-        <a href="./team.html" > Team </a>
-        <a href="./events.html"> Events </a>
-   
-        </div> 
-        </nav>
-      </header>
+          <a href="./about.html"> About </a>
+          <a href="./gallery.html"> Gallery </a>
+          <a href="./team.html"> Team </a>
+          <a href="./events.html"> Events </a>
+        </div>
+      </nav>
+    </header>
 
-     <section>
     <div class="heading">
-      <pre><h1>KCx
-TECHCLUB</h1></pre></div>
+      <h1>KCx<br />TECHCLUB</h1>
+    </div>
+    <div class="slogan">
+      <p class="text">
+        Empowering <span class="one">Innovation</span>, One
+        <span class="one">Byte</span> at a Time...
+      </p>
+    </div>
 
-        <div class="slogan">
-          <p class="text">Empowering Innovation, One Byte at a Time...</p>
-    </div> 
-      </section>
-   
+    <div class="boxes">
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
 
-<!-- bg-->
-<div class="background">
-  <div class="overlay"></div>
-</div>
+    <!-- 3D Model Viewer Container -->
+    <div id="model-viewer" class="model-container"></div>
 
-</body>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- 3D Model JavaScript -->
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>

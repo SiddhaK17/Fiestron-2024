@@ -4,105 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./stylesheets/event.css">
 
-    <link rel="stylesheet" href="./stylesheets/navbar.css">
+    <!-- Preconnect for Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="./stylesheets/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/stylesheets/footer.css">
+<link rel="stylesheet" href="/stylesheets/navbar0.css">
+<link rel="stylesheet" href="/stylesheets/event.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <!-- <div id="resolution"></div> -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <div class="wrapper dusra">
+        <img src="/images/tclogo.png" alt="techclublogo" class="tclogo" />
+
+        <div class="checkbox-container">
+          <input class="checkbox-trigger" type="checkbox"  />
+          <div class="menu-content">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html"> About </a></li>
+                <li><a href="./gallery.html"> Gallery </a></li>
+                <li><a href="./team.html"> Team </a></li>
+                <li><a href="./events.html"> Events </a></li>
+              </ul>
+            <div class="hamburger-menu"></div>
+          </div>
         </div>
-
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#events" class="nav-link">Events</a></li>
-        </ul>
-
-        <div class="team-link">
-            <a href="#team">Team</a>
-        </div>
-
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-
-    <div class="Wrapped hidden0">
-        <canvas class="canvas">
-
-        </canvas>
+      </div>
+      
+    <div class="font-apply">
+        <h1 data-text="Welcome to Fiestron Events">
+            <span id="mySpan" data-text="Welcome to Fiestron Events">Welcome to Fiestron Events</span>
+        </h1>
     </div>
+    
     <div class="event">
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
-            <div class="EventD">
-                <div class="TitleDate">
-                    <div class="Title">Event One balloon</div>
-                    <div class="Date">10/10/2024</div>
-                </div>
-                <div class="Description deactive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste expedita quos quae officiis minima consequatur qui esse laboriosam voluptatum, itaque neque officia dignissimos maxime corrupti repudiandae modi ex molestias soluta fugit dolorem saepe odio a illum? Fuga explicabo optio sed. Iste perferendis assumenda veritatis consectetur reiciendis expedita ea! Vero tenetur repellat commodi dicta itaque nobis praesentium, aut reprehenderit ratione atque voluptatibus eligendi inventore, recusandae quasi! Molestiae odit culpa totam sapiente unde ipsam repellat fugiat. Optio modi atque odit eos beatae dolore repudiandae distinctio eaque voluptate temporibus suscipit praesentium commodi, excepturi quo in provident quas! Doloribus dolor velit expedita? Nobis, facilis impedit. Non, reiciendis recusandae animi explicabo quia veniam illo ipsam magni iusto ducimus, rem fuga commodi quisquam enim. Similique laboriosam error recusandae magni dolorem dicta minima? Sequi voluptas eaque esse et natus accusantium mollitia placeat sit molestiae ipsum, neque quod voluptates ducimus odit. Asperiores nam!</div>
-                <div class="ReadRegister">
-                    <div class="Read"><button class="ReadMoreBtn">Read More</button></div>
-                    <div class="Register"><button>Register</button></div>
-                </div>
-            </div>
-        </div>
-        <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
-            <div class="EventD">
-                <div class="TitleDate">
-                    <div class="Title">Event One balloon</div>
-                    <div class="Date">10/10/2024</div>
-                </div>
-                <div class="Description deactive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste expedita quos quae officiis minima consequatur qui esse laboriosam voluptatum, itaque neque officia dignissimos maxime corrupti repudiandae modi ex molestias soluta fugit dolorem saepe odio a illum? Fuga explicabo optio sed. Iste perferendis assumenda veritatis consectetur reiciendis expedita ea! Vero tenetur repellat commodi dicta itaque nobis praesentium, aut reprehenderit ratione atque voluptatibus eligendi inventore, recusandae quasi! Molestiae odit culpa totam sapiente unde ipsam repellat fugiat. Optio modi atque odit eos beatae dolore repudiandae distinctio eaque voluptate temporibus suscipit praesentium commodi, excepturi quo in provident quas! Doloribus dolor velit expedita? Nobis, facilis impedit. Non, reiciendis recusandae animi explicabo quia veniam illo ipsam magni iusto ducimus, rem fuga commodi quisquam enim. Similique laboriosam error recusandae magni dolorem dicta minima? Sequi voluptas eaque esse et natus accusantium mollitia placeat sit molestiae ipsum, neque quod voluptates ducimus odit. Asperiores nam!</div>
-                <div class="ReadRegister">
-                    <div class="Read"><button class="ReadMoreBtn">Read More</button></div>
-                    <div class="Register"><button>Register</button></div>
-                </div>
-            </div>
-        </div>
-        <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
-            <div class="EventD">
-                <div class="TitleDate">
-                    <div class="Title">Event One balloon</div>
-                    <div class="Date">10/10/2024</div>
-                </div>
-                <div class="Description deactive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste expedita quos quae officiis minima consequatur qui esse laboriosam voluptatum, itaque neque officia dignissimos maxime corrupti repudiandae modi ex molestias soluta fugit dolorem saepe odio a illum? Fuga explicabo optio sed. Iste perferendis assumenda veritatis consectetur reiciendis expedita ea! Vero tenetur repellat commodi dicta itaque nobis praesentium, aut reprehenderit ratione atque voluptatibus eligendi inventore, recusandae quasi! Molestiae odit culpa totam sapiente unde ipsam repellat fugiat. Optio modi atque odit eos beatae dolore repudiandae distinctio eaque voluptate temporibus suscipit praesentium commodi, excepturi quo in provident quas! Doloribus dolor velit expedita? Nobis, facilis impedit. Non, reiciendis recusandae animi explicabo quia veniam illo ipsam magni iusto ducimus, rem fuga commodi quisquam enim. Similique laboriosam error recusandae magni dolorem dicta minima? Sequi voluptas eaque esse et natus accusantium mollitia placeat sit molestiae ipsum, neque quod voluptates ducimus odit. Asperiores nam!</div>
-                <div class="ReadRegister">
-                    <div class="Read"><button class="ReadMoreBtn">Read More</button></div>
-                    <div class="Register"><button>Register</button></div>
-                </div>
-            </div>
-        </div>
-        <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -130,7 +75,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -144,7 +89,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -158,7 +103,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -172,7 +117,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -186,7 +131,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -200,7 +145,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -214,7 +159,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -228,7 +173,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -242,7 +187,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -256,7 +201,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -270,7 +215,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -284,7 +229,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -298,7 +243,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -312,7 +257,7 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -326,7 +271,49 @@
             </div>
         </div>
         <div class="event-card hidden">
-            <div class="EventI"><img src="./images/events/event.jpg"></div>
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
+            <div class="EventD">
+                <div class="TitleDate">
+                    <div class="Title">Event One balloon</div>
+                    <div class="Date">10/10/2024</div>
+                </div>
+                <div class="Description deactive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste expedita quos quae officiis minima consequatur qui esse laboriosam voluptatum, itaque neque officia dignissimos maxime corrupti repudiandae modi ex molestias soluta fugit dolorem saepe odio a illum? Fuga explicabo optio sed. Iste perferendis assumenda veritatis consectetur reiciendis expedita ea! Vero tenetur repellat commodi dicta itaque nobis praesentium, aut reprehenderit ratione atque voluptatibus eligendi inventore, recusandae quasi! Molestiae odit culpa totam sapiente unde ipsam repellat fugiat. Optio modi atque odit eos beatae dolore repudiandae distinctio eaque voluptate temporibus suscipit praesentium commodi, excepturi quo in provident quas! Doloribus dolor velit expedita? Nobis, facilis impedit. Non, reiciendis recusandae animi explicabo quia veniam illo ipsam magni iusto ducimus, rem fuga commodi quisquam enim. Similique laboriosam error recusandae magni dolorem dicta minima? Sequi voluptas eaque esse et natus accusantium mollitia placeat sit molestiae ipsum, neque quod voluptates ducimus odit. Asperiores nam!</div>
+                <div class="ReadRegister">
+                    <div class="Read"><button class="ReadMoreBtn">Read More</button></div>
+                    <div class="Register"><button>Register</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="event-card hidden">
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
+            <div class="EventD">
+                <div class="TitleDate">
+                    <div class="Title">Event One balloon</div>
+                    <div class="Date">10/10/2024</div>
+                </div>
+                <div class="Description deactive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste expedita quos quae officiis minima consequatur qui esse laboriosam voluptatum, itaque neque officia dignissimos maxime corrupti repudiandae modi ex molestias soluta fugit dolorem saepe odio a illum? Fuga explicabo optio sed. Iste perferendis assumenda veritatis consectetur reiciendis expedita ea! Vero tenetur repellat commodi dicta itaque nobis praesentium, aut reprehenderit ratione atque voluptatibus eligendi inventore, recusandae quasi! Molestiae odit culpa totam sapiente unde ipsam repellat fugiat. Optio modi atque odit eos beatae dolore repudiandae distinctio eaque voluptate temporibus suscipit praesentium commodi, excepturi quo in provident quas! Doloribus dolor velit expedita? Nobis, facilis impedit. Non, reiciendis recusandae animi explicabo quia veniam illo ipsam magni iusto ducimus, rem fuga commodi quisquam enim. Similique laboriosam error recusandae magni dolorem dicta minima? Sequi voluptas eaque esse et natus accusantium mollitia placeat sit molestiae ipsum, neque quod voluptates ducimus odit. Asperiores nam!</div>
+                <div class="ReadRegister">
+                    <div class="Read"><button class="ReadMoreBtn">Read More</button></div>
+                    <div class="Register"><button>Register</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="event-card hidden">
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
+            <div class="EventD">
+                <div class="TitleDate">
+                    <div class="Title">Event One balloon</div>
+                    <div class="Date">10/10/2024</div>
+                </div>
+                <div class="Description deactive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste expedita quos quae officiis minima consequatur qui esse laboriosam voluptatum, itaque neque officia dignissimos maxime corrupti repudiandae modi ex molestias soluta fugit dolorem saepe odio a illum? Fuga explicabo optio sed. Iste perferendis assumenda veritatis consectetur reiciendis expedita ea! Vero tenetur repellat commodi dicta itaque nobis praesentium, aut reprehenderit ratione atque voluptatibus eligendi inventore, recusandae quasi! Molestiae odit culpa totam sapiente unde ipsam repellat fugiat. Optio modi atque odit eos beatae dolore repudiandae distinctio eaque voluptate temporibus suscipit praesentium commodi, excepturi quo in provident quas! Doloribus dolor velit expedita? Nobis, facilis impedit. Non, reiciendis recusandae animi explicabo quia veniam illo ipsam magni iusto ducimus, rem fuga commodi quisquam enim. Similique laboriosam error recusandae magni dolorem dicta minima? Sequi voluptas eaque esse et natus accusantium mollitia placeat sit molestiae ipsum, neque quod voluptates ducimus odit. Asperiores nam!</div>
+                <div class="ReadRegister">
+                    <div class="Read"><button class="ReadMoreBtn">Read More</button></div>
+                    <div class="Register"><button>Register</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="event-card hidden">
+            <div class="EventI"><img src="/images/events/event.jpg"></div>
             <div class="EventD">
                 <div class="TitleDate">
                     <div class="Title">Event One balloon</div>
@@ -373,7 +360,8 @@
             </div>
         </div>
     </footer>
-    <script src="./js/event.js">
-    </script>
+    <script src="/js/navbar0.js"></script>
+    <script src="/js/event.js"></script>
+    
 </body>
 </html>
