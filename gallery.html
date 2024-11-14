@@ -11,10 +11,32 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="./stylesheets/gallery.css">
+  <link rel="stylesheet" href="./stylesheets/navbar.css">
 </head>
 
 <body>
-  <h1 class="titleHeading"> Our Gallery!</h1>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="/images/tclogo.png" alt="Logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./about.html" class="nav-link">About</a></li>
+        <li><a href="./events.html" class="nav-link">Events</a></li>
+        <li><a href="./team.html" class="nav-link">Team</a></li>
+    </ul>
+
+        
+   
+
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+  <h1 class="titleHeading" id="Gallery-padding"> Our Gallery!</h1>
 
   <div class="centerNav">
     <div class="event-nav">
@@ -30,7 +52,7 @@
         <img class="event-img img-fluid" src="../images/fiestron/fiestronfestpic.jpg" height="150" width="150"
           alt="...">
       </a>
-      <a href="#card">
+      <a href="#card4">
         <img class="event-img img-fluid" src="../images/clmeet/clmeetpic.jpg" height="150" width="150" alt="...">
       </a>
     </div>
@@ -38,8 +60,9 @@
 
   <h1 class="titleHeading">Teacher's Day</h1>
   <div class="centerNav">
-    <section class="container">
-      <div id="carouselTeachersDay" class="carousel slide" data-bs-ride="carousel">
+    <section class="container" id="card1">
+      <div id="carouselExampleAutoplaying
+      " class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/teachersday/tday1.jpg" class="d-block w-100" alt="...">
@@ -80,8 +103,8 @@
 
   <h1 class="titleHeading">Orientation</h1>
   <div class="centerNav">
-    <section class="container">
-      <div id="carouselOrientation" class="carousel slide" data-bs-ride="carousel">
+    <section class="container" id="card2">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/orientation/or1.jpg" class="d-block w-100" alt="...">
@@ -137,8 +160,8 @@
 
   <h1 class="titleHeading">Fiestron'24</h1>
   <div class="centerNav">
-    <section class="container">
-      <div id="carouselFiestron" class="carousel slide" data-bs-ride="carousel">
+    <section class="container"  id="card3">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/fiestron/fi1.jpg" class="d-block w-100" alt="...">
@@ -206,7 +229,7 @@
 
   <h1 class="titleHeading">CL Meet</h1>
   <div class="centerNav">
-    <section class="container">
+    <section class="container" id="card4">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -263,5 +286,9 @@
   </div>
   </section>
   </div>
+
+  <script src="/js/navbar.js" />
+
+
 </body>
 </html>
