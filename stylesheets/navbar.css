@@ -87,6 +87,8 @@ a:hover {
         letter-spacing: calc(0.09rem + 0.1vw);
         color: #ffd300;
     }
+
+  
 }
 
 @media (min-width: 769px) and (max-width: 1100px) {
