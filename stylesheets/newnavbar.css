@@ -1,6 +1,7 @@
-.checkbox-trigger{
+.checkbox-trigger {
     display: none;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-    background-color: #121212;;
+    background-color: #121212;
 }
 
 .navbar-adjustments {
@@ -19,46 +20,32 @@ body {
     background: rgba(255, 255, 255, 0.3);
     border-bottom: 0.1rem solid white;
     backdrop-filter: blur(13px);
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .tclogo {
-    position: fixed;
-    top: 0.7rem;
-    left: 1rem;
     width: 4.5rem;
     height: 4.5rem;
     z-index: 10;
     cursor: pointer;
 }
 
-.nav-floatleft {
-    position: fixed;
-    top: 1.85rem;
-    right: 1.3rem;
-    font-size: 1.7rem;
-    font-family: "Golos Text";
-    z-index: 1;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.4s ease;
-    z-index: 10;
-}
-
-nav a {
+a {
     text-decoration: none;
     padding: 1.5rem 1.6rem;
     color: #39ff14;
     transition: 0.3s ease-in-out;
 }
 
-nav a:hover {
+a:hover {
     transition: 0.3s ease-in-out, color 0.3s ease;
     letter-spacing: 0.2rem;
-    color: #ffd300; 
+    color: #ffd300;
 }
 
 @media (min-width: 769px) and (max-width: 1400px) {
@@ -66,95 +53,62 @@ nav a:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: calc(2rem + 1vw) calc(2rem + 0.5vw); 
+        padding: calc(2rem + 1vw) calc(2rem + 0.5vw);
         background: rgba(255, 255, 255, 0.3);
         border-bottom: 0.1rem solid white;
-        backdrop-filter: blur(calc(10px + 1vw)); 
+        backdrop-filter: blur(calc(10px + 1vw));
     }
 
     .tclogo {
-        position: fixed;
-        top: calc(0.3rem + 0.5vw); 
-        left: calc(0.5rem + 1vw); 
-        width: calc(3.8rem + 0.8vw); 
-        height: calc(3.8rem + 0.8vw); 
+        width: calc(3.8rem + 0.8vw);
+        height: calc(3.8rem + 0.8vw);
         z-index: 1;
         cursor: pointer;
     }
 
-    .nav-floatleft {
-        position: fixed;
-        top: calc(1.5rem + 0.5vw); 
-        right: calc(1rem + 0.5vw); 
-        font-size: calc(1.3rem + 0.2vw); 
-        font-family: "Golos Text";
-        z-index: 1;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: all 0.4s ease;
-        z-index: 10;
-    }
-
-    nav a {
+    a {
         text-decoration: none;
-        padding: calc(1rem + 0.5vw) calc(1rem + 0.4vw); 
+        padding: calc(1rem + 0.5vw) calc(1rem + 0.4vw);
         color: #39ff14;
         transition: 0.3s ease-in-out;
     }
 
-    nav a:hover {
+    a:hover {
         transition: 0.3s ease-in-out, color 0.3s ease;
-        letter-spacing: calc(0.15rem + 0.1vw); 
+        letter-spacing: calc(0.15rem + 0.1vw);
         color: #ffd300;
     }
 }
-/*New code a bit king*/
-.nav-floatleft{
-    display: flex;
-    align-items: center;
-}
+
 @media (min-width: 769px) and (max-width: 1100px) {
-    nav a {
-        padding: calc(1rem + 0.5vw) calc(0.6rem + 0.3vw); 
+    a {
+        padding: calc(1rem + 0.5vw) calc(0.6rem + 0.3vw);
+        font-size: calc(1.2rem + 0.2vw);
     }
 
     .nav-floatleft {
         font-size: calc(1.2rem + 0.2vw);
     }
 }
-a {
-    color: #FF00FF;
-    padding: 0.3em;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-  }
-  a:hover{
-    color: #FFD300;
-    transform: scale(1.1);
-  }
-  .menu-content ul{
-  margin: 0;
-  list-style: none;
-  display: flex;
-  font-size: 3vw;
-  }
-  
-@media(max-width:762px){
-    .navbar-adjustments{
+
+.menu-content ul {
+    margin: 0;
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;   
-    height: fit-content;   
+    font-size: 3vw;
+}
+
+@media(max-width: 762px) {
+    .navbar-adjustments {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: fit-content;
     }
 
     .checkbox-container {
@@ -163,9 +117,9 @@ a {
         height: 40px;
         position: relative;
         background: #182825;
-       }
-       
-       .checkbox-trigger {
+    }
+
+    .checkbox-trigger {
         display: flex;
         opacity: 0;
         position: absolute;
@@ -174,76 +128,76 @@ a {
         left: 0px;
         cursor: pointer;
         z-index: 5;
-       }
-       /*hamburger menu icon*/
-       .hamburger-menu,
-       .hamburger-menu::before,
-       .hamburger-menu::after {
+    }
+
+    .hamburger-menu,
+    .hamburger-menu::before,
+    .hamburger-menu::after {
         display: block;
         position: absolute;
         background-color: white;
         width: 36px;
         height: 3px;
         transition: background-color 0.3s ease;
-       }
-       
-       .hamburger-menu::before,
-       .hamburger-menu::after {
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after {
         content: "";
         position: absolute;
         margin: -0.7em 0 0;
         transition: width 0.7s ease 0.3s, transform 0.7s ease 0.3s;
-       }
-       
-       .hamburger-menu::after {
+    }
+
+    .hamburger-menu::after {
         margin-top: 0.7em;
-       }
-       
-       .hamburger-menu {
+    }
+
+    .hamburger-menu {
         position: relative;
         display: block;
         margin: 0;
         margin-top: 20px;
         margin-right: 10px;
-        margin-left:10px;
+        margin-left: 10px;
         margin-bottom: 18px;
         transition: width 0.5s ease;
-       }
-       
-       .checkbox-trigger:checked {
+    }
+
+    .checkbox-trigger:checked {
         left: -70px;
-       }
-       
-       .checkbox-trigger:checked + .menu-content .hamburger-menu {
+    }
+
+    .checkbox-trigger:checked + .menu-content .hamburger-menu {
         width: 1.7em;
         transition: width 0.5s ease 0.3s;
         transform: translateX(-70px);
-        transition: transform 0.7s ease;  
-       }
-       
-       .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
+        transition: transform 0.7s ease;
+    }
+
+    .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
         width: 1.5em;
         transform: translateX(5px) rotate(32deg);
         margin-top: -0.4em;
-       }
-       
-       .checkbox-trigger:checked + .menu-content .hamburger-menu::after {
+    }
+
+    .checkbox-trigger:checked + .menu-content .hamburger-menu::after {
         width: 1.5em;
         transform: translateX(5px) rotate(-32deg);
         margin-top: 0.4em;
-       }
-       
-       .menu-content {
+    }
+
+    .menu-content {
         display: flex;
         background: #30343F;
         color: #FF00FF;
-        position: absolute; 
-        right: 0px;/*This is influenecer*/
+        position: absolute;
+        right: 0px;
         max-height: 40px;
         transition: max-height 0.5s ease, width 0.5s ease;
-       }
-       
-       .menu-content ul {
+    }
+
+    .menu-content ul {
         display: block;
         padding-left: 0;
         padding-top: 1em;
@@ -254,54 +208,60 @@ a {
         overflow: hidden;
         transition: height 2s ease;
         transition-duration: 3s;
-       }
-       
-       .checkbox-trigger:checked + .menu-content {
-       max-height:fit-content;
-       transition:width 0.5s ease,max-height 0.5s ease 0.7s;
-       }
-       .checkbox-trigger:checked + .menu-content ul {
+    }
+
+    .checkbox-trigger:checked + .menu-content {
+        max-height: fit-content;
+        transition: width 0.5s ease, max-height 0.5s ease 0.7s;
+    }
+
+    .checkbox-trigger:checked + .menu-content ul {
         width: 70px;
         height: auto;
         transition: width 0.3s ease, height 0.5s ease;
         margin-left: 20px;
         margin-top: 20px;
         padding-bottom: 0;
-       }
-       
-       .checkbox-trigger:checked + .menu-content ul{
-       transition-duration: 1s;
-       }
-       .menu-content ul li {
+    }
+
+    .checkbox-trigger:checked + .menu-content ul {
+        transition-duration: 1s;
+    }
+
+    .menu-content ul li {
         list-style: none;
-        padding-top:10px;
+        padding-top: 10px;
         padding-bottom: 10px;
         font-size: 18px;
         cursor: pointer;
         transition: color 0.5s, background-color 0.5s;
-       
-       }
-       
-       .menu-content ul li:hover a{
-        color:#FFD300;
-       }
-       
-       .wrapper{
-       width: 100%;
-       justify-content: space-between;
-       align-items: center;
-       } 
-       
-       .tclogo{
+    }
+
+    .menu-content ul li:hover a {
+        color: #FFD300;
+    }
+
+    .wrapper {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tclogo {
         padding-top: 15px;
-       height: 45px;
-       position: static;
-       top: 0;
-       left: 0;
-       margin: 0;
-       padding: 0;
-       }
-       .navbar-adjustments{
+        height: 45px;
+        position: static;
+        top: 0;
+        left: 0;
+        margin: 0;
         padding: 0;
-       }
+    }
+
+    .navbar-adjustments {
+        padding: 0;
+    }
+
+    a {
+        padding: 0.5rem;
+    }
 }
