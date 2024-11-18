@@ -1,39 +1,33 @@
-<!--This is the code for navbar-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glassmorphism Navbar</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/navbar.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <header>
+        <div class="navbar-adjustments">
+            <img src="./images/tclogo.png" alt="techclublogo" class="tclogo" />
+            <div class="checkbox-container">
+                <input class="checkbox-trigger" type="checkbox"  />
+                <div class="menu-content">
+                    <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./about.html"> About </a></li>
+                      <li><a href="./gallery.html"> Gallery </a></li>
+                      <li><a href="./team.html"> Team </a></li>
+                      <li><a href="./events.html"> Events </a></li>
+                    </ul>
+                  <div class="hamburger-menu"></div>
+                </div>
+            </div>
         </div>
-
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#events" class="nav-link">Events</a></li>
-        </ul>
-
-        <div class="team-link">
-            <a href="#team">Team</a>
-        </div>
-
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-
-    <script src="/js/navbar.js" />
+    </header>
 </body>
-
 </html>
+

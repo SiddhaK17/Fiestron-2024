@@ -7,7 +7,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #030c26;
+    background-color: #121212;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Glassmorphism footer styling */
@@ -15,13 +17,13 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
     backdrop-filter: blur(15px);
-    padding: 20px 0;
+    padding: 1rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
     animation: slideUp 1s ease-out;
 }
@@ -38,66 +40,75 @@ footer {
 }
 
 .footer-section {
-    flex: 1 1 200px;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #6387f2;
+    font-size: 1.7rem;
+    margin-bottom: 1.1rem;
+    color: #0FF0FF;
+    text-align: center;
 }
 
 .footer-links a {
+    text-align: center;
+    font-size: 1.2rem;
     display: block;
     color: #ffffff;
     text-decoration: none;
-    margin: 8px 0;
-    transition: all 0.3s ease;
+    margin: 1rem 0;
+    transition: 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
     color: #0df205;
-    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .social-icons {
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    margin-top: 15px;
+    justify-content: center;
 }
 
 .social-icons a {
     position: relative;
     color: white;
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    background-color: #6387f2;
+    font-size: 1.9rem;
+    width: 47px;
+    height: 47px;
+    background-color: #FF1493;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .social-icons a:hover {
-    background-color: #0df205;
+    background-color: #FF1493;
     transform: scale(1.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
 }
 
 .social-icons a::before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 50px;
+    top: 110%; 
+    left: 50%; 
+    transform: translateX(-50%);
     background: #6387f2;
     color: white;
-    padding: 5px 10px;
+    padding: 7px 13px;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
     opacity: 0;
     transition: opacity 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 2);
 }
 
 .social-icons a:hover::before {
@@ -107,14 +118,65 @@ footer {
 /* Contact info */
 .contact-info {
     color: white;
-    margin-top: 10px;
+    align-items: center;
+}
+
+.height {
+    line-height: 3rem;
 }
 
 .contact-info p {
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 /* Responsive Design */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .footer-title {
+        font-size: calc(1.15rem + 0.5vw);
+        margin-bottom: calc(1rem + 0.2vw); 
+    }
+
+    .footer-links a {
+        font-size: calc(0.9rem + 0.4vw); 
+        margin: calc(0.8rem + 0.2vw) 0; 
+    }
+
+    .footer-links a:hover {
+        font-size: calc(1rem + 0.5vw); 
+        letter-spacing: calc(0.05rem + 0.06vw); 
+    }
+
+    /* .social-icons {
+        gap: calc(0.5rem + 0.2vw); 
+    } */
+
+    .social-icons a {
+        font-size: calc(1.5rem + 0.4vw); 
+        width: calc(30px + 2vw); 
+        height: calc(30px + 2vw); 
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.1); 
+    }
+
+    .social-icons a::before {
+        font-size: calc(0.8rem + 0.2vw);
+        padding: calc(4px + 0.3vw) calc(8px + 0.3vw); 
+    }
+
+    .contact-info p {
+        font-size: calc(0.93rem + 0.3vw); 
+    }
+
+    .height {
+        line-height: calc(2rem + 0.6vw); 
+    }
+}
+
+
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
@@ -123,4 +185,58 @@ footer {
     .social-icons {
         justify-content: center;
     }
+
+    .contact_us_adjusting, .follow_us_adjusting {
+        margin-top: 1.7rem;
+    }
+
+    footer {
+        padding: calc(1rem + 1vw) 0;
+        padding-bottom: 5rem;
+        border-radius: calc(5px + 1vw);
+        backdrop-filter: blur(calc(10px + 5vw));
+        flex-direction: column;
+        align-items: center;
+        animation: slideUp 1s ease-out;
+    }
+
+    .footer-title {
+        font-size: calc(1.2rem + 1vw);
+        margin-bottom: calc(0.8rem + 0.5vw);
+    }
+
+    .footer-links a {
+        font-size: calc(0.8rem + 1vw);
+        margin: calc(0.6rem + 0.5vw) 0;
+    }
+
+    .footer-links a:hover {
+        font-size: calc(1.01rem + 1vw);
+        letter-spacing: calc(0.02rem + 0.1vw);
+    }
+
+    .social-icons a {
+        font-size: calc(1.3rem + 1vw);
+        width: calc(37px + 2vw);
+        height: calc(37px + 2vw);
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.09); 
+    }
+
+    .social-icons a::before {
+        font-size: calc(0.7rem + 0.5vw);
+        padding: calc(3px + 0.5vw) calc(8px + 0.5vw);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-info p {
+        font-size: calc(0.9rem + 0.5vw);
+    }
+
+    .height {
+        line-height: calc(2.5rem + 1vw);
+    }
+
 }
