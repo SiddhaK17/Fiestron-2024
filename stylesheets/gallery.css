@@ -25,7 +25,7 @@ body {
     width: 45vw;
     background: #30343f;
     border-radius: 10px;
-    box-shadow: 0 0 1rem #8200ff;
+    box-shadow: 0 0 1rem #0ff0ff;
     display: flex;
     justify-content: center;
     gap: 0.5rem;
@@ -41,7 +41,7 @@ body {
     height: auto;
     width: auto;
     background: #30343f;
-    box-shadow: 0 0 1rem #8200ff;
+    box-shadow: 0 0 1rem #0ff0ff;
     border-radius: 10px;
     position: relative;
 }
@@ -82,6 +82,9 @@ a {
     padding-top: 7%;
 }
 
+#tchrsday-padding{
+    padding-top: 7%;
+}
 
 @media (max-width: 700px){
     .titleHeading{
