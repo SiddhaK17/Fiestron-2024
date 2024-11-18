@@ -54,16 +54,7 @@
     color: #0df205; /* Accent color when active */
 }
 
-.team-link a {
-    text-decoration: none;
-    color: #6387f2; /* Secondary color */
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
 
-.team-link a:hover {
-    color: #0df205; /* Accent color on hover */
-}
 
 .hamburger {
     display: none;
@@ -107,5 +98,7 @@
     .hamburger {
         display: flex;
     }
+
+  
 }
 
