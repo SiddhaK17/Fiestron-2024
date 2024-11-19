@@ -13,26 +13,41 @@ document.getElementById("model-viewer").appendChild(renderer.domElement);
 
 // Set up the scene and camera
 const scene = new THREE.Scene();
-scene.background = null; // Set background to null for transparency
+scene.background = null;
 const camera = new THREE.PerspectiveCamera(
   35,
   window.innerWidth / window.innerHeight,
-  0.1, // Near plane
+  0.1,
   1000
 );
-camera.position.set(0, 1, 5); // Camera positioned slightly back and above the model
+camera.position.set(0, 1, 5);
 
-// Set up the controls
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.enablePan = false;
-controls.minDistance = 2; // Adjust the min distance to avoid cutting off the model
-controls.maxDistance = 20;
-controls.minPolarAngle = 0; // Allow viewing from below
-controls.maxPolarAngle = Math.PI; // Allow viewing from above
-controls.autoRotate = false;
-controls.target.set(0, 0, 0); // Make sure the target is set correctly
-controls.update();
+// Function to initialize OrbitControls
+let controls;
+
+function initializeControls() {
+  if (controls) {
+    controls.dispose();
+    controls = null;
+  }
+
+  const isDesktop = window.innerWidth > 768;
+
+  if (isDesktop) {
+    controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.enablePan = false;
+    controls.minDistance = 2;
+    controls.maxDistance = 20;
+    controls.minPolarAngle = 0;
+    controls.maxPolarAngle = Math.PI;
+    controls.autoRotate = false;
+    controls.target.set(0, 0, 0);
+    controls.update();
+  }
+}
+
+initializeControls();
 
 // Set up the lighting
 const spotLight = new THREE.SpotLight(0xffffff, 3, 100, 0.2, 0.5);
@@ -47,8 +62,8 @@ loader.load(
   "scene.gltf",
   (gltf) => {
     model = gltf.scene;
-    model.position.set(0, 0, 0); // Center the model
-    model.scale.set(0.65, 0.65, 0.65); // Scale down the model as needed
+    model.position.set(0, 0, 0);
+    model.scale.set(0.65, 0.65, 0.65);
     scene.add(model);
   },
   (xhr) => {
@@ -62,10 +77,13 @@ loader.load(
 // Animation loop
 function animate() {
   requestAnimationFrame(animate);
-  controls.update(); // Update controls
+
+  if (controls) {
+    controls.update();
+  }
 
   if (model) {
-    model.rotation.y += 0.02; // Rotate around Y-axis
+    model.rotation.y += 0.02;
   }
 
   renderer.render(scene, camera);
@@ -77,4 +95,5 @@ window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+  initializeControls();
 });
