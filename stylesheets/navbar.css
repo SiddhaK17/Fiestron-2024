@@ -35,19 +35,19 @@ body {
     cursor: pointer;
 }
 
-li {
+.list_wrapper {
     font-size: 1.7rem;
     font-family: "Golos Text"
 }
 
-a {
+.elements_navbar {
     text-decoration: none;
     padding: 1.3rem 1.4rem;
     color: #39ff14;
     transition: 0.3s ease-in-out;
 }
 
-a:hover {
+.elements_navbar:hover {
     transition: 0.3s ease-in-out, color 0.3s ease;
     letter-spacing: 0.13rem;
     color: #ffd300;
@@ -71,28 +71,28 @@ a:hover {
         cursor: pointer;
     }
 
-    li {
+    .list_wrapper {
         font-size: 1.6rem;
     }
 
-    a {
+    .elements_navbar {
         text-decoration: none;
         padding: calc(1rem + 0.5vw) calc(0.9rem + 0.4vw);
         color: #39ff14;
         transition: 0.3s ease-in-out;
     }
 
-    a:hover {
+    .elements_navbar:hover {
         transition: 0.3s ease-in-out, color 0.3s ease;
         letter-spacing: calc(0.09rem + 0.1vw);
         color: #ffd300;
     }
 
-  
+
 }
 
 @media (min-width: 769px) and (max-width: 1100px) {
-    a {
+    .elements_navbar {
         padding: calc(1rem + 0.5vw) calc(0.6rem + 0.3vw);
         font-size: calc(1.2rem + 0.2vw);
     }
@@ -102,7 +102,7 @@ a:hover {
     }
 }
 
-.menu-content ul {
+.menu-content .elements_wrapper {
     margin: 0;
     list-style: none;
     display: flex;
@@ -177,13 +177,13 @@ a:hover {
     }
 
     .checkbox-trigger:checked {
-        left: -70px;
+        left: -82px;
     }
 
     .checkbox-trigger:checked + .menu-content .hamburger-menu {
         width: 1.7em;
         transition: width 0.5s ease 0.3s;
-        transform: translateX(-70px);
+        transform: translateX(-82px);
         transition: transform 0.7s ease;
     }
 
@@ -210,7 +210,7 @@ a:hover {
         border-radius: 9%;
     }
 
-    .menu-content ul {
+    .menu-content .elements_wrapper {
         display: block;
         padding-left: 0;
         padding-top: 1em;
@@ -228,7 +228,7 @@ a:hover {
         transition: width 0.5s ease, max-height 0.5s ease 0.7s;
     }
 
-    .checkbox-trigger:checked + .menu-content ul {
+    .checkbox-trigger:checked + .menu-content .elements_wrapper {
         width: 83px;
         height: auto;
         transition: width 0.3s ease, height 0.5s ease;
@@ -237,11 +237,11 @@ a:hover {
         padding-bottom: 0;
     }
 
-    .checkbox-trigger:checked + .menu-content ul {
+    .checkbox-trigger:checked + .menu-content .elements_wrapper {
         transition-duration: 1s;
     }
 
-    .menu-content ul li {
+    .menu-content .elements_wrapper .list_wrapper {
         list-style: none;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -250,7 +250,7 @@ a:hover {
         transition: color 0.5s, background-color 0.5s;
     }
 
-    .menu-content ul li:hover a {
+    .menu-content .elements_wrapper .list_wrapper:hover .elements_navbar {
         color: #FFD300;
     }
 
@@ -275,7 +275,7 @@ a:hover {
         padding: 0;
     }
 
-    a {
+    .elements_navbar {
         padding: 0.5rem;
     }
 }
