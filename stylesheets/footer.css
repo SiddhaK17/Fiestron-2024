@@ -5,8 +5,21 @@
     box-sizing: border-box;
 }
 
+.footer_wrapper {
+    border: 0.27rem solid #25a9dd;
+    border-radius: 0.9rem;
+    padding: 2rem 0 3rem 0;
+    width: 97%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgba(48, 52, 63, 0.2);
+    box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
+    transition: all 0.9s ease-in-out;
+    }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Golos Text";
     background-color: #121212;
     width: 100%;
     margin: 0 auto;
@@ -49,9 +62,10 @@ footer {
     margin-bottom: 1.1rem;
     color: #0FF0FF;
     text-align: center;
+    font-family: "Golos Text";
 }
 
-.footer-links a {
+.footer-links .elements_footer {
     text-align: center;
     font-size: 1.2rem;
     display: block;
@@ -59,12 +73,13 @@ footer {
     text-decoration: none;
     margin: 1rem 0;
     transition: 0.3s ease-in-out;
+    font-family: "Golos Text";
 }
 
-.footer-links a:hover {
+.footer-links .elements_footer:hover {
     color: #0df205;
     transition: 0.3s ease-in-out;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: 0.1rem;
 }
 
@@ -73,7 +88,7 @@ footer {
     justify-content: center;
 }
 
-.social-icons a {
+.social-icons .social-icons-elements {
     position: relative;
     color: white;
     font-size: 1.9rem;
@@ -86,15 +101,16 @@ footer {
     justify-content: center;
     transition: all 0.3s ease;
     text-decoration: none;
+    font-family: "Golos Text";
 }
 
-.social-icons a:hover {
+.social-icons .social-icons-elements:hover {
     background-color: #FF1493;
     transform: scale(1.2);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
 }
 
-.social-icons a::before {
+.social-icons .social-icons-elements::before {
     content: attr(data-tooltip);
     position: absolute;
     top: 110%; 
@@ -111,7 +127,7 @@ footer {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 2);
 }
 
-.social-icons a:hover::before {
+.social-icons .social-icons-elements:hover::before {
     opacity: 1;
 }
 
@@ -125,9 +141,10 @@ footer {
     line-height: 3rem;
 }
 
-.contact-info p {
+.contact-info .contact_elements {
     font-size: 1.2rem;
     text-align: center;
+    font-family: "Golos Text";
 }
 
 /* Responsive Design */
@@ -138,13 +155,13 @@ footer {
         margin-bottom: calc(1rem + 0.2vw); 
     }
 
-    .footer-links a {
+    .footer-links .elements_footer {
         font-size: calc(0.9rem + 0.4vw); 
         margin: calc(0.8rem + 0.2vw) 0; 
     }
 
-    .footer-links a:hover {
-        font-size: calc(1rem + 0.5vw); 
+    .footer-links .elements_footer:hover {
+        font-size: calc(1rem + 0.4vw); 
         letter-spacing: calc(0.05rem + 0.06vw); 
     }
 
@@ -152,22 +169,22 @@ footer {
         gap: calc(0.5rem + 0.2vw); 
     } */
 
-    .social-icons a {
+    .social-icons .social-icons-elements {
         font-size: calc(1.5rem + 0.4vw); 
         width: calc(30px + 2vw); 
         height: calc(30px + 2vw); 
     }
 
-    .social-icons a:hover {
+    .social-icons .social-icons-elements:hover {
         transform: scale(1.1); 
     }
 
-    .social-icons a::before {
+    .social-icons .social-icons-elements::before {
         font-size: calc(0.8rem + 0.2vw);
         padding: calc(4px + 0.3vw) calc(8px + 0.3vw); 
     }
 
-    .contact-info p {
+    .contact-info .contact_elements {
         font-size: calc(0.93rem + 0.3vw); 
     }
 
@@ -187,12 +204,12 @@ footer {
     }
 
     .contact_us_adjusting, .follow_us_adjusting {
-        margin-top: 1.7rem;
+        margin-top: 1.3rem;
     }
 
     footer {
         padding: calc(1rem + 1vw) 0;
-        padding-bottom: 5rem;
+        padding-bottom: 4.6rem;
         border-radius: calc(5px + 1vw);
         backdrop-filter: blur(calc(10px + 5vw));
         flex-direction: column;
@@ -205,38 +222,53 @@ footer {
         margin-bottom: calc(0.8rem + 0.5vw);
     }
 
-    .footer-links a {
+    .footer-links .elements_footer {
         font-size: calc(0.8rem + 1vw);
         margin: calc(0.6rem + 0.5vw) 0;
+        width: 100%;
     }
 
-    .footer-links a:hover {
-        font-size: calc(1.01rem + 1vw);
+    .footer-links .elements_footer:hover {
+        font-size: calc(0.95rem + 0.9vw);
         letter-spacing: calc(0.02rem + 0.1vw);
     }
 
-    .social-icons a {
+    .social-icons .social-icons-elements {
         font-size: calc(1.3rem + 1vw);
         width: calc(37px + 2vw);
         height: calc(37px + 2vw);
     }
 
-    .social-icons a:hover {
+    .social-icons .social-icons-elements:hover {
         transform: scale(1.09); 
     }
 
-    .social-icons a::before {
+    .social-icons .social-icons-elements::before {
         font-size: calc(0.7rem + 0.5vw);
         padding: calc(3px + 0.5vw) calc(8px + 0.5vw);
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     }
 
-    .contact-info p {
+    .contact-info .contact_elements {
         font-size: calc(0.9rem + 0.5vw);
     }
 
     .height {
         line-height: calc(2.5rem + 1vw);
     }
+
+    .footer_wrapper {
+        border: 0.27rem solid #25a9dd;
+        border-radius: 0.9rem;
+        padding: 2rem 0 4.3rem 0;
+        width: 97%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+        background-color: rgba(48, 52, 63, 0.2);
+        box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
+        transition: all 0.9s ease-in-out;
+        }
+
 
 }
