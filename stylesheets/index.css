@@ -89,11 +89,27 @@ nav a:hover {
   animation: animates 5s linear infinite;
 }
 @keyframes animates {
-  0%,18%,20%,50.1%,60%,80%,90.1%,92.1% {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  80%,
+  90.1%,
+  92.1% {
     color: #030c26;
     box-shadow: none;
   }
-  18%,20%,30%,50%,60%,65%,80.1%,90%,92.15%,100% {
+  18%,
+  20%,
+  30%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.15%,
+  100% {
     color: #fff;
     text-shadow: 0 0 10px #09777f, 0 0 10px #0c555a;
   }
@@ -231,12 +247,12 @@ nav a:hover {
 
 /* 3d model container */
 .model-container {
-  position: fixed;
-  top: 20%;
-  right: 5%;
+  position: relative;
   float: right;
-  width: 40vw; /* adjust width as needed */
-  height: 70vh; /*adjust height as needed */
+  top: 17%;
+  left: 28%;
+  width: 100%; /* adjust width as needed */
+  height: 100vh; /*adjust height as needed */
   z-index: 5; /* place it below the nav and header elements */
   overflow: visible;
   background: transparent; /*ensure the background is transparent */
