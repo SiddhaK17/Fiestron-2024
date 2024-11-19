@@ -47,7 +47,7 @@ loader.load(
   "scene.gltf",
   (gltf) => {
     model = gltf.scene;
-    model.position.set(-2, 0, 0); // Center the model
+    model.position.set(0, 0, 0); // Center the model
     model.scale.set(0.65, 0.65, 0.65); // Scale down the model as needed
     scene.add(model);
   },
