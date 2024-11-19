@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 body,
 html {
   margin: 0;
@@ -7,7 +11,7 @@ html {
   overflow: hidden;
 }
 
-/* General reset */
+/*General reset*/
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +52,6 @@ nav {
   transition: all 0.4s ease;
   z-index: 10;
 }
-
 nav a {
   text-decoration: none;
   padding: 1.5rem 2rem;
@@ -154,10 +157,10 @@ nav a:hover {
   position: fixed;
   display: block;
   list-style-type: none;
-  border: 0.2em solid #0fefff70;
+  border: 0.2em solid #0fefff9d;
   bottom: -150px;
   border-radius: 10px;
-  animation: animationsAlt 22s linear infinite;
+  animation: animations 20s linear infinite;
   animation-timing-function: linear;
 }
 
@@ -166,7 +169,7 @@ nav a:hover {
   width: 80px;
   height: 80px;
   animation-delay: 2s;
-  animation-duration: 20s;
+  animation-duration: 18s;
 }
 
 .box-area li:nth-child(2) {
@@ -174,72 +177,48 @@ nav a:hover {
   width: 30px;
   height: 30px;
   animation-delay: 1.5s;
-  animation-duration: 13s;
+  animation-duration: 11s;
 }
 
 .box-area li:nth-child(3) {
   left: 80%;
   width: 90px;
   height: 90px;
-  animation-delay: 7.5s;
-  animation-duration: 23s;
+  animation-delay: 4.5s;
+  animation-duration: 21s;
 }
 
 .box-area li:nth-child(4) {
   left: 42%;
   width: 150px;
   height: 150px;
-  animation-delay: -1s;
-  animation-duration: 16s;
+  animation-delay: 0s;
+  animation-duration: 14s;
 }
 
 .box-area li:nth-child(5) {
   left: 65%;
   width: 40px;
   height: 40px;
-  animation-delay: 5s;
-  animation-duration: 12s;
+  animation-delay: 0s;
+  animation-duration: 10s;
 }
 
 .box-area li:nth-child(6) {
   left: 15%;
   width: 110px;
   height: 110px;
-  animation-delay: 4.5s;
-  animation-duration: 10s;
+  animation-delay: 6.5s;
+  animation-duration: 13s;
 }
 
-@keyframes animationsAlt {
+@keyframes animations {
   0% {
-    transform: translateY(0) rotate(0deg) scale(1);
+    transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
-  15% {
-    transform: translateY(-150px) rotate(120deg) scale(1.5);
-    opacity: 0.9;
-  }
-  30% {
-    transform: translateY(-300px) rotate(240deg) scale(0.6);
-    opacity: 0.8;
-  }
-  45% {
-    transform: translateY(-450px) rotate(360deg) scale(1.3);
-    opacity: 0.6;
-  }
-  60% {
-    transform: translateY(-600px) rotate(480deg) scale(0.7);
-    opacity: 0.5;
-  }
-  75% {
-    transform: translateY(-700px) rotate(600deg) scale(1.2);
-    opacity: 0.4;
-  }
-  90% {
-    transform: translateY(-750px) rotate(720deg) scale(0.8);
-    opacity: 0.3;
-  }
   100% {
-    transform: translateY(-800px) rotate(840deg) scale(1.4);
+    transform: translateY(-800px) rotate(720deg);
     opacity: 0;
   }
 }
@@ -263,9 +242,8 @@ nav a:hover {
 }
 
 /*responsive */
-
 /*320px - 768px; 769px - 1024px; 1024px..*/
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   /* Adjustments for smaller screens */
   .tclogo {
     top: 0.8rem;
@@ -297,22 +275,20 @@ nav a:hover {
     font-size: 1.8rem;
     line-height: 2cm;
     margin-top: 16rem;
-    margin-left: 1rem;
     text-align: center;
   }
 
   .slogan {
     font-size: 1rem;
-    margin-top: 11rem;
-    margin-left: 1rem;
+    margin-top: 10rem;
     text-align: center;
   }
   .box-area li {
     border: 0.2em solid #0fefff3b;
   }
   .box-area li:nth-child(1) {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
   }
   .box-area li:nth-child(2) {
     width: 55px;
@@ -331,7 +307,187 @@ nav a:hover {
     height: 30px;
   }
   .box-area li:nth-child(6) {
+    width: 85px;
+    height: 85px;
+  }
+}
+@media (min-width: 350px) and (max-width: 377px) {
+  /* Adjustments for smaller screens */
+  .tclogo {
+    top: 0.8rem;
+    left: 0.8rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0.6rem;
+  }
+  .nav-floatleft {
+    top: 1rem;
+    right: 0.9rem;
+    font-size: 1.1rem;
+  }
+
+  .model-container {
+    position: fixed;
+    top: 2rem;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-60);
+  }
+
+  .heading {
+    font-size: 2.1rem;
+    line-height: 2cm;
+    margin-top: 16rem;
+    text-align: center;
+  }
+
+  .slogan {
+    font-size: 1.2rem;
+    margin-top: 10rem;
+    text-align: center;
+  }
+  .box-area li {
+    border: 0.2em solid #0fefff3b;
+  }
+  .box-area li:nth-child(1) {
+    width: 120px;
+    height: 120px;
+  }
+  .box-area li:nth-child(2) {
+    width: 75px;
+    height: 75px;
+  }
+  .box-area li:nth-child(3) {
     width: 55px;
     height: 55px;
+  }
+  .box-area li:nth-child(4) {
+    width: 75px;
+    height: 75px;
+  }
+  .box-area li:nth-child(5) {
+    width: 50px;
+    height: 50px;
+  }
+  .box-area li:nth-child(6) {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media (min-width: 378px) and (max-width: 427px) {
+  /* Adjustments for smaller screens */
+  .tclogo {
+    top: 0.8rem;
+    left: 0.8rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0.6rem;
+  }
+  .nav-floatleft {
+    top: 1rem;
+    right: 0.9rem;
+    font-size: 1.2rem;
+  }
+
+  .model-container {
+    position: fixed;
+    top: 2rem;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-60);
+  }
+
+  .heading {
+    font-size: 2.4rem;
+    line-height: 2cm;
+    margin-top: 16rem;
+    text-align: center;
+  }
+
+  .slogan {
+    font-size: 1.3rem;
+    margin-top: 10rem;
+    text-align: center;
+  }
+  .box-area li {
+    border: 0.2em solid #0fefff3b;
+  }
+  .box-area li:nth-child(1) {
+    width: 120px;
+    height: 120px;
+  }
+  .box-area li:nth-child(2) {
+    width: 75px;
+    height: 75px;
+  }
+  .box-area li:nth-child(3) {
+    width: 55px;
+    height: 55px;
+  }
+  .box-area li:nth-child(4) {
+    width: 75px;
+    height: 75px;
+  }
+  .box-area li:nth-child(5) {
+    width: 50px;
+    height: 50px;
+  }
+  .box-area li:nth-child(6) {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 769px) {
+  /* Adjustments for smaller screens */
+  .tclogo {
+    top: 1rem;
+    left: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0.8rem;
+  }
+  .nav-floatleft {
+    top: 1rem;
+    right: 0.9rem;
+    font-size: 1.8rem;
+  }
+
+  .model-container {
+    position: fixed;
+    top: 2rem;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-60);
+  }
+
+  .heading {
+    font-size: 3.5rem;
+    line-height: 3cm;
+    margin-top: 17rem;
+    margin-left: 4rem;
+    text-align: center;
+  }
+
+  .slogan {
+    font-size: 2.3rem;
+    margin-top: 16rem;
+    text-align: center;
   }
 }

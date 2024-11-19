@@ -46,18 +46,54 @@ body {
   -webkit-text-stroke: 0.125rem #0ff0ff;
 }
 
+/* Ensure the grid layout adjusts dynamically */
 .gridSection {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
   gap: 1rem;
   padding: 1%;
+  align-items: start; /* Align items to the top of the grid cells */
+}
+
+/* Style the image container */
+.image-container {
+  display: flex; /* Use flexbox for vertical centering */
+  justify-content: center;
+  align-items: center;
+  background-color: #30343f; /* Match your background */
+  border: 0.125rem #0ff0ff solid;
+  filter: drop-shadow(0 0 0.2rem #0ff0ff);
+  padding: 1rem; /* Optional padding around the image */
+}
+
+/* Ensure the image maintains its aspect ratio */
+.imgFluid {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure proper fitting inside the container */
+  display: block;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) {
+  .gridSection {
+    grid-template-columns: 1fr; /* Stack the grid items vertically */
+  }
+
+  .gridItem:nth-child(3) {
+    order: 4;
+  }
+
+  .gridItem:nth-child(4) {
+    order: 3;
+  }
 }
 
 .gridItem {
   border: 0.125rem #0ff0ff solid;
   filter: drop-shadow(0 0 0.2rem #0ff0ff);
   background-color: #30343f;
+  height: 100%;
 }
 
 .gridTitle {
@@ -71,10 +107,4 @@ body {
   font-family: "Assistant", sans-serif;
   font-size: 1.22rem;
   color: #ffffff;
-}
-
-.imgFluid {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
