@@ -251,14 +251,14 @@ span::after {
 }
 
 .ReadRegister .Register button:hover,.ReadRegister .Register button:focus{
-    border-color: #FF1493;
+    border-color: #FF00FF;
     color: #FFD300;
-    transform:scale(1.05)
+    transform:scale(1.05);
 }
 
 .RegisterAnimation button:hover,
 .RegisterAnimation button:focus{
-    box-shadow: inset 0 0 0 30px #FF1493;
+    box-shadow: inset 0 0 0 30px #FF00FF;
 }
 
 
