@@ -8,7 +8,7 @@
 .footer_wrapper {
     border: 0.27rem solid #25a9dd;
     border-radius: 0.9rem;
-    padding: 2rem 0 3rem 0;
+    padding: 2rem 0 5rem 0;
     width: 97%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -272,7 +272,7 @@ footer {
     .footer_wrapper {
         border: 0.27rem solid #25a9dd;
         border-radius: 0.9rem;
-        padding: 2rem 0 4.3rem 0;
+        padding: 2rem 0 4.5rem 0;
         width: 97%;
         margin: 0 auto;
         box-sizing: border-box;
