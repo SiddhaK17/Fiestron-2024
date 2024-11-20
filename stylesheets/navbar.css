@@ -16,8 +16,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
-    background: rgba(255, 255, 255, 0.3);
+    padding: 0.1rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
     border-bottom: 0.1rem solid white;
     backdrop-filter: blur(13px);
     width: 100%;
@@ -43,14 +43,14 @@ body {
 .elements_navbar {
     text-decoration: none;
     padding: 1.3rem 1.4rem;
-    color: #39ff14;
+    color: #FFFFFF;
     transition: 0.3s ease-in-out;
 }
 
 .elements_navbar:hover {
     transition: 0.3s ease-in-out, color 0.3s ease;
     letter-spacing: 0.13rem;
-    color: #ffd300;
+    color: #39ff14;
 }
 
 @media (min-width: 769px) and (max-width: 1400px) {
@@ -58,8 +58,8 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: calc(0.1rem + 1vw) calc(0.1rem + 0.5vw);
-        background: rgba(255, 255, 255, 0.3);
+        padding: calc(0.1rem + 0.01vw) calc(0.1rem + 0.5vw);
+        background: rgba(255, 255, 255, 0.2);
         border-bottom: 0.1rem solid white;
         backdrop-filter: blur(calc(10px + 1vw));
     }
@@ -76,16 +76,13 @@ body {
     }
 
     .elements_navbar {
-        text-decoration: none;
         padding: calc(1rem + 0.5vw) calc(0.9rem + 0.4vw);
-        color: #39ff14;
         transition: 0.3s ease-in-out;
     }
 
     .elements_navbar:hover {
         transition: 0.3s ease-in-out, color 0.3s ease;
         letter-spacing: calc(0.09rem + 0.1vw);
-        color: #ffd300;
     }
 
 
@@ -114,7 +111,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: calc(2rem + 1vw) calc(2rem + 0.5vw);
+        padding: calc(1.5rem + 1vw) calc(2rem + 0.5vw);
         z-index: 1000;
         position: fixed;
         top: 0;
@@ -177,13 +174,13 @@ body {
     }
 
     .checkbox-trigger:checked {
-        left: -82px;
+        left: -94px;
     }
 
     .checkbox-trigger:checked + .menu-content .hamburger-menu {
         width: 1.7em;
         transition: width 0.5s ease 0.3s;
-        transform: translateX(-82px);
+        transform: translateX(-94px);
         transition: transform 0.7s ease;
     }
 
@@ -202,7 +199,6 @@ body {
     .menu-content {
         display: flex;
         background: #30343F;
-        color: #FF00FF;
         position: absolute;
         right: 0px;
         max-height: 40px;
@@ -229,7 +225,7 @@ body {
     }
 
     .checkbox-trigger:checked + .menu-content .elements_wrapper {
-        width: 83px;
+        width: 95px;
         height: auto;
         transition: width 0.3s ease, height 0.5s ease;
         margin-left: 10px;
@@ -251,7 +247,7 @@ body {
     }
 
     .menu-content .elements_wrapper .list_wrapper:hover .elements_navbar {
-        color: #FFD300;
+        color: #39ff14;
     }
 
     .wrapper {

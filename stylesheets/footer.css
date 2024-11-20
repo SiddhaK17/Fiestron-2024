@@ -147,6 +147,10 @@ footer {
     font-family: "Golos Text";
 }
 
+.phone_adjusting {
+    margin-left: 4.8rem;
+}
+
 /* Responsive Design */
 
 @media (min-width: 769px) and (max-width: 1100px) {
@@ -191,6 +195,10 @@ footer {
     .height {
         line-height: calc(2rem + 0.6vw); 
     }
+
+    .phone_adjusting {
+        margin-left: calc(3.3rem + 2vw);
+}
 }
 
 
@@ -204,7 +212,11 @@ footer {
     }
 
     .contact_us_adjusting, .follow_us_adjusting {
-        margin-top: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .follow_us_adjusting {
+        margin-top: 1.7rem;
     }
 
     footer {
@@ -269,6 +281,10 @@ footer {
         box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
         transition: all 0.9s ease-in-out;
         }
+
+    .phone_adjusting {
+        margin-left: calc(3.9rem + 1.1vw);
+    }
 
 
 }
