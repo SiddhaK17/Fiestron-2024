@@ -77,7 +77,7 @@
     -webkit-text-stroke-color: rgb(15, 240, 255);
     color: rgb(15, 240, 255);
     text-align: center;
-    padding: 3rem 3rem 1.5rem 3rem;
+    padding: 7rem 3rem 1.5rem 3rem;
     font-size: 5rem;
     text-decoration: underline solid rgb(15, 240, 255) 12%;
     text-underline-offset: 0.8rem;
@@ -984,7 +984,7 @@
     }
 
     .ourteam {
-        padding: calc(2rem + 0.5vw) calc(2rem + 0.5vw) calc(1rem + 0.5vw) calc(2rem + 0.5vw); 
+        padding: calc(7rem + 0.5vw) calc(2rem + 0.5vw) calc(1rem + 0.5vw) calc(2rem + 0.5vw); 
         font-size: calc(3rem + 1vw); 
         text-underline-offset: calc(0.5rem + 0.2vw); 
         text-shadow: 0 0 calc(0.3rem + 0.1vw) rgba(15, 240, 255, 0.7);
@@ -1605,7 +1605,7 @@
         -webkit-text-stroke-color: rgb(15, 240, 255);
         color: rgb(15, 240, 255);
         text-align: center;
-        padding: calc(1.5rem + 1vw) calc(1.5rem + 1vw) calc(0.75rem + 0.5vw);
+        padding: calc(6rem + 1vw) calc(1.5rem + 1vw) calc(0.75rem + 0.5vw);
         font-size: calc(2.3rem + 2vw);
         text-decoration: underline solid rgb(15, 240, 255) 12%;
         text-underline-offset: calc(0.4rem + 0.2vw);
