@@ -9,57 +9,36 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <link rel="stylesheet" href="./stylesheets/navbar.css">
+  <link rel="stylesheet" href="./stylesheets/footer.css">
+  <link rel="stylesheet" href="./stylesheets/navbar.css">
   <link rel="stylesheet" href="./stylesheets/gallery.css">
  
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">
-        <img src="/images/tclogo.png" alt="Logo">
+  <header>
+    <div class="navbar-adjustments">
+        <img src="./images/tclogo.png" alt="techclublogo" class="tclogo" />
+        <div class="checkbox-container">
+            <input class="checkbox-trigger" type="checkbox"  />
+            <div class="menu-content">
+                <ul class="elements_wrapper">
+                  <li class="list_wrapper"><a class="elements_navbar" href="./index.html">Home</a></li>
+                  <li class="list_wrapper"><a class="elements_navbar" href="./about.html"> About </a></li>
+                  <li class="list_wrapper"><a class="elements_navbar" href="./team.html"> Team </a></li>
+                  <li class="list_wrapper"><a class="elements_navbar" href="./events.html"> Events </a></li>
+                </ul>
+              <div class="hamburger-menu"></div>
+            </div>
+        </div>
     </div>
+</header>
+<div class="centerNav" id="Gallery-padding">
+  <div class="container">
+  <h1 class="titleHeading"> Our Gallery</h1>
+</div></div>
 
-    <ul class="nav-links">
-        <li><a href="./index.html" class="nav-link">Home</a></li>
-        <li><a href="./about.html" class="nav-link">About</a></li>
-        <li><a href="./team.html" class="nav-link">Team</a></li>
-        <li><a href="./events.html" class="nav-link">Events</a></li>
-    </ul>
-
-        
-   
-
-    <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-</nav>
-<!--
-  <h1 class="titleHeading" id="Gallery-padding"> Our Gallery!</h1>
-
-  <div class="centerNav">
-    <div class="event-nav">
-      <a href="#card1">
-        <img class="event-img img-fluid" src="../images/teachersday/teachersdaypic.jpg" height="150" width="150"
-          alt="...">
-      </a>
-      <a href="#card2">
-        <img class="event-img img-fluid" src="../images/orientation/orientationpic.jpg" height="150" width="150"
-          alt="...">
-      </a>
-      <a href="#card3">
-        <img class="event-img img-fluid" src="../images/fiestron/fiestronfestpic.jpg" height="150" width="150"
-          alt="...">
-      </a>
-      <a href="#card4">
-        <img class="event-img img-fluid" src="../images/clmeet/clmeetpic.jpg" height="150" width="150" alt="...">
-      </a>
-    </div>
-  </div>-->
-
-  <h1 class="titleHeading" id="tchrsday-padding">Teacher's Day</h1>
+  <h1 class="titleHeading">Teacher's Day</h1>
   <div class="centerNav">
     <section class="container">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -104,7 +83,7 @@
   <h1 class="titleHeading">Orientation</h1>
   <div class="centerNav">
     <section class="container">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselOrientation" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/orientation/or1.jpg" class="d-block w-100" alt="...">
@@ -137,11 +116,11 @@
             <img src="./images/orientation/or10.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOrientation" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOrientation" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -160,7 +139,7 @@
   <h1 class="titleHeading">Fiestron'24</h1>
   <div class="centerNav">
     <section class="container">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselFiestron" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/fiestron/fi1.jpg" class="d-block w-100" alt="...">
@@ -202,11 +181,11 @@
             <img src="./images/fiestron/fi13.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFiestron" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFiestron" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -228,7 +207,7 @@
   <h1 class="titleHeading">CL Meet</h1>
   <div class="centerNav">
     <section class="container">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselCLMeet" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/clmeet/meet1.jpg" class="d-block w-100" alt="...">
@@ -264,11 +243,11 @@
             <img src="./images/clmeet/meet11.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCLMeet" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCLMeet" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -284,7 +263,39 @@
     </div>
 
 
+    <footer class="footer_wrapper">
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+          <h3 class="footer-title quick_links_adjusting">Quick Links</h3>
+          <div class="footer-links">
+              <a class="elements_footer" href="./index.html">Home</a>
+              <a class="elements_footer" href="./about.html">About</a>
+              <a class="elements_footer" href="./gallery.html">Gallery</a>
+              <a class="elements_footer" href="./team.html">Team</a>
+              <a class="elements_footer" href="./events.html">Events</a>
+          </div>
+      </div>
 
+      <!-- Contact Me Section -->
+      <div class="footer-section">
+          <h3 class="footer-title contact_us_adjusting">Contact Us</h3>
+          <div class="contact-info">
+              <p class="contact_elements" >Email : <a href="mailto:youremail@gmail.com" style="color:#0df205;">kc.techclub0@gmail.com</a></p>
+              <p class="height contact_elements">Phone : +91 98929 47853 &nbsp;|&nbsp; +91 83698 81215</p>
+          </div>
+      </div>
+
+      <!-- Social Media Handles -->
+      <div class="footer-section">
+          <h3 class="footer-title follow_us_adjusting">Follow Us</h3>
+          <div class="social-icons">
+              <a class="social-icons-elements" href="https://www.instagram.com/kc.techclub?igsh=dXZiOWJuc29pZ3Zw" data-tooltip="Instagram : @kc.techclub"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </footer>
+
+  <script src="/js/footer.js" />
+</body>
 
 </body>
 </html>

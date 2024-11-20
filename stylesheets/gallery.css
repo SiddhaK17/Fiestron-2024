@@ -20,20 +20,7 @@ body {
     padding: 2.5%;
 }
 
-.event-nav {
-    padding: 2%;
-    width: 45vw;
-    background: #30343f;
-    border-radius: 10px;
-    box-shadow: 0 0 1rem #0ff0ff;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
 
-.event-img {
-    border-radius: 50%;
-}
 
 .container {
     margin: 2.5%;
@@ -75,15 +62,17 @@ a {
     font-weight: 900;
     font-size: 5rem;
     padding-top: 2%;
-    text-decoration: underline;
+   
 }
 
 #Gallery-padding {
     padding-top: 7%;
 }
 
-#tchrsday-padding{
-    padding-top: 7%;
+@media (max-width: 771px){
+    #Gallery-padding {
+        padding-top: 15%;
+    }
 }
 
 @media (max-width: 700px){
@@ -93,6 +82,10 @@ a {
     
     p{
         font-size: 1.25rem;
+    }
+
+    #Gallery-padding {
+        padding-top: 13%;
     }
 }
 
@@ -105,9 +98,18 @@ a {
         font-size: 1.25rem;
     }
 
-     
+     #Gallery-padding {
+    padding-top: 7%;
+}
+
     .container{
         padding: 3%;
+    }
+}
+
+@media (max-width: 580px){
+    #Gallery-padding {
+        padding-top: 15%;
     }
 }
 
@@ -123,6 +125,11 @@ a {
     .container{
         padding: 3%;
     }
+
+    #Gallery-padding {
+        padding-top: 15%;
+    }
+
 }
 
 @media (max-width: 434px){
@@ -137,6 +144,11 @@ a {
     .container{
         padding: 3%;
     }
+
+    #Gallery-padding {
+        padding-top: 20%;
+    }
+
 }
 
 @media (max-width: 381px){
@@ -151,6 +163,11 @@ a {
     .container{
         padding: 3%;
     }
+
+    #Gallery-padding {
+        padding-top: 20%;
+    }
+
 }
 
 @media (max-width: 374px){
@@ -165,21 +182,13 @@ a {
     .container{
         padding: 3%;
     }
+
+    #Gallery-padding {
+        padding-top: 20%;
+    }
+
 }
 
-@media (max-width: 355px){
-    .titleHeading{
-        font-size: 2.9rem;
-    }
-
-    p{
-        font-size: 0.85rem;
-    }
-
-    .container{
-        padding: 3%;
-    }
-}
 
 @media (max-width: 335px){
     .titleHeading{
@@ -193,4 +202,9 @@ a {
     .container{
         padding: 2.7%;
     }
+
+    #Gallery-padding {
+        padding-top: 25%;
+    }
+
 }
