@@ -13,20 +13,21 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 15px; /* Added padding for small screens */
 }
 
 #title {
   font-family: "Convergence", sans-serif;
-  font-size: 7rem;
+  font-size: 6rem; /* Reduced the initial size */
   color: #0ff0ff;
   -webkit-text-stroke: 0.0625rem #0ff0ff;
   filter: drop-shadow(0 0 0.3125rem #0ff0ff);
-  line-height: 70%;
+  line-height: 1.2; /* Adjusted line-height for better spacing */
 }
 
 #titleBig {
   transition: color 0.3s, -webkit-text-stroke 0.3s;
-  line-height: 100%;
+  line-height: 1.1; /* Tighten spacing for better compactness */
 }
 
 #titleBig:hover {
@@ -36,14 +37,87 @@ body {
 }
 
 #titleSmall {
-  font-size: 4.1rem;
+  font-size: 3.5rem; /* Adjusted for better balance */
   transition: color 0.3s, -webkit-text-stroke 0.3s;
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 #titleSmall:hover {
   color: transparent;
   filter: drop-shadow(0 0 0.4375rem #0ff0ff);
   -webkit-text-stroke: 0.125rem #0ff0ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  #title {
+    font-size: 5rem;
+  }
+
+  #titleBig {
+    font-size: 4.5rem;
+  }
+
+  #titleSmall {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #title {
+    font-size: 4.5rem;
+  }
+
+  #titleBig {
+    font-size: 4rem;
+  }
+
+  #titleSmall {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #title {
+    font-size: 4rem;
+  }
+
+  #titleBig {
+    font-size: 3.5rem;
+  }
+
+  #titleSmall {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #title {
+    font-size: 3.5rem;
+  }
+
+  #titleBig {
+    font-size: 3rem;
+  }
+
+  #titleSmall {
+    font-size: 2rem;
+  }
+}
+
+/* For very small screens below 400px */
+@media (max-width: 400px) {
+  #title {
+    font-size: 3rem;
+  }
+
+  #titleBig {
+    font-size: 2.5rem;
+  }
+
+  #titleSmall {
+    font-size: 1.7rem; /* Adjusted for readability */
+  }
 }
 
 /* Ensure the grid layout adjusts dynamically */

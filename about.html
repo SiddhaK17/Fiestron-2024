@@ -26,18 +26,19 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/navbar.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Footer with Glassmorphism & Animation</title>
-    <link rel="stylesheet" href="/stylesheets/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/navbar.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Footer with Glassmorphism & Animation</title>
-    <link rel="stylesheet" href="/stylesheets/footer.css" />
+    <link rel="stylesheet" href="./stylesheets/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -51,12 +52,22 @@
         <div class="checkbox-container">
           <input class="checkbox-trigger" type="checkbox" />
           <div class="menu-content">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html"> About </a></li>
-              <li><a href="./gallery.html"> Gallery </a></li>
-              <li><a href="./team.html"> Team </a></li>
-              <li><a href="./events.html"> Events </a></li>
+            <ul class="elements_wrapper">
+              <li class="list_wrapper">
+                <a class="elements_navbar" href="./index.html">Home</a>
+              </li>
+              <li class="list_wrapper">
+                <a class="elements_navbar" href="./about.html"> About </a>
+              </li>
+              <li class="list_wrapper">
+                <a class="elements_navbar" href="./gallery.html"> Gallery </a>
+              </li>
+              <li class="list_wrapper">
+                <a class="elements_navbar" href="./team.html"> Team </a>
+              </li>
+              <li class="list_wrapper">
+                <a class="elements_navbar" href="./events.html"> Events </a>
+              </li>
             </ul>
             <div class="hamburger-menu"></div>
           </div>
@@ -125,14 +136,16 @@
       crossorigin="anonymous"
     ></script>
 
-    <footer>
+    <footer class="footer_wrapper">
       <!-- Quick Links Section -->
       <div class="footer-section">
         <h3 class="footer-title quick_links_adjusting">Quick Links</h3>
         <div class="footer-links">
-          <a href="#">Home</a>
-          <a href="./about.html">About</a>
-          <a href="#">Contact</a>
+          <a class="elements_footer" href="./index.html">Home</a>
+          <a class="elements_footer" href="./about.html">About</a>
+          <a class="elements_footer" href="./gallery.html">Gallery</a>
+          <a class="elements_footer" href="./team.html">Team</a>
+          <a class="elements_footer" href="./events.html">Events</a>
         </div>
       </div>
 
@@ -140,13 +153,18 @@
       <div class="footer-section">
         <h3 class="footer-title contact_us_adjusting">Contact Us</h3>
         <div class="contact-info">
-          <p>
+          <p class="contact_elements">
             Email :
             <a href="mailto:youremail@gmail.com" style="color: #0df205"
-              >youremail@gmail.com</a
+              >kc.techclub0@gmail.com</a
             >
           </p>
-          <p class="height">Phone : +91 123 4567 | +91 123 4567</p>
+          <p class="height contact_elements">
+            Phone ~ Burhan : +91 98929 47853
+          </p>
+          <p class="phone_adjusting contact_elements">
+            Pakzad : +91 83698 81215
+          </p>
         </div>
       </div>
 
@@ -155,6 +173,7 @@
         <h3 class="footer-title follow_us_adjusting">Follow Us</h3>
         <div class="social-icons">
           <a
+            class="social-icons-elements"
             href="https://www.instagram.com/kc.techclub?igsh=dXZiOWJuc29pZ3Zw"
             data-tooltip="Instagram : @kc.techclub"
             ><i class="fab fa-instagram"></i
