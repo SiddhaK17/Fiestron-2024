@@ -205,7 +205,6 @@ nav a:hover {
   border-radius: 15px;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
   /* optional: adjust shadow if needed; */
-  overflow: visible;
 }
 
 /*responsive */
