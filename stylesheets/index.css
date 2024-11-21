@@ -28,42 +28,6 @@ html {
   overflow: hidden;
 }
 
-.tclogo {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: 4.5rem;
-  height: 4.5rem;
-  z-index: 10;
-}
-
-.nav-floatleft {
-  position: fixed;
-  top: 2rem;
-  right: 1.3rem;
-  font-size: 1.7rem;
-  font-family: "Assistant";
-  z-index: 10;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.4s ease;
-  z-index: 10;
-}
-nav a {
-  text-decoration: none;
-  padding: 1.5rem 2rem;
-  color: #39ff14; /* Light color for better contrast */
-  transition: color 0.3s ease, letter-spacing 0.3s ease;
-}
-
-nav a:hover {
-  letter-spacing: 0.2rem;
-  color: #ffd300; /* Hover color */
-}
 
 .heading {
   font-size: 3.5rem;
@@ -219,15 +183,6 @@ nav a:hover {
     height: 2rem;
   }
 
-  nav a {
-    padding: 0.5rem 1rem;
-  }
-  .nav-floatleft {
-    top: 1rem;
-    right: 0.9rem;
-    font-size: 0.7rem;
-  }
-
   .model-container {
     position: fixed;
     top: -5cm;
@@ -285,15 +240,6 @@ nav a:hover {
     left: 0.8rem;
     width: 3rem;
     height: 3rem;
-  }
-
-  nav a {
-    padding: 0.5rem 0.6rem;
-  }
-  .nav-floatleft {
-    top: 1rem;
-    right: 0.9rem;
-    font-size: 1.1rem;
   }
 
   .model-container {
@@ -356,15 +302,6 @@ nav a:hover {
     height: 4rem;
   }
 
-  nav a {
-    padding: 0.5rem 0.6rem;
-  }
-  .nav-floatleft {
-    top: 1rem;
-    right: 0.9rem;
-    font-size: 1.2rem;
-  }
-
   .model-container {
     position: fixed;
     top: -5cm;
@@ -383,7 +320,7 @@ nav a:hover {
   }
 
   .slogan {
-    font-size: 6.5rem;
+    font-size: 1rem;
     margin-top: 13rem;
     text-align: center;
   }
@@ -423,15 +360,6 @@ nav a:hover {
     left: 1rem;
     width: 4.5rem;
     height: 4.5rem;
-  }
-
-  nav a {
-    padding: 0.5rem 0.8rem;
-  }
-  .nav-floatleft {
-    top: 1rem;
-    right: 0.9rem;
-    font-size: 1.8rem;
   }
 
   .model-container {
