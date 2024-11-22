@@ -8,13 +8,13 @@
 .footer_wrapper {
     border: 0.27rem solid #25a9dd;
     border-radius: 0.9rem;
-    padding: 2rem 0 5rem 0;
+    padding: 2rem 0 2.5rem 0;
     width: 97%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     box-sizing: border-box;
     position: relative;
     background-color: rgba(48, 52, 63, 0.2);
-    box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
+    box-shadow: 0 0 1.5rem rgba(41, 181, 220, 0.955);
     transition: all 0.9s ease-in-out;
     }
 
@@ -216,7 +216,7 @@ footer {
     }
 
     .follow_us_adjusting {
-        margin-top: 1.7rem;
+        margin-top: 1.9rem;
     }
 
     footer {
@@ -272,13 +272,13 @@ footer {
     .footer_wrapper {
         border: 0.27rem solid #25a9dd;
         border-radius: 0.9rem;
-        padding: 2rem 0 4.5rem 0;
+        padding: 2rem 0 4.6rem 0;
         width: 97%;
-        margin: 0 auto;
+        margin: 0 auto 3rem auto;
         box-sizing: border-box;
         position: relative;
         background-color: rgba(48, 52, 63, 0.2);
-        box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
+        box-shadow: 0 0 1.5rem rgba(41, 181, 220, 0.955);
         transition: all 0.9s ease-in-out;
         }
 
