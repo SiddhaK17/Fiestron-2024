@@ -134,7 +134,6 @@ body {
   }
 }
 
-
 /* Ensure the grid layout adjusts dynamically */
 .gridSection {
   display: grid;
@@ -196,4 +195,54 @@ body {
   font-family: "Assistant", sans-serif;
   font-size: 1.22rem;
   color: #ffffff;
+}
+
+/* Statistics section */
+.stats-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5rem auto;
+  max-width: 1000px;
+  padding-inline: 0.4px;
+}
+
+.stats-container .stat {
+  background: #30343F;
+ border: 0.125rem #0FF0FF solid;
+ filter: drop-shadow(0 0 0.2rem #0ff0ff);
+  padding: 24px;
+  text-align: center;
+  color: #edf2f4;
+}
+
+.stats-container .stat .value {
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.stats-container .stat .type {
+  font-size: 20px;
+  color: #0FF0FF;
+  font-weight: 600;
+}
+
+.value.plus {
+  position: relative;
+}
+
+.value.plus::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  top: 18.5px;
+  font-size: 30px;
+}
+
+@media (max-width: 700px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
 }
