@@ -17,17 +17,17 @@
     box-sizing: border-box;
     position: relative;
     background-color: rgba(48, 52, 63, 0.2);
-    box-shadow: 0 0 2.2rem rgba(41, 181, 220, 0.955);
-    transition: all 0.9s ease-in-out;
+    box-shadow: 0 0 2rem rgba(41, 181, 220, 0.955);
+    transition: all 0.7s ease-in-out;
 }
 
 .teachers-wrapper:hover,
 .core-wrapper:hover,
 .hod-wrapper:hover,
 .website-team-wrapper:hover {
-    border-color: #ffd300;
-    box-shadow: 0 0 4rem #ff1493;
-    transition: all 0.9s ease-in-out;
+    border-color: #FFFFFF;
+    box-shadow: 0 0 3rem #bb04ee;
+    transition: all 0.7s ease-in-out;
 }
 
 .styling-team-of-teachers,
