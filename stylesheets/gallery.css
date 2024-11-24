@@ -12,15 +12,11 @@ body {
     background-repeat: no-repeat;
 }
 
-
-
 .centerNav {
     display: flex;
     justify-content: center;
     padding: 2.5%;
 }
-
-
 
 .container {
     margin: 2.5%;
@@ -49,38 +45,35 @@ p {
     font-size: 1.8rem;
 }
 
-
-
 a {
     color: transparent;
 }
 
-.titleHeading{
+.titleHeading {
     text-align: center;
     color: #0ff0ff;
     font-family: "Convergence", sans-serif;
     font-weight: 900;
     font-size: 5rem;
     padding-top: 2%;
-   
 }
 
 #Gallery-padding {
     padding-top: 7%;
 }
 
-@media (max-width: 771px){
+@media (max-width: 771px) {
     #Gallery-padding {
         padding-top: 15%;
     }
 }
 
-@media (max-width: 700px){
-    .titleHeading{
+@media (max-width: 700px) {
+    .titleHeading {
         font-size: 4rem;
     }
-    
-    p{
+
+    p {
         font-size: 1.25rem;
     }
 
@@ -89,122 +82,116 @@ a {
     }
 }
 
-@media (max-width: 580px){
-    .titleHeading{
+@media (max-width: 580px) {
+    .titleHeading {
         font-size: 3.8rem;
     }
 
-    p{
+    p {
         font-size: 1.25rem;
     }
 
-     #Gallery-padding {
-    padding-top: 7%;
-}
+    #Gallery-padding {
+        padding-top: 7%;
+    }
 
-    .container{
+    .container {
         padding: 3%;
     }
 }
 
-@media (max-width: 580px){
+@media (max-width: 580px) {
     #Gallery-padding {
         padding-top: 15%;
     }
 }
 
-@media (max-width: 491px){
-    .titleHeading{
+@media (max-width: 491px) {
+    .titleHeading {
         font-size: 3.5rem;
     }
 
-    p{
+    p {
         font-size: 1.03rem;
     }
- 
-    .container{
+
+    .container {
         padding: 3%;
     }
 
     #Gallery-padding {
         padding-top: 15%;
     }
-
 }
 
-@media (max-width: 434px){
-    .titleHeading{
+@media (max-width: 434px) {
+    .titleHeading {
         font-size: 3.2rem;
     }
 
-    p{
+    p {
         font-size: 1rem;
     }
 
-    .container{
+    .container {
         padding: 3%;
     }
 
     #Gallery-padding {
         padding-top: 20%;
     }
-
 }
 
-@media (max-width: 381px){
-    .titleHeading{
+@media (max-width: 381px) {
+    .titleHeading {
         font-size: 3.1rem;
     }
 
-    p{
+    p {
         font-size: 0.95rem;
     }
 
-    .container{
+    .container {
         padding: 3%;
     }
 
     #Gallery-padding {
         padding-top: 20%;
     }
-
 }
 
-@media (max-width: 374px){
-    .titleHeading{
+@media (max-width: 374px) {
+    .titleHeading {
         font-size: 3rem;
     }
 
-    p{
+    p {
         font-size: 0.9rem;
     }
 
-    .container{
+    .container {
         padding: 3%;
     }
 
     #Gallery-padding {
         padding-top: 20%;
     }
-
 }
 
-
-@media (max-width: 335px){
-    .titleHeading{
+@media (max-width: 335px) {
+    .titleHeading {
         font-size: 2.85rem;
     }
 
-    p{
+    p {
         font-size: 0.8rem;
     }
 
-    .container{
+    .container {
         padding: 2.7%;
     }
 
     #Gallery-padding {
         padding-top: 25%;
     }
-
 }

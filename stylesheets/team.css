@@ -25,11 +25,10 @@
 .core-wrapper:hover,
 .hod-wrapper:hover,
 .website-team-wrapper:hover {
-    border-color: #FFD300;
-    box-shadow: 0 0 4rem #FF1493;
+    border-color: #ffd300;
+    box-shadow: 0 0 4rem #ff1493;
     transition: all 0.9s ease-in-out;
 }
-
 
 .styling-team-of-teachers,
 .core,
@@ -39,11 +38,11 @@
     font-weight: 500;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: #000000;
-    color:#FFFFFF;
+    color: #ffffff;
     font-style: italic;
     text-decoration: underline solid rgb(40, 226, 236) 12%;
     text-underline-offset: 0.6rem;
-    text-shadow: 0 0 0.30rem rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.7);
     transition: all 0.5s ease-in-out;
 }
 
@@ -89,7 +88,7 @@
     font-weight: 380;
     padding-top: 1rem;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 3rem;
     padding-bottom: 2rem;
     width: 80%;
@@ -166,10 +165,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #5416B4,
-        #E400E0,
-        #F493F2,
-        #5416B4
+        #5416b4,
+        #e400e0,
+        #f493f2,
+        #5416b4
     );
     top: 50%;
     left: 50%;
@@ -194,7 +193,7 @@
 }
 
 .name-shalini-sinha {
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
@@ -251,10 +250,10 @@
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        #5416B4,
-        #E400E0,
-        #F493F2,
-        #5416B4
+        #5416b4,
+        #e400e0,
+        #f493f2,
+        #5416b4
     );
     top: 50%;
     left: 50%;
@@ -329,7 +328,7 @@
     width: 94%;
     padding-bottom: 94%;
     font-size: 1.3rem;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     word-spacing: 0.2rem;
     line-height: 1.7rem;
@@ -387,8 +386,8 @@
     background-image: conic-gradient(
         from var(--angle),
         #ff0000,
-        #ED020B,
-        #F46528,
+        #ed020b,
+        #f46528,
         #db3107
     );
     top: 50%;
@@ -451,7 +450,7 @@
     text-align: center;
     margin: 0 2rem;
     font-family: "Kanit", sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.4rem;
     word-spacing: 0.3rem;
     line-height: 1.8rem;
@@ -551,8 +550,8 @@
     background-image: conic-gradient(
         from var(--angle),
         #ff0000,
-        #ED020B,
-        #F46528,
+        #ed020b,
+        #f46528,
         #db3107
     );
     top: 50%;
@@ -607,7 +606,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -642,7 +641,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -676,7 +675,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -728,8 +727,8 @@
     background-image: conic-gradient(
         from var(--angle),
         #ff0000,
-        #ED020B,
-        #F46528,
+        #ed020b,
+        #f46528,
         #db3107
     );
     top: 50%;
@@ -758,7 +757,7 @@
     text-align: center;
     width: 100%;
     padding-top: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.58rem;
     word-spacing: 0.4rem;
     font-family: "Kanit", sans-serif;
@@ -843,7 +842,7 @@
 .website-team-names-3,
 .website-team-names-4 {
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     word-spacing: 0.4rem;
     line-height: 2rem;
@@ -902,7 +901,7 @@
 .website-team-names-5,
 .website-team-names-6 {
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     word-spacing: 0.4rem;
     line-height: 2rem;
@@ -938,8 +937,8 @@
     background-image: conic-gradient(
         from var(--angle),
         #ff0000,
-        #ED020B,
-        #F46528,
+        #ed020b,
+        #f46528,
         #db3107
     );
     top: 50%;
@@ -978,78 +977,80 @@
         border: calc(0.25rem + 0.1vw) solid #25a9dd;
         border-radius: calc(0.9rem + 0.3vw);
         padding: 0 calc(1.5rem + 0.5vw) calc(2rem + 0.5vw) calc(1.5rem + 0.5vw);
-        margin: calc(1.5rem + 0.5vw) calc(3rem + 1vw) calc(5rem + 1vw) calc(3rem + 1vw);
+        margin: calc(1.5rem + 0.5vw) calc(3rem + 1vw) calc(5rem + 1vw)
+            calc(3rem + 1vw);
         box-shadow: 0 0 calc(2rem + 0.5vw) rgba(41, 181, 220, 0.955);
         background-color: rgba(48, 52, 63, 0.2);
     }
 
     .ourteam {
-        padding: calc(7rem + 0.5vw) calc(2rem + 0.5vw) calc(1rem + 0.5vw) calc(2rem + 0.5vw); 
-        font-size: calc(3rem + 1vw); 
-        text-underline-offset: calc(0.5rem + 0.2vw); 
+        padding: calc(7rem + 0.5vw) calc(2rem + 0.5vw) calc(1rem + 0.5vw)
+            calc(2rem + 0.5vw);
+        font-size: calc(3rem + 1vw);
+        text-underline-offset: calc(0.5rem + 0.2vw);
         text-shadow: 0 0 calc(0.3rem + 0.1vw) rgba(15, 240, 255, 0.7);
         color: rgb(15, 240, 255);
         text-shadow: 0 0 4rem rgba(15, 240, 255, 0.7);
     }
-    
+
     .tagline {
-        padding-top: calc(0.5rem + 0.5vw); 
-        font-size: calc(2rem + 1vw); 
-        padding-bottom: calc(1.5rem + 0.5vw); 
-        width: calc(70% + 5vw); 
+        padding-top: calc(0.5rem + 0.5vw);
+        font-size: calc(2rem + 1vw);
+        padding-bottom: calc(1.5rem + 0.5vw);
+        width: calc(70% + 5vw);
         line-height: calc(3rem + 0.5vw);
-        word-spacing: calc(0.2rem + 0.1vw); 
+        word-spacing: calc(0.2rem + 0.1vw);
     }
-    
+
     .teachers {
-        padding-top: calc(2rem + 1vw); 
-        font-size: calc(2.8rem + 0.5vw); 
-        padding-bottom: calc(1rem + 1vw); 
-        width: calc(100% + 5vw); 
+        padding-top: calc(2rem + 1vw);
+        font-size: calc(2.8rem + 0.5vw);
+        padding-bottom: calc(1rem + 1vw);
+        width: calc(100% + 5vw);
         max-width: 600px;
     }
-    
+
     .styling-introducing-our-dedicated {
         font-family: "Young Serif", serif;
         font-weight: 100;
-        font-size: calc(3rem + 1vw); 
+        font-size: calc(3rem + 1vw);
     }
-    
+
     .row-one {
         padding-top: calc(2rem + 1vw);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%; 
+        width: 100%;
     }
-    
+
     .teacher1 {
-        width: calc(15% + 1vw); 
-        padding-bottom: calc(15% + 1vw); 
-        border-radius: calc(8% + 0.5vw); 
+        width: calc(15% + 1vw);
+        padding-bottom: calc(15% + 1vw);
+        border-radius: calc(8% + 0.5vw);
     }
-    
+
     .teacher1::after,
     .teacher1::before {
-        padding: calc(1.8% + 0.3vw); 
-        border-radius: calc(8% + 0.5vw); 
+        padding: calc(1.8% + 0.3vw);
+        border-radius: calc(8% + 0.5vw);
     }
-    
+
     .teacher1::before {
-        filter: blur(calc(2rem + 0.5vw)); 
+        filter: blur(calc(2rem + 0.5vw));
         opacity: 0.4;
     }
-    
+
     .name-shalini-sinha {
         text-align: center;
-        padding-top: calc(0.8rem + 0.5vw); 
-        font-size: calc(1rem + 0.5vw); 
+        padding-top: calc(0.8rem + 0.5vw);
+        font-size: calc(1rem + 0.5vw);
     }
-    
+
     .row-two {
-        padding-top: calc(2.5rem + 1vw); 
-        padding-bottom: calc(0.5rem + 0.5vw); 
-        gap: calc(1rem + 1vw); 
+        padding-top: calc(2.5rem + 1vw);
+        padding-bottom: calc(0.5rem + 0.5vw);
+        gap: calc(1rem + 1vw);
         width: 96%;
     }
 
@@ -1059,39 +1060,39 @@
     .teacher5,
     .teacher6,
     .teacher7 {
-        width: calc(90% + 1.5vw); 
-        padding-bottom: calc(90% + 1vw); 
-        border: calc(0.15rem + 0.05vw) solid #222222; 
+        width: calc(90% + 1.5vw);
+        padding-bottom: calc(90% + 1vw);
+        border: calc(0.15rem + 0.05vw) solid #222222;
     }
-    
-    .teacher2::before, 
-    .teacher3::before, 
-    .teacher4::before, 
-    .teacher5::before, 
-    .teacher6::before, 
-    .teacher7::before, 
-    .teacher2::after, 
-    .teacher3::after, 
-    .teacher4::after, 
-    .teacher5::after, 
-    .teacher6::after, 
+
+    .teacher2::before,
+    .teacher3::before,
+    .teacher4::before,
+    .teacher5::before,
+    .teacher6::before,
+    .teacher7::before,
+    .teacher2::after,
+    .teacher3::after,
+    .teacher4::after,
+    .teacher5::after,
+    .teacher6::after,
     .teacher7::after {
-        height: calc(90% + 2vw); 
-        width: calc(90% + 2vw); 
+        height: calc(90% + 2vw);
+        width: calc(90% + 2vw);
         padding: calc(0.001rem + 0.0001vw);
         border-radius: 50%;
     }
-    
+
     .teacher2::before,
     .teacher3::before,
     .teacher4::before,
     .teacher5::before,
     .teacher6::before,
     .teacher7::before {
-    filter: blur(calc(1.5rem + 0.2vw)); 
-    opacity: 0.4;
+        filter: blur(calc(1.5rem + 0.2vw));
+        opacity: 0.4;
     }
-    
+
     .teacher-names-wrapper {
         display: flex;
         flex-direction: column;
@@ -1116,10 +1117,10 @@
 
     .core {
         padding-top: calc(2rem + 1vw);
-        font-size: calc(2.5rem + 1vw); 
-        padding-bottom: calc(3.4rem + 1vw); 
+        font-size: calc(2.5rem + 1vw);
+        padding-bottom: calc(3.4rem + 1vw);
     }
-    
+
     .core-pic-adjusting {
         width: calc(95% + 2vw);
         margin: 0 auto;
@@ -1130,71 +1131,71 @@
     .corepic2,
     .corepic3,
     .corepic4 {
-        width: calc(100% + 1vw); 
-        padding-bottom: calc(100% + 1vw); 
-        padding-top: calc(1rem + 0.5vw); 
-        border: calc(0.12rem + 0.03vw) solid #222222; 
-}
+        width: calc(100% + 1vw);
+        padding-bottom: calc(100% + 1vw);
+        padding-top: calc(1rem + 0.5vw);
+        border: calc(0.12rem + 0.03vw) solid #222222;
+    }
 
-.corepic1::before,
-.corepic2::before,
-.corepic3::before,
-.corepic4::before,
-.corepic1::after,
-.corepic2::after,
-.corepic3::after,
-.corepic4::after {
-    height: calc(95% + 1.5vw); 
-    width: calc(95% + 1.5vw);  
-    padding: calc(0.002rem + 0.1vw); 
-}
+    .corepic1::before,
+    .corepic2::before,
+    .corepic3::before,
+    .corepic4::before,
+    .corepic1::after,
+    .corepic2::after,
+    .corepic3::after,
+    .corepic4::after {
+        height: calc(95% + 1.5vw);
+        width: calc(95% + 1.5vw);
+        padding: calc(0.002rem + 0.1vw);
+    }
 
-.corepic1::before,
-.corepic2::before,
-.corepic3::before,
-.corepic4::before {
-    filter: blur(calc(1.8rem + 0.5vw)); 
-    opacity: 0.3;
-}
+    .corepic1::before,
+    .corepic2::before,
+    .corepic3::before,
+    .corepic4::before {
+        filter: blur(calc(1.8rem + 0.5vw));
+        opacity: 0.3;
+    }
 
-.core-names-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(16% + 2vw);
-}
+    .core-names-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(16% + 2vw);
+    }
 
-.core-names-1,
-.core-names-2,
-.core-names-3,
-.core-names-4 {
-    padding-top: calc(1rem + 0.2vw);
-    margin: 0 calc(2rem + 0.5vw);
-    color: #FFFFFF;
-    font-size: calc(1rem + 0.2vw);
-    word-spacing: calc(0.3rem + 0.1vw);
-    line-height: calc(1.2rem + 0.1vw);
+    .core-names-1,
+    .core-names-2,
+    .core-names-3,
+    .core-names-4 {
+        padding-top: calc(1rem + 0.2vw);
+        margin: 0 calc(2rem + 0.5vw);
+        color: #ffffff;
+        font-size: calc(1rem + 0.2vw);
+        word-spacing: calc(0.3rem + 0.1vw);
+        line-height: calc(1.2rem + 0.1vw);
     }
 
     .meet-our-styling {
-        font-size: calc(3rem + 0.2vw); 
+        font-size: calc(3rem + 0.2vw);
     }
-    
+
     .dept-hod-styling {
-        text-shadow: 0 0 calc(0.35rem + 0.05vw) rgba(0, 0, 0, 0.7); 
+        text-shadow: 0 0 calc(0.35rem + 0.05vw) rgba(0, 0, 0, 0.7);
     }
-    
+
     .hodintroline {
-        padding-top: calc(2.7rem + 1vw); 
-        padding-bottom: calc(1rem + 0.5vw); 
-        font-size: calc(2.3rem + 0.3vw); 
+        padding-top: calc(2.7rem + 1vw);
+        padding-bottom: calc(1rem + 0.5vw);
+        font-size: calc(2.3rem + 0.3vw);
     }
 
     .name-adjust {
         width: calc(63% + 1vw);
         margin: 0 auto;
     }
-    
+
     .first-order {
         display: flex;
         justify-content: space-between;
@@ -1237,7 +1238,7 @@
         border: calc(0.17rem + 0.05vw) solid #222222;
         position: relative;
     }
-    
+
     .admin-pic::before,
     .accounts-pic::before,
     .coverage-pic::before,
@@ -1258,7 +1259,7 @@
     .technical-pic::after {
         height: calc(94.5% + 1vw);
         width: calc(94.5% + 1vw);
-        padding: calc(2.3% + 0.2vw); 
+        padding: calc(2.3% + 0.2vw);
         border-radius: calc(12% + 0.5vw) / calc(17% + 0.7vw);
     }
 
@@ -1272,9 +1273,8 @@
     .prandmarketing-pic::before,
     .technical-pic::before {
         filter: blur(calc(1.2rem + 0.1vw));
-        opacity: calc(0.7 + 0.05); 
+        opacity: calc(0.7 + 0.05);
     }
-
 
     .admin-name,
     .accounts-name,
@@ -1282,7 +1282,7 @@
         width: 100%;
         text-align: center;
         padding-top: calc(1rem + 0.2vw);
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: calc(1.1rem + 0.2vw);
         word-spacing: calc(0.2rem + 0.1vw);
         font-family: "Kanit", sans-serif;
@@ -1295,138 +1295,137 @@
         padding-top: calc(0.5rem + 0.5vw);
     }
 
-.decor-name,
-.hospitality-name,
-.design-name {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: calc(1rem + 0.2vw);
-    color: #FFFFFF;
-    font-size: calc(1.1rem + 0.2vw);
-    word-spacing: calc(0.2rem + 0.1vw);
-    font-family: "Kanit", sans-serif;
-    padding-bottom: calc(2rem + 0.3vw);
-}
+    .decor-name,
+    .hospitality-name,
+    .design-name {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: calc(1rem + 0.2vw);
+        color: #ffffff;
+        font-size: calc(1.1rem + 0.2vw);
+        word-spacing: calc(0.2rem + 0.1vw);
+        font-family: "Kanit", sans-serif;
+        padding-bottom: calc(2rem + 0.3vw);
+    }
 
-.hospitality-name-adjust {
-    width: 60%;
-    margin: 0 auto;
-}
+    .hospitality-name-adjust {
+        width: 60%;
+        margin: 0 auto;
+    }
 
-.third-order {
-    display: flex;
-    justify-content: space-between;
-    padding-top: calc(1rem + 0.5vw);
-}
+    .third-order {
+        display: flex;
+        justify-content: space-between;
+        padding-top: calc(1rem + 0.5vw);
+    }
 
-.logistics-name,
-.prandmarketing-name,
-.technical-name {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: calc(1rem + 0.2vw);
-    color: #FFFFFF;
-    font-size: calc(1.1rem + 0.2vw);
-    word-spacing: calc(0.2rem + 0.1vw);
-    font-family: "Kanit", sans-serif;
-}
+    .logistics-name,
+    .prandmarketing-name,
+    .technical-name {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: calc(1rem + 0.2vw);
+        color: #ffffff;
+        font-size: calc(1.1rem + 0.2vw);
+        word-spacing: calc(0.2rem + 0.1vw);
+        font-family: "Kanit", sans-serif;
+    }
 
+    .fourth-order {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: calc(3.5rem + 0.5vw);
+    }
 
-.fourth-order {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding-top: calc(3.5rem + 0.5vw);
-}
+    .security {
+        font-size: calc(1.5rem + 0.2vw);
+        padding: calc(1.5rem + 0.2vw) 0 0 0;
+        color: rgb(15, 240, 255);
+        width: calc(35% + 2vw);
+        text-align: center;
+        word-spacing: calc(0.4rem + 0.1vw);
+        font-family: "Asap", sans-serif;
+        font-weight: 600;
+    }
 
-.security {
-    font-size: calc(1.5rem + 0.2vw);
-    padding: calc(1.5rem + 0.2vw) 0 0 0;
-    color: rgb(15, 240, 255);
-    width: calc(35% + 2vw);
-    text-align: center;
-    word-spacing: calc(0.4rem + 0.1vw);
-    font-family: "Asap", sans-serif;
-    font-weight: 600;
-}
+    .security-pic {
+        width: calc(60% + 2vw);
+        padding-bottom: calc(63% + 2vw);
+        margin: 0 auto;
+        background-image: url(../images/sampleTeam.jpg);
+        background-position: center center;
+        background-size: cover;
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
+        border: calc(0.17rem + 0.05vw) solid #222222;
+        position: relative;
+    }
 
-.security-pic {
-    width: calc(60% + 2vw);
-    padding-bottom: calc(63% + 2vw);
-    margin: 0 auto;
-    background-image: url(../images/sampleTeam.jpg);
-    background-position: center center;
-    background-size: cover;
-    border-radius: calc(10% + 1vw) / calc(15% + 1vw);
-    border: calc(0.17rem + 0.05vw) solid #222222;
-    position: relative;
-}
-
-.security-name {
-    text-align: center;
-    width: 100%;
-    padding-top: calc(1rem + 0.2vw);
-    color: #FFFFFF;
-    font-size: calc(1.1rem + 0.2vw);
-    word-spacing: calc(0.2rem + 0.1vw);
-    font-family: "Kanit", sans-serif;
-    padding-bottom: 1.5rem;
-}
+    .security-name {
+        text-align: center;
+        width: 100%;
+        padding-top: calc(1rem + 0.2vw);
+        color: #ffffff;
+        font-size: calc(1.1rem + 0.2vw);
+        word-spacing: calc(0.2rem + 0.1vw);
+        font-family: "Kanit", sans-serif;
+        padding-bottom: 1.5rem;
+    }
 
     .security-pic::before,
     .security-pic::after {
         height: calc(95.5% + 1vw);
         width: calc(95.5% + 1vw);
-        padding: calc(2% + 0.2vw); 
+        padding: calc(2% + 0.2vw);
         border-radius: calc(12% + 0.5vw) / calc(17% + 0.7vw);
     }
 
     .security-pic::before {
-        filter: blur(calc(1.2rem + 0.1vw)); 
-        opacity: calc(0.7 + 0.05); 
+        filter: blur(calc(1.2rem + 0.1vw));
+        opacity: calc(0.7 + 0.05);
     }
 
-.website-team-intro { 
-    padding-top: calc(2rem + 1vw);
-    padding-bottom: calc(2rem + 1vw);
-    font-size: calc(2.5rem + 1vw);
-    width: calc(80% + 5vw);
-    line-height: calc(4rem + 1vw);
-}
+    .website-team-intro {
+        padding-top: calc(2rem + 1vw);
+        padding-bottom: calc(2rem + 1vw);
+        font-size: calc(2.5rem + 1vw);
+        width: calc(80% + 5vw);
+        line-height: calc(4rem + 1vw);
+    }
 
-.meet-the-rising-stars-of-our-styling {
-    font-size: calc(2.8rem + 1vw);
-}
+    .meet-the-rising-stars-of-our-styling {
+        font-size: calc(2.8rem + 1vw);
+    }
 
-.website-team-styling {
-    font-size: calc(3rem + 1vw);
-    line-height: calc(2.5rem + 0.5vw);
-}
+    .website-team-styling {
+        font-size: calc(3rem + 1vw);
+        line-height: calc(2.5rem + 0.5vw);
+    }
 
-.website-team-pictures-row-one {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: calc(92% + 1vw);
-    margin: 0 auto;
-    padding-top: calc(2rem + 0.5vw);
-    gap: calc(1.8rem + 1vw);
-}
+    .website-team-pictures-row-one {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: calc(92% + 1vw);
+        margin: 0 auto;
+        padding-top: calc(2rem + 0.5vw);
+        gap: calc(1.8rem + 1vw);
+    }
 
-.pic-1,
-.pic-2,
-.pic-3,
-.pic-4 {
-    width: calc(100% + 0.5vw);
-    padding-bottom: calc(100% + 0.5vw);
-    padding-top: calc(2rem + 0.3vw);
-    background-size: cover;
-    border-radius: calc(10% + 0.5vw);
-    border: calc(0.17rem + 0.05vw) solid #222222;
-    position: relative;
+    .pic-1,
+    .pic-2,
+    .pic-3,
+    .pic-4 {
+        width: calc(100% + 0.5vw);
+        padding-bottom: calc(100% + 0.5vw);
+        padding-top: calc(2rem + 0.3vw);
+        background-size: cover;
+        border-radius: calc(10% + 0.5vw);
+        border: calc(0.17rem + 0.05vw) solid #222222;
+        position: relative;
     }
 
     .website-team-names-1,
@@ -1434,7 +1433,7 @@
     .website-team-names-3,
     .website-team-names-4 {
         font-size: calc(1.1rem + 0.2vw);
-        color: #FFFFFF;
+        color: #ffffff;
         text-align: center;
         word-spacing: calc(0.4rem + 0.1vw);
         line-height: calc(1.4rem + 0.2vw);
@@ -1448,11 +1447,11 @@
         flex-direction: column;
         align-items: center;
         width: calc(25% + 2vw);
-    }    
+    }
 
     .to-give-padding {
         padding-top: calc(2.5rem + 1vw);
-    }    
+    }
 
     .website-team-pictures-row-two {
         padding-top: calc(1.5rem + 0.3vw);
@@ -1477,19 +1476,19 @@
     .pic-6 {
         background-position: center center;
         background-size: 180%;
-    }    
+    }
 
     .webteam-names-wrapper2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: calc(26% + 2vw);
-    }    
+    }
 
     .website-team-names-5,
     .website-team-names-6 {
         font-size: calc(1.3rem + 0.2vw);
-        color: #FFFFFF;
+        color: #ffffff;
         text-align: center;
         word-spacing: calc(0.4rem + 0.1vw);
         line-height: calc(1.4rem + 0.2vw);
@@ -1513,8 +1512,8 @@
     .pic-5::after,
     .pic-6::after {
         height: calc(94% + 1vw);
-        width: calc(94% + 1vw); 
-        padding: calc(2.6% + 0.3vw); 
+        width: calc(94% + 1vw);
+        padding: calc(2.6% + 0.3vw);
         border-radius: calc(10% + 0.5vw);
     }
 
@@ -1525,23 +1524,21 @@
     .pic-5::before,
     .pic-6::before,
     .pic-7::before {
-        filter: blur(calc(1.2rem + 0.2vw)); 
-        opacity: calc(0.5 + 0.05); 
+        filter: blur(calc(1.2rem + 0.2vw));
+        opacity: calc(0.5 + 0.05);
     }
-
 }
 
 @media (min-width: 1400px) and (max-width: 1450px) {
     .styling-team-of-teachers {
-        font-size: calc(2.2rem + 0.5vw); 
+        font-size: calc(2.2rem + 0.5vw);
         -webkit-text-stroke-width: 0.01rem;
     }
-
 }
 
 @media (min-width: 1450px) and (max-width: 1480px) {
     .meet-our-styling {
-        font-size: calc(2.9rem + 0.2vw); 
+        font-size: calc(2.9rem + 0.2vw);
         margin: 0 auto;
     }
 }
@@ -1553,7 +1550,7 @@
 }
 
 @media (min-width: 1124px) and (max-width: 1154px) {
-    .meet-our-styling, 
+    .meet-our-styling,
     .dept-hod-styling {
         width: 80%;
         margin: 0 auto;
@@ -1570,17 +1567,13 @@
         width: 50%;
         margin: 0 auto;
     }
-
 }
 
 @media (min-width: 936px) and (max-width: 1227px) {
     .website-team-names-6 {
         width: 75%;
     }
-
 }
-
-
 
 @media (min-width: 320px) and (max-width: 768px) {
     .teachers-wrapper,
@@ -1589,8 +1582,10 @@
     .website-team-wrapper {
         border: calc(0.2rem + 0.1vw) solid #25a9dd;
         border-radius: calc(0.5rem + 0.1vw);
-        padding: calc(0.8rem + 0.5vw) calc(1.2rem + 0.5vw) calc(2rem + 0.8vw) calc(1.2rem + 0.5vw);
-        margin: calc(1rem + 0.5vw) calc(2rem + 1vw) calc(3rem + 1vw) calc(2rem + 1vw);
+        padding: calc(0.8rem + 0.5vw) calc(1.2rem + 0.5vw) calc(2rem + 0.8vw)
+            calc(1.2rem + 0.5vw);
+        margin: calc(1rem + 0.5vw) calc(2rem + 1vw) calc(3rem + 1vw)
+            calc(2rem + 1vw);
         box-sizing: border-box;
         position: relative;
         background-color: rgba(48, 52, 63, 0.2);
@@ -1619,7 +1614,7 @@
         padding-top: calc(0.9rem + 0.3vw);
         padding-bottom: calc(1rem + 1vw);
         text-align: center;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: calc(1.3rem + 0.5vw);
         width: calc(85% + 3vw);
         margin: 0 auto;
@@ -1629,34 +1624,34 @@
     }
 
     .teachers {
-        padding-top: calc(1rem + 0.5vw); 
-        padding-bottom: calc(0.5rem + 0.5vw);  
+        padding-top: calc(1rem + 0.5vw);
+        padding-bottom: calc(0.5rem + 0.5vw);
         text-align: center;
         color: rgb(15, 240, 255);
-        font-size: calc(2rem + 0.5vw);  
-        width: calc(93% + 3vw); 
+        font-size: calc(2rem + 0.5vw);
+        width: calc(93% + 3vw);
         margin: 0 auto;
     }
 
     .styling-introducing-our-dedicated {
-        font-size: calc(1.3rem + 2vw);  
+        font-size: calc(1.3rem + 2vw);
     }
 
     .styling-team-of-teachers {
         font-weight: 200;
-        font-size: calc(0.7rem + 2vw);  
-        word-spacing: 0.01rem;   
-        -webkit-text-stroke-width: 0.001rem;   
+        font-size: calc(0.7rem + 2vw);
+        word-spacing: 0.01rem;
+        -webkit-text-stroke-width: 0.001rem;
     }
 
     .row-one {
-        padding-top: calc(2rem + 0.5vw); 
+        padding-top: calc(2rem + 0.5vw);
     }
 
     .teacher1 {
-        width: 38%;  
-        padding-bottom: 38%;  
-        border-radius: calc(10% + 0.2vw); 
+        width: 38%;
+        padding-bottom: 38%;
+        border-radius: calc(10% + 0.2vw);
     }
 
     .teacher1::after,
@@ -1673,8 +1668,8 @@
     }
 
     .name-shalini-sinha {
-        padding-top: calc(0.7rem + 0.3vw); 
-        font-size: calc(0.8rem + 0.7vw);   
+        padding-top: calc(0.7rem + 0.3vw);
+        font-size: calc(0.8rem + 0.7vw);
     }
 
     .row-two {
@@ -1708,7 +1703,7 @@
         background-image: url(../images/team/geeta.jpg);
         background-size: 170%;
         background-position: center 15%;
-    }    
+    }
 
     .teacher2-name,
     .teacher3-name,
@@ -1716,7 +1711,7 @@
     .teacher5-name,
     .teacher6-name,
     .teacher7-name {
-        font-size: calc(0.7rem + 0.7vw); 
+        font-size: calc(0.7rem + 0.7vw);
         padding-bottom: 1rem;
         line-height: calc(1.2rem + 0.2vw);
         padding-bottom: calc(1.5rem + 0.5vw);
@@ -1724,44 +1719,43 @@
         word-spacing: calc(0.1rem + 0.1vw);
     }
 
-.teacher2::before,
-.teacher3::before,
-.teacher4::before,
-.teacher5::before,
-.teacher6::before,
-.teacher7::before,
-.teacher2::after,
-.teacher3::after,
-.teacher4::after,
-.teacher5::after,
-.teacher6::after,
-.teacher7::after {
-    height: 100%;
-    width: 100%;
-    padding: calc(2% + 0.3vw);
-    border-radius: calc(50% + 0.01vw);
-    animation: 2.5s spin linear infinite;
-}
+    .teacher2::before,
+    .teacher3::before,
+    .teacher4::before,
+    .teacher5::before,
+    .teacher6::before,
+    .teacher7::before,
+    .teacher2::after,
+    .teacher3::after,
+    .teacher4::after,
+    .teacher5::after,
+    .teacher6::after,
+    .teacher7::after {
+        height: 100%;
+        width: 100%;
+        padding: calc(2% + 0.3vw);
+        border-radius: calc(50% + 0.01vw);
+        animation: 2.5s spin linear infinite;
+    }
 
-.teacher2::before,
-.teacher3::before,
-.teacher4::before,
-.teacher5::before,
-.teacher6::before,
-.teacher7::before {
-    filter: blur(calc(0.5rem + 0.5vw));
-    opacity: 0.6;
-}
-
+    .teacher2::before,
+    .teacher3::before,
+    .teacher4::before,
+    .teacher5::before,
+    .teacher6::before,
+    .teacher7::before {
+        filter: blur(calc(0.5rem + 0.5vw));
+        opacity: 0.6;
+    }
 
     .core {
         padding-top: calc(1rem + 1vw);
         padding-bottom: calc(2rem + 1vw);
         text-align: center;
         font-size: calc(1rem + 2vw);
-        line-height: calc(2rem + 0.2vw); 
+        line-height: calc(2rem + 0.2vw);
         text-underline-offset: 0.5rem;
-        -webkit-text-stroke-width: 0.001rem;   
+        -webkit-text-stroke-width: 0.001rem;
     }
 
     .core-pic-adjusting {
@@ -1794,8 +1788,8 @@
         font-size: calc(0.7rem + 0.7vw);
         padding-top: calc(0.8rem + 0.2vw);
         margin: 0;
-        word-spacing: calc(0.1rem + 0.1vw); 
-        line-height: calc(1.1rem + 0.2vw); 
+        word-spacing: calc(0.1rem + 0.1vw);
+        line-height: calc(1.1rem + 0.2vw);
     }
 
     .corepic1::before,
@@ -1817,45 +1811,45 @@
     .corepic2::before,
     .corepic3::before,
     .corepic4::before {
-        filter: blur(calc(1rem + 0.5vw)); 
-        opacity: 0.7; 
+        filter: blur(calc(1rem + 0.5vw));
+        opacity: 0.7;
     }
 
     .hodintroline {
-        padding-top: calc(0.7rem + 1vw); 
+        padding-top: calc(0.7rem + 1vw);
         padding-bottom: calc(1rem + 0.5vw);
         text-align: center;
-        width: 100%; 
-        text-transform: capitalize; 
+        width: 100%;
+        text-transform: capitalize;
     }
 
     .meet-our-styling {
-        font-family: "Young Serif", serif; 
-        font-weight: 100; 
-        font-size: calc(1.4rem + 1vw); 
+        font-family: "Young Serif", serif;
+        font-weight: 100;
+        font-size: calc(1.4rem + 1vw);
     }
 
     .dept-hod-styling {
         text-shadow: 0 0 calc(0.35rem + 0.1vw) rgba(0, 0, 0, 0.7);
-        font-size: calc(1.2rem + 1vw); 
-        line-height: calc(0.01rem + 0.2vw); 
+        font-size: calc(1.2rem + 1vw);
+        line-height: calc(0.01rem + 0.2vw);
         width: 100%;
         text-underline-offset: 0.6rem;
         margin: 0 auto;
-        -webkit-text-stroke-width: 0.001rem;   
+        -webkit-text-stroke-width: 0.001rem;
     }
 
     .first-order {
         display: flex;
-        flex-direction: column; 
-        justify-content: center; 
+        flex-direction: column;
+        justify-content: center;
         padding-top: calc(0.2rem + 2vw);
     }
 
     .name-adjust {
         width: 100%;
     }
-    
+
     .admin,
     .accounts,
     .coverage,
@@ -1865,17 +1859,17 @@
     .logistics,
     .prandmarketing,
     .technical {
-        font-size: calc(1.2rem + 1vw); 
-        padding-top: calc(0.3rem + 2vw); 
+        font-size: calc(1.2rem + 1vw);
+        padding-top: calc(0.3rem + 2vw);
         margin: 0 auto;
         color: rgb(15, 240, 255);
-        width: 65%; 
+        width: 65%;
         text-align: center;
         word-spacing: 0.2rem;
         font-family: "Asap", sans-serif;
         font-weight: 600;
     }
-    
+
     .admin-pic,
     .accounts-pic,
     .coverage-pic,
@@ -1885,11 +1879,11 @@
     .logistics-pic,
     .prandmarketing-pic,
     .technical-pic {
-        width: 60%; 
-        padding-bottom: calc(40% + 10vw); 
+        width: 60%;
+        padding-bottom: calc(40% + 10vw);
         margin: 0 auto;
         background-size: cover;
-        border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
         border: 0.17rem solid #222222;
         position: relative;
     }
@@ -1897,11 +1891,11 @@
     .admin-name,
     .accounts-name,
     .coverage-name {
-        width: 100%; 
+        width: 100%;
         text-align: center;
-        padding-top: calc(0.6rem + 1vw); 
-        padding-bottom: calc(1.5rem + 1vw); 
-        color: #FFFFFF;
+        padding-top: calc(0.6rem + 1vw);
+        padding-bottom: calc(1.5rem + 1vw);
+        color: #ffffff;
         font-size: calc(0.7rem + 0.8vw);
         word-spacing: 0.2rem;
         font-family: "Kanit", sans-serif;
@@ -1910,305 +1904,302 @@
 
     .second-order {
         display: flex;
-        flex-direction: column; 
-        justify-content: center; 
-        padding-top: calc(0.5rem + 1vw); 
-        width: 100%; 
+        flex-direction: column;
+        justify-content: center;
+        padding-top: calc(0.5rem + 1vw);
+        width: 100%;
     }
 
-.decor-name,
-.hospitality-name,
-.design-name {
-    width: 100%;
-    text-align: center;
-    padding-top: calc(0.6rem + 1vw); 
-    color: #FFFFFF;
-    font-size: calc(0.7rem + 0.8vw);
-    word-spacing: 0.2rem;
-    font-family: "Kanit", sans-serif;
-    padding-bottom: calc(1.5rem + 1vw); 
-}
+    .decor-name,
+    .hospitality-name,
+    .design-name {
+        width: 100%;
+        text-align: center;
+        padding-top: calc(0.6rem + 1vw);
+        color: #ffffff;
+        font-size: calc(0.7rem + 0.8vw);
+        word-spacing: 0.2rem;
+        font-family: "Kanit", sans-serif;
+        padding-bottom: calc(1.5rem + 1vw);
+    }
 
-.third-order {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: calc(0.5rem + 1vw); 
-    width: 100%; 
-}
+    .third-order {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: calc(0.5rem + 1vw);
+        width: 100%;
+    }
 
-.logistics-name,
-.prandmarketing-name,
-.technical-name {
-    width: 100%;
-    text-align: center;
-    padding-top: calc(0.6rem + 1vw); 
-    padding-bottom: calc(1.5rem + 1vw); 
-    color: #FFFFFF;
-    font-size: calc(0.7rem + 0.8vw);
-    word-spacing: 0.2rem;
-    font-family: "Kanit", sans-serif;
-}
+    .logistics-name,
+    .prandmarketing-name,
+    .technical-name {
+        width: 100%;
+        text-align: center;
+        padding-top: calc(0.6rem + 1vw);
+        padding-bottom: calc(1.5rem + 1vw);
+        color: #ffffff;
+        font-size: calc(0.7rem + 0.8vw);
+        word-spacing: 0.2rem;
+        font-family: "Kanit", sans-serif;
+    }
 
-.admin-pic::before,
-.accounts-pic::before,
-.coverage-pic::before,
-.decor-pic::before,
-.design-pic::before,
-.hospitality-pic::before,
-.logistics-pic::before,
-.prandmarketing-pic::before,
-.technical-pic::before,
-.admin-pic::after,
-.accounts-pic::after,
-.coverage-pic::after,
-.decor-pic::after,
-.design-pic::after,
-.hospitality-pic::after,
-.logistics-pic::after,
-.prandmarketing-pic::after,
-.technical-pic::after {
-    height: 100%;
-    width: 100%;
-    padding: calc(2.4% + 0.2vw); 
-    border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
-    animation: spin 3s linear infinite; 
-}
+    .admin-pic::before,
+    .accounts-pic::before,
+    .coverage-pic::before,
+    .decor-pic::before,
+    .design-pic::before,
+    .hospitality-pic::before,
+    .logistics-pic::before,
+    .prandmarketing-pic::before,
+    .technical-pic::before,
+    .admin-pic::after,
+    .accounts-pic::after,
+    .coverage-pic::after,
+    .decor-pic::after,
+    .design-pic::after,
+    .hospitality-pic::after,
+    .logistics-pic::after,
+    .prandmarketing-pic::after,
+    .technical-pic::after {
+        height: 100%;
+        width: 100%;
+        padding: calc(2.4% + 0.2vw);
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
+        animation: spin 3s linear infinite;
+    }
 
-.admin-pic::before,
-.accounts-pic::before,
-.coverage-pic::before,
-.decor-pic::before,
-.design-pic::before,
-.hospitality-pic::before,
-.logistics-pic::before,
-.prandmarketing-pic::before,
-.technical-pic::before {
-    filter: blur(calc(1.6rem + 0.2vw)); 
-    opacity: 0.8; 
-}
+    .admin-pic::before,
+    .accounts-pic::before,
+    .coverage-pic::before,
+    .decor-pic::before,
+    .design-pic::before,
+    .hospitality-pic::before,
+    .logistics-pic::before,
+    .prandmarketing-pic::before,
+    .technical-pic::before {
+        filter: blur(calc(1.6rem + 0.2vw));
+        opacity: 0.8;
+    }
 
-.fourth-order {
-    width: 100%; 
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    padding-top: calc(0.1rem + 1vw); 
-}
+    .fourth-order {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: calc(0.1rem + 1vw);
+    }
 
-.security {
-    font-size: calc(1.2rem + 1vw);
-    padding-top: calc(0.5rem + 2vw); 
-    color: rgb(15, 240, 255);
-    width: calc(90% - 4vw); 
-    text-align: center;
-    word-spacing: 0.4rem;
-    font-family: "Asap", sans-serif;
-    font-weight: 600;
-    margin: 0 auto;
-}
+    .security {
+        font-size: calc(1.2rem + 1vw);
+        padding-top: calc(0.5rem + 2vw);
+        color: rgb(15, 240, 255);
+        width: calc(90% - 4vw);
+        text-align: center;
+        word-spacing: 0.4rem;
+        font-family: "Asap", sans-serif;
+        font-weight: 600;
+        margin: 0 auto;
+    }
 
-.security-pic {
-    width: calc(52% - 4vw); 
-    padding-bottom: calc(32% + 10vw); 
-    margin: 0 auto;
-    background-image: url(../images/sampleTeam.jpg);
-    background-position: center center;
-    background-size: cover;
-    border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
-    border: 0.17rem solid #222222;
-    position: relative;
-}
+    .security-pic {
+        width: calc(52% - 4vw);
+        padding-bottom: calc(32% + 10vw);
+        margin: 0 auto;
+        background-image: url(../images/sampleTeam.jpg);
+        background-position: center center;
+        background-size: cover;
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
+        border: 0.17rem solid #222222;
+        position: relative;
+    }
 
-.security-name {
-    text-align: center;
-    width: 100%;
-    padding-top: calc(0.6rem + 1vw); 
-    padding-bottom: calc(1.5rem + 1vw); 
-    color: #FFFFFF;
-    font-size: calc(0.7rem + 0.8vw);
-    word-spacing: 0.2rem;
-    font-family: "Kanit", sans-serif;
-    padding-bottom: 1.5rem;
-}
+    .security-name {
+        text-align: center;
+        width: 100%;
+        padding-top: calc(0.6rem + 1vw);
+        padding-bottom: calc(1.5rem + 1vw);
+        color: #ffffff;
+        font-size: calc(0.7rem + 0.8vw);
+        word-spacing: 0.2rem;
+        font-family: "Kanit", sans-serif;
+        padding-bottom: 1.5rem;
+    }
 
-.security-pic::before,
-.security-pic::after {
-    height: 100%;
-    width: 100%;
-    padding: calc(2.4% + 0.2vw);
-    border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
-    animation: spin 3s linear infinite; 
-}
+    .security-pic::before,
+    .security-pic::after {
+        height: 100%;
+        width: 100%;
+        padding: calc(2.4% + 0.2vw);
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
+        animation: spin 3s linear infinite;
+    }
 
-.security-pic::before {
-    filter: blur(calc(1.5rem + 0.2vw)); 
-}
+    .security-pic::before {
+        filter: blur(calc(1.5rem + 0.2vw));
+    }
 
-.website-team-intro {
-    padding-top: calc(0.5rem + 2vw);
-    padding-bottom: calc(0.001rem + 2vw); 
-    color: rgb(15, 240, 255);
-    text-align: center;
-    font-size: calc(0.8rem + 1vw); 
-    width: calc(100% - 4vw); 
-    margin: 0 auto;
-    text-transform: capitalize;
-}
+    .website-team-intro {
+        padding-top: calc(0.5rem + 2vw);
+        padding-bottom: calc(0.001rem + 2vw);
+        color: rgb(15, 240, 255);
+        text-align: center;
+        font-size: calc(0.8rem + 1vw);
+        width: calc(100% - 4vw);
+        margin: 0 auto;
+        text-transform: capitalize;
+    }
 
-.meet-the-rising-stars-of-our-styling {
-    width: 100%;
-    font-family: "Young Serif", serif;
-    font-weight: 100;
-    font-size: calc(1.4rem + 2vw); 
-    line-height: calc(2rem + 3vw); 
-    text-transform: none;
-    text-align: center;
-}
+    .meet-the-rising-stars-of-our-styling {
+        width: 100%;
+        font-family: "Young Serif", serif;
+        font-weight: 100;
+        font-size: calc(1.4rem + 2vw);
+        line-height: calc(2rem + 3vw);
+        text-transform: none;
+        text-align: center;
+    }
 
-.website-team-styling  {
-    font-size: calc(0.9rem + 2vw); 
-    text-align: center;
-    position: relative;
-    top: calc(-1rem - 0.5vw);
-    -webkit-text-stroke-width: 0.001rem; 
-}
+    .website-team-styling {
+        font-size: calc(0.9rem + 2vw);
+        text-align: center;
+        position: relative;
+        top: calc(-1rem - 0.5vw);
+        -webkit-text-stroke-width: 0.001rem;
+    }
 
-.website-team-pictures-row-one {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 1.2rem;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: calc(0.001rem + 0.5vw);
-}
+    .website-team-pictures-row-one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: calc(0.001rem + 0.5vw);
+    }
 
-.pic-1,
-.pic-2,
-.pic-3,
-.pic-4 {
-    width: 75%; 
-    padding-bottom: 80%;
-    padding-top: 0; 
-    background-size: cover;
-    border-radius: calc(10% + 0.5vw);
-    border: calc(0.17rem + 0.05vw) solid #222222;
-    position: relative;
-}
+    .pic-1,
+    .pic-2,
+    .pic-3,
+    .pic-4 {
+        width: 75%;
+        padding-bottom: 80%;
+        padding-top: 0;
+        background-size: cover;
+        border-radius: calc(10% + 0.5vw);
+        border: calc(0.17rem + 0.05vw) solid #222222;
+        position: relative;
+    }
 
-.website-team-names-1,
-.website-team-names-2,
-.website-team-names-3,
-.website-team-names-4 {
-    font-size: calc(0.7rem + 0.8vw); 
-    color: #FFFFFF;
-    text-align: center;
-    word-spacing: calc(0.3rem + 0.1vw);
-    line-height: calc(1rem + 0.2vw);
-    width: 100%;
-    font-family: "Kanit", sans-serif;
-    margin-top: calc(0.8rem + 0.2vw);
-}
+    .website-team-names-1,
+    .website-team-names-2,
+    .website-team-names-3,
+    .website-team-names-4 {
+        font-size: calc(0.7rem + 0.8vw);
+        color: #ffffff;
+        text-align: center;
+        word-spacing: calc(0.3rem + 0.1vw);
+        line-height: calc(1rem + 0.2vw);
+        width: 100%;
+        font-family: "Kanit", sans-serif;
+        margin-top: calc(0.8rem + 0.2vw);
+    }
 
-.webteam-names-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%; 
-    margin-bottom: 1rem;
-}
+    .webteam-names-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        margin-bottom: 1rem;
+    }
 
-.to-give-padding {
-    padding-top: calc(0.01rem + 3vw);
-}
+    .to-give-padding {
+        padding-top: calc(0.01rem + 3vw);
+    }
 
-.website-team-pictures-row-two {
-    padding-top: calc(0.2rem + 1vw); 
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly; 
-    align-items: center;
-    width: 100%; 
-    margin: 0 auto;
-    gap: 1rem;
-}
+    .website-team-pictures-row-two {
+        padding-top: calc(0.2rem + 1vw);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
 
-.pic-5,
-.pic-6 {
-    width: 80%; 
-    padding-bottom: 70%;
-    padding-top: calc(2rem + 0.5vw); 
-    background-size: cover;
-    border-radius: calc(10% + 0.5vw);
-    border: calc(0.17rem + 0.05vw) solid #222222;  
-    position: relative;
-}
+    .pic-5,
+    .pic-6 {
+        width: 80%;
+        padding-bottom: 70%;
+        padding-top: calc(2rem + 0.5vw);
+        background-size: cover;
+        border-radius: calc(10% + 0.5vw);
+        border: calc(0.17rem + 0.05vw) solid #222222;
+        position: relative;
+    }
 
-.pic-6 {
-    background-position: center center;
-    background-size: 170%;
-}
+    .pic-6 {
+        background-position: center center;
+        background-size: 170%;
+    }
 
-.webteam-names-wrapper2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%; 
-}
+    .webteam-names-wrapper2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+    }
 
-.website-team-names-5,
-.website-team-names-6 {
-    font-size: calc(0.8rem + 0.7vw);
-    color: #FFFFFF;
-    text-align: center;
-    word-spacing: calc(0.2rem + 0.1vw);
-    line-height: calc(1rem + 0.2vw);
-    width: 100%;
-    margin: 0 auto;
-    font-family: "Kanit", sans-serif;
-    margin-top: calc(0.9rem + 0.2vw);
-    padding-bottom: calc(1rem + 0.5vw); 
-}
+    .website-team-names-5,
+    .website-team-names-6 {
+        font-size: calc(0.8rem + 0.7vw);
+        color: #ffffff;
+        text-align: center;
+        word-spacing: calc(0.2rem + 0.1vw);
+        line-height: calc(1rem + 0.2vw);
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Kanit", sans-serif;
+        margin-top: calc(0.9rem + 0.2vw);
+        padding-bottom: calc(1rem + 0.5vw);
+    }
 
-.pic-1::before,
-.pic-2::before,
-.pic-3::before,
-.pic-4::before,
-.pic-5::before,
-.pic-6::before,
-.pic-1::after,
-.pic-2::after,
-.pic-3::after,
-.pic-4::after,
-.pic-5::after,
-.pic-6::after {
-    height: 100%;
-    width: 100%;
-    padding: calc(2.4% + 0.2vw);
-    border-radius: calc(10% + 0.2vw); 
-    animation: spin 3s linear infinite; 
-}
+    .pic-1::before,
+    .pic-2::before,
+    .pic-3::before,
+    .pic-4::before,
+    .pic-5::before,
+    .pic-6::before,
+    .pic-1::after,
+    .pic-2::after,
+    .pic-3::after,
+    .pic-4::after,
+    .pic-5::after,
+    .pic-6::after {
+        height: 100%;
+        width: 100%;
+        padding: calc(2.4% + 0.2vw);
+        border-radius: calc(10% + 0.2vw);
+        animation: spin 3s linear infinite;
+    }
 
-.pic-1::before,
-.pic-2::before,
-.pic-3::before,
-.pic-4::before,
-.pic-5::before,
-.pic-6::before {
-    filter: blur(calc(1.4rem + 0.2vw)); 
-    opacity: 0.4; 
+    .pic-1::before,
+    .pic-2::before,
+    .pic-3::before,
+    .pic-4::before,
+    .pic-5::before,
+    .pic-6::before {
+        filter: blur(calc(1.4rem + 0.2vw));
+        opacity: 0.4;
+    }
 }
-
-}
-
 
 @media (min-width: 366px) and (max-width: 412px) {
     .website-team-names-6 {
         width: 80%;
     }
-
 }
 
 @media (min-width: 615px) and (max-width: 634px) {
@@ -2216,33 +2207,31 @@
         width: 80%;
         margin: 0 auto;
     }
-
 }
 
 @media (min-width: 320px) and (max-width: 361px) {
     .hodintroline {
-        padding-top: calc(0.7rem + 1vw); 
+        padding-top: calc(0.7rem + 1vw);
         padding-bottom: calc(1rem + 0.5vw);
         text-align: center;
-        width: 100%; 
-        text-transform: capitalize; 
+        width: 100%;
+        text-transform: capitalize;
     }
 
     .meet-our-styling {
-        font-family: "Young Serif", serif; 
-        font-weight: 100; 
-        font-size: calc(1.8rem + 1vw); 
+        font-family: "Young Serif", serif;
+        font-weight: 100;
+        font-size: calc(1.8rem + 1vw);
     }
 
     .dept-hod-styling {
         text-shadow: 0 0 calc(0.35rem + 0.1vw);
-        font-size: calc(1.1rem + 1vw); 
-        line-height: calc(0.01rem + 0.2vw); 
+        font-size: calc(1.1rem + 1vw);
+        line-height: calc(0.01rem + 0.2vw);
         width: 100%;
         text-underline-offset: 0.6rem;
         margin: 0 auto;
     }
-
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
@@ -2259,140 +2248,135 @@
         filter: blur(calc(0.5rem + 0.5vw));
     }
 
-.teacher2::before,
-.teacher3::before,
-.teacher4::before,
-.teacher5::before,
-.teacher6::before,
-.teacher7::before,
-.teacher2::after,
-.teacher3::after,
-.teacher4::after,
-.teacher5::after,
-.teacher6::after,
-.teacher7::after {
-    height: 100%;
-    width: 100%;
-    padding: calc(2.5% + 0.5vw);
-    border-radius: calc(50% + 0.01vw);
-    animation: 2.5s spin linear infinite;
-}
+    .teacher2::before,
+    .teacher3::before,
+    .teacher4::before,
+    .teacher5::before,
+    .teacher6::before,
+    .teacher7::before,
+    .teacher2::after,
+    .teacher3::after,
+    .teacher4::after,
+    .teacher5::after,
+    .teacher6::after,
+    .teacher7::after {
+        height: 100%;
+        width: 100%;
+        padding: calc(2.5% + 0.5vw);
+        border-radius: calc(50% + 0.01vw);
+        animation: 2.5s spin linear infinite;
+    }
 
-.teacher2::before,
-.teacher3::before,
-.teacher4::before,
-.teacher5::before,
-.teacher6::before,
-.teacher7::before {
-    filter: blur(calc(0.5rem + 0.5vw));
-    opacity: 0.6;
-}
+    .teacher2::before,
+    .teacher3::before,
+    .teacher4::before,
+    .teacher5::before,
+    .teacher6::before,
+    .teacher7::before {
+        filter: blur(calc(0.5rem + 0.5vw));
+        opacity: 0.6;
+    }
 
-.corepic1::before,
-.corepic2::before,
-.corepic3::before,
-.corepic4::before,
-.corepic1::after,
-.corepic2::after,
-.corepic3::after,
-.corepic4::after {
-    padding: calc(2.5% + 0.5vw);
-    border-radius: calc(9% + 0.01vw);
-    animation: 2.5s spin linear infinite;
-}
+    .corepic1::before,
+    .corepic2::before,
+    .corepic3::before,
+    .corepic4::before,
+    .corepic1::after,
+    .corepic2::after,
+    .corepic3::after,
+    .corepic4::after {
+        padding: calc(2.5% + 0.5vw);
+        border-radius: calc(9% + 0.01vw);
+        animation: 2.5s spin linear infinite;
+    }
 
-.corepic1::before,
-.corepic2::before,
-.corepic3::before,
-.corepic4::before {
-    filter: blur(calc(1rem + 0.5vw)); 
-    opacity: 0.5; 
-}
+    .corepic1::before,
+    .corepic2::before,
+    .corepic3::before,
+    .corepic4::before {
+        filter: blur(calc(1rem + 0.5vw));
+        opacity: 0.5;
+    }
 
-.admin-pic::before,
-.accounts-pic::before,
-.coverage-pic::before,
-.decor-pic::before,
-.design-pic::before,
-.hospitality-pic::before,
-.logistics-pic::before,
-.prandmarketing-pic::before,
-.technical-pic::before,
-.admin-pic::after,
-.accounts-pic::after,
-.coverage-pic::after,
-.decor-pic::after,
-.design-pic::after,
-.hospitality-pic::after,
-.logistics-pic::after,
-.prandmarketing-pic::after,
-.technical-pic::after {
-    padding: calc(2.5% + 0.5vw);
-    border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
-    animation: spin 3s linear infinite; 
-}
+    .admin-pic::before,
+    .accounts-pic::before,
+    .coverage-pic::before,
+    .decor-pic::before,
+    .design-pic::before,
+    .hospitality-pic::before,
+    .logistics-pic::before,
+    .prandmarketing-pic::before,
+    .technical-pic::before,
+    .admin-pic::after,
+    .accounts-pic::after,
+    .coverage-pic::after,
+    .decor-pic::after,
+    .design-pic::after,
+    .hospitality-pic::after,
+    .logistics-pic::after,
+    .prandmarketing-pic::after,
+    .technical-pic::after {
+        padding: calc(2.5% + 0.5vw);
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
+        animation: spin 3s linear infinite;
+    }
 
-.admin-pic::before,
-.accounts-pic::before,
-.coverage-pic::before,
-.decor-pic::before,
-.design-pic::before,
-.hospitality-pic::before,
-.logistics-pic::before,
-.prandmarketing-pic::before,
-.technical-pic::before {
-    filter: blur(calc(1.6rem + 0.2vw)); 
-    opacity: 0.8; 
-}
+    .admin-pic::before,
+    .accounts-pic::before,
+    .coverage-pic::before,
+    .decor-pic::before,
+    .design-pic::before,
+    .hospitality-pic::before,
+    .logistics-pic::before,
+    .prandmarketing-pic::before,
+    .technical-pic::before {
+        filter: blur(calc(1.6rem + 0.2vw));
+        opacity: 0.8;
+    }
 
-.security-pic::before,
-.security-pic::after {
-    padding: calc(2.5% + 0.5vw);
-    border-radius: calc(10% + 1vw) / calc(15% + 1vw); 
-    animation: spin 3s linear infinite; 
-}
+    .security-pic::before,
+    .security-pic::after {
+        padding: calc(2.5% + 0.5vw);
+        border-radius: calc(10% + 1vw) / calc(15% + 1vw);
+        animation: spin 3s linear infinite;
+    }
 
-.security-pic::before {
-    filter: blur(calc(1.5rem + 0.2vw)); 
-}
+    .security-pic::before {
+        filter: blur(calc(1.5rem + 0.2vw));
+    }
 
-.pic-1::before,
-.pic-2::before,
-.pic-3::before,
-.pic-4::before,
-.pic-5::before,
-.pic-6::before,
-.pic-1::after,
-.pic-2::after,
-.pic-3::after,
-.pic-4::after,
-.pic-5::after,
-.pic-6::after {
-    padding: calc(2.7% + 0.5vw);
-    border-radius: calc(10% + 0.2vw); 
-    animation: spin 3s linear infinite; 
-}
+    .pic-1::before,
+    .pic-2::before,
+    .pic-3::before,
+    .pic-4::before,
+    .pic-5::before,
+    .pic-6::before,
+    .pic-1::after,
+    .pic-2::after,
+    .pic-3::after,
+    .pic-4::after,
+    .pic-5::after,
+    .pic-6::after {
+        padding: calc(2.7% + 0.5vw);
+        border-radius: calc(10% + 0.2vw);
+        animation: spin 3s linear infinite;
+    }
 
-.pic-1::before,
-.pic-2::before,
-.pic-3::before,
-.pic-4::before,
-.pic-5::before,
-.pic-6::before {
-    filter: blur(calc(1.4rem + 0.2vw)); 
-    opacity: 0.4; 
-} 
-
+    .pic-1::before,
+    .pic-2::before,
+    .pic-3::before,
+    .pic-4::before,
+    .pic-5::before,
+    .pic-6::before {
+        filter: blur(calc(1.4rem + 0.2vw));
+        opacity: 0.4;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 339px) {
     .styling-team-of-teachers {
         font-weight: 200;
-        font-size: calc(0.6rem + 2vw);  
-        word-spacing: 0.01rem;      
+        font-size: calc(0.6rem + 2vw);
+        word-spacing: 0.01rem;
     }
-
 }
-
-
-

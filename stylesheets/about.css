@@ -3,18 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  overflow-x: hidden;
-  background-color: #030c26;
+    overflow-x: hidden;
+    background-color: #030c26;
 }
 
 /* /* NAV STYLING 
@@ -86,168 +86,168 @@ body {
 } */
 
 .firstSection {
-  height: 100vh;
+    height: 100vh;
 }
 
 .box-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .background-text-big {
-  font-family: "Convergence", sans-serif;
-  font-size: 7rem;
-  color: #6387f2;
-  -webkit-text-stroke: 1px #6387f2;
-  filter: drop-shadow(0 0 5px #6387f2);
-  transition: color 0.3s, -webkit-text-stroke 0.3s;
+    font-family: "Convergence", sans-serif;
+    font-size: 7rem;
+    color: #6387f2;
+    -webkit-text-stroke: 1px #6387f2;
+    filter: drop-shadow(0 0 5px #6387f2);
+    transition: color 0.3s, -webkit-text-stroke 0.3s;
 }
 
 .background-text-big:hover {
-  color: transparent;
-  filter: drop-shadow(0 0 7px #3f63f5);
-  -webkit-text-stroke: 3px #3f63f5;
+    color: transparent;
+    filter: drop-shadow(0 0 7px #3f63f5);
+    -webkit-text-stroke: 3px #3f63f5;
 }
 
 .background-text-small {
-  font-family: "Convergence", Verdana;
-  font-size: 4.1rem;
-  color: #6387f2;
-  -webkit-text-stroke: 1px #6387f2;
-  filter: drop-shadow(0 0 5px #6387f2);
-  transition: color 0.3s, -webkit-text-stroke 0.3s;
+    font-family: "Convergence", Verdana;
+    font-size: 4.1rem;
+    color: #6387f2;
+    -webkit-text-stroke: 1px #6387f2;
+    filter: drop-shadow(0 0 5px #6387f2);
+    transition: color 0.3s, -webkit-text-stroke 0.3s;
 }
 
 .background-text-small:hover {
-  color: transparent;
-  filter: drop-shadow(0 0 7px #3f63f5);
-  -webkit-text-stroke: 3px #3f63f5;
+    color: transparent;
+    filter: drop-shadow(0 0 7px #3f63f5);
+    -webkit-text-stroke: 3px #3f63f5;
 }
 
 /* PARA SECTION STYLING  */
 .section {
-  display: flex;
-  width: 100%;
-  height: auto;
-  position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 /* Box Styling */
 .text-box,
 .image-box {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.7rem;
-  border-radius: 0rem;
-  position: relative;
-  box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem;
+    border-radius: 0rem;
+    position: relative;
+    box-shadow: 0 0.25rem 0.625rem #c6bbbb33;
 }
 
 .text-box {
-  background-color: rgba(62, 83, 96, 0.374);
-  backdrop-filter: blur(10px);
-  flex-direction: column;
-  padding: 1rem;
-  font-family: "headfont", Verdana, Tahoma, sans-serif;
+    background-color: rgba(62, 83, 96, 0.374);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 1rem;
+    font-family: "headfont", Verdana, Tahoma, sans-serif;
 }
 
 .image-box {
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Rotating Border for Text Box */
 .text-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 3rem;
-  border: 0.3rem solid transparent;
-  border-image: conic-gradient(
-      from var(--angle),
-      #0000e3,
-      #0df205,
-      #00bfff,
-      #0df205,
-      #0000e3
-    )
-    1;
-  z-index: -1;
-  animation: spin 5s linear infinite;
-  box-shadow: 7rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    border: 0.3rem solid transparent;
+    border-image: conic-gradient(
+            from var(--angle),
+            #0000e3,
+            #0df205,
+            #00bfff,
+            #0df205,
+            #0000e3
+        )
+        1;
+    z-index: -1;
+    animation: spin 5s linear infinite;
+    box-shadow: 7rem;
 }
 
 /* Rotating Border for Image Box */
 .image-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 3rem;
-  border: 0.3rem solid transparent;
-  border-image: conic-gradient(
-      from var(--angle),
-      #0000e3,
-      #0df205,
-      #00bfff,
-      #0df205,
-      #0000e3
-    )
-    1;
-  animation: spin 5s linear infinite;
-  box-shadow: 7rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    border: 0.3rem solid transparent;
+    border-image: conic-gradient(
+            from var(--angle),
+            #0000e3,
+            #0df205,
+            #00bfff,
+            #0df205,
+            #0000e3
+        )
+        1;
+    animation: spin 5s linear infinite;
+    box-shadow: 7rem;
 }
 
 .image-box > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sectionSubTag.text-small {
-  font-family: "Assistant", sans-serif;
-  font-size: 1.22rem;
-  color: #6387f2;
+    font-family: "Assistant", sans-serif;
+    font-size: 1.22rem;
+    color: #6387f2;
 }
 
 .sectionSubTag.text-big {
-  font-family: "Convergence", Verdana, Geneva, Tahoma, sans-serif;
-  color: #0df205;
-  text-decoration: underline;
-  font-size: 2.2rem;
+    font-family: "Convergence", Verdana, Geneva, Tahoma, sans-serif;
+    color: #0df205;
+    text-decoration: underline;
+    font-size: 2.2rem;
 }
 
 /* Keyframes for Spin Animation */
 @property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
 @keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
 .thirdsection {
-  padding-top: 10%;
-  padding-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 /* Third page styling - I have removed the slide for the time being*/

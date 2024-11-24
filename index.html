@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KCxTECHCLUB</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
- 
-    <link rel="stylesheet" href="./stylesheets/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./stylesheets/navbar.css">
-    <!-- Import map for module resolution -->
-    <script type="importmap">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KCxTECHCLUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./stylesheets/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./stylesheets/navbar.css">
+  <!-- Import map for module resolution -->
+  <script type="importmap">
       {
         "imports": {
           "three": "https://unpkg.com/three@0.153.0/build/three.module.js",
@@ -23,53 +21,55 @@
         }
       }
     </script>
-  </head>
-  <body>
-    
-    <header>
-      <div class="navbar-adjustments">
-          <a href="./index.html">
-          <img src="./images/tclogo.png" alt="techclublogo" class="tclogo" />
-          </a>
-          <div class="checkbox-container">
-              <input class="checkbox-trigger" type="checkbox"  />
-              <div class="menu-content">
-                  <ul class="elements_wrapper">
-                    <li class="list_wrapper"><a class="elements_navbar" href="./about.html"> About </a></li>
-                    <li class="list_wrapper"><a class="elements_navbar" href="./gallery.html"> Gallery </a></li>
-                    <li class="list_wrapper"><a class="elements_navbar" href="./team.html"> Team </a></li>
-                    <li class="list_wrapper"><a class="elements_navbar" href="./events.html"> Events </a></li>
-                  </ul>
-                <div class="hamburger-menu"></div>
-              </div>
-          </div>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar-adjustments">
+      <a href="./index.html">
+        <img src="./images/tclogo.png" alt="techclublogo" class="tclogo" />
+      </a>
+      <div class="checkbox-container">
+        <input class="checkbox-trigger" type="checkbox" />
+        <div class="menu-content">
+          <ul class="elements_wrapper">
+            <li class="list_wrapper"><a class="elements_navbar" href="./about.html"> About </a></li>
+            <li class="list_wrapper"><a class="elements_navbar" href="./gallery.html"> Gallery </a></li>
+            <li class="list_wrapper"><a class="elements_navbar" href="./team.html"> Team </a></li>
+            <li class="list_wrapper"><a class="elements_navbar" href="./events.html"> Events </a></li>
+          </ul>
+          <div class="hamburger-menu"></div>
+        </div>
       </div>
+    </div>
   </header>
-    <div class="heading">
-      <h1>KCx<br />TECHCLUB</h1>
-    </div>
-    <div class="slogan">
-      <p class="text">Empowering Innovation, One Byte at a Time...</p>
-    </div>
+  <div class="heading">
+    <h1>KCx<br />TECHCLUB</h1>
+  </div>
+  <div class="slogan">
+    <p class="text">Empowering Innovation, One Byte at a Time...</p>
+  </div>
 
-    <div class="boxes">
-      <ul class="box-area">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+  <div class="boxes">
+    <ul class="box-area">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 
-    <!-- 3D Model Viewer Container -->
-    <div id="model-viewer" class="model-container"></div>
+  <!-- 3D Model Viewer Container -->
+  <div id="model-viewer" class="model-container"></div>
 
-    <!-- Background -->
-    <div class="background"></div>
+  <!-- Background -->
+  <div class="background"></div>
 
-    <!-- 3D Model JavaScript -->
-    <script src="js/main.js" type="module"></script>
-  </body>
+  <!-- 3D Model JavaScript -->
+  <script src="js/main.js" type="module"></script>
+</body>
+
 </html>

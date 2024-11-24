@@ -16,7 +16,7 @@
     background-color: rgba(48, 52, 63, 0.2);
     box-shadow: 0 0 1.5rem rgba(41, 181, 220, 0.955);
     transition: all 0.9s ease-in-out;
-    }
+}
 
 body {
     font-family: "Golos Text";
@@ -60,7 +60,7 @@ footer {
 .footer-title {
     font-size: 1.7rem;
     margin-bottom: 1.1rem;
-    color: #0FF0FF;
+    color: #0ff0ff;
     text-align: center;
     font-family: "Golos Text";
 }
@@ -94,7 +94,7 @@ footer {
     font-size: 1.9rem;
     width: 47px;
     height: 47px;
-    background-color: #FF1493;
+    background-color: #ff1493;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ footer {
 }
 
 .social-icons .social-icons-elements:hover {
-    background-color: #FF1493;
+    background-color: #ff1493;
     transform: scale(1.2);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
 }
@@ -113,8 +113,8 @@ footer {
 .social-icons .social-icons-elements::before {
     content: attr(data-tooltip);
     position: absolute;
-    top: 110%; 
-    left: 50%; 
+    top: 110%;
+    left: 50%;
     transform: translateX(-50%);
     background: #6387f2;
     color: white;
@@ -156,17 +156,17 @@ footer {
 @media (min-width: 769px) and (max-width: 1100px) {
     .footer-title {
         font-size: calc(1.15rem + 0.5vw);
-        margin-bottom: calc(1rem + 0.2vw); 
+        margin-bottom: calc(1rem + 0.2vw);
     }
 
     .footer-links .elements_footer {
-        font-size: calc(0.9rem + 0.4vw); 
-        margin: calc(0.8rem + 0.2vw) 0; 
+        font-size: calc(0.9rem + 0.4vw);
+        margin: calc(0.8rem + 0.2vw) 0;
     }
 
     .footer-links .elements_footer:hover {
-        font-size: calc(1rem + 0.4vw); 
-        letter-spacing: calc(0.05rem + 0.06vw); 
+        font-size: calc(1rem + 0.4vw);
+        letter-spacing: calc(0.05rem + 0.06vw);
     }
 
     /* .social-icons {
@@ -174,33 +174,32 @@ footer {
     } */
 
     .social-icons .social-icons-elements {
-        font-size: calc(1.5rem + 0.4vw); 
-        width: calc(30px + 2vw); 
-        height: calc(30px + 2vw); 
+        font-size: calc(1.5rem + 0.4vw);
+        width: calc(30px + 2vw);
+        height: calc(30px + 2vw);
     }
 
     .social-icons .social-icons-elements:hover {
-        transform: scale(1.1); 
+        transform: scale(1.1);
     }
 
     .social-icons .social-icons-elements::before {
         font-size: calc(0.8rem + 0.2vw);
-        padding: calc(4px + 0.3vw) calc(8px + 0.3vw); 
+        padding: calc(4px + 0.3vw) calc(8px + 0.3vw);
     }
 
     .contact-info .contact_elements {
-        font-size: calc(0.93rem + 0.3vw); 
+        font-size: calc(0.93rem + 0.3vw);
     }
 
     .height {
-        line-height: calc(2rem + 0.6vw); 
+        line-height: calc(2rem + 0.6vw);
     }
 
     .phone_adjusting {
         margin-left: calc(3.3rem + 2vw);
+    }
 }
-}
-
 
 @media (max-width: 768px) {
     footer {
@@ -211,7 +210,8 @@ footer {
         justify-content: center;
     }
 
-    .contact_us_adjusting, .follow_us_adjusting {
+    .contact_us_adjusting,
+    .follow_us_adjusting {
         margin-top: 1rem;
     }
 
@@ -252,7 +252,7 @@ footer {
     }
 
     .social-icons .social-icons-elements:hover {
-        transform: scale(1.09); 
+        transform: scale(1.09);
     }
 
     .social-icons .social-icons-elements::before {
@@ -280,11 +280,9 @@ footer {
         background-color: rgba(48, 52, 63, 0.2);
         box-shadow: 0 0 1.5rem rgba(41, 181, 220, 0.955);
         transition: all 0.9s ease-in-out;
-        }
+    }
 
     .phone_adjusting {
         margin-left: calc(3.9rem + 1.1vw);
     }
-
-
 }
