@@ -3,246 +3,262 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Convergence&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
 
 .titleSection {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 15px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
 }
 
 #title {
-    font-family: "Convergence", sans-serif;
-    font-size: 6rem;
-    color: #0ff0ff;
-    -webkit-text-stroke: 0.0625rem #0ff0ff;
-    filter: drop-shadow(0 0 0.3125rem #0ff0ff);
-    line-height: 1.2;
+  font-family: "Convergence", sans-serif;
+  font-size: 6rem;
+  color: #0ff0ff;
+  -webkit-text-stroke: 0.0625rem #0ff0ff;
+  filter: drop-shadow(0 0 0.3125rem #0ff0ff);
+  line-height: 1.2;
 }
 
 #titleBig {
-    transition: color 0.3s, -webkit-text-stroke 0.3s;
-    line-height: 1.1;
+  transition: color 0.3s, -webkit-text-stroke 0.3s;
+  line-height: 1.1;
 }
 
 #titleBig:hover {
-    color: transparent;
-    filter: drop-shadow(0 0 0.4375rem #0ff0ff);
-    -webkit-text-stroke: 0.1875rem #0ff0ff;
+  color: transparent;
+  filter: drop-shadow(0 0 0.4375rem #0ff0ff);
+  -webkit-text-stroke: 0.1875rem #0ff0ff;
 }
 
 #titleSmall {
-    font-size: 3.5rem;
-    transition: color 0.3s, -webkit-text-stroke 0.3s;
-    white-space: nowrap;
-    word-wrap: break-word;
-    max-width: 100%;
+  font-size: 3.5rem;
+  transition: color 0.3s, -webkit-text-stroke 0.3s;
+  white-space: nowrap;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 #titleSmall:hover {
-    color: transparent;
-    filter: drop-shadow(0 0 0.4375rem #0ff0ff);
-    -webkit-text-stroke: 0.125rem #0ff0ff;
+  color: transparent;
+  filter: drop-shadow(0 0 0.4375rem #0ff0ff);
+  -webkit-text-stroke: 0.125rem #0ff0ff;
 }
 
 @media (max-width: 1200px) {
-    #title {
-        font-size: 5rem;
-    }
+  #title {
+    font-size: 5rem;
+  }
 
-    #titleBig {
-        font-size: 4.5rem;
-    }
+  #titleBig {
+    font-size: 4.5rem;
+  }
 
-    #titleSmall {
-        font-size: 3rem;
-    }
+  #titleSmall {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 992px) {
-    #title {
-        font-size: 4.5rem;
-    }
+  #title {
+    font-size: 4.5rem;
+  }
 
-    #titleBig {
-        font-size: 4rem;
-    }
+  #titleBig {
+    font-size: 4rem;
+  }
 
-    #titleSmall {
-        font-size: 2.5rem;
-    }
+  #titleSmall {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-    #title {
-        font-size: 4rem;
-    }
+  #title {
+    font-size: 4rem;
+  }
 
-    #titleBig {
-        font-size: 3.5rem;
-    }
+  #titleBig {
+    font-size: 3.5rem;
+  }
 
-    #titleSmall {
-        font-size: 2.2rem;
-    }
+  #titleSmall {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 576px) {
-    #title {
-        font-size: 3.5rem;
-    }
+  #title {
+    font-size: 3.5rem;
+  }
 
-    #titleBig {
-        font-size: 3rem;
-    }
+  #titleBig {
+    font-size: 3rem;
+  }
 
-    #titleSmall {
-        font-size: 2rem;
-    }
+  #titleSmall {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 400px) {
-    #title {
-        font-size: 3rem;
-    }
+  #title {
+    font-size: 3rem;
+  }
 
-    #titleBig {
-        font-size: 2.5rem;
-    }
+  #titleBig {
+    font-size: 2.5rem;
+  }
 
-    #titleSmall {
-        font-size: 1.7rem;
-    }
+  #titleSmall {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 340px) {
-    #titleSmall {
-        font-size: 2.5rem; /* Slightly smaller font for smaller screens */
-        white-space: normal; /* Allow 'Welcome' to break */
-    }
+  #titleSmall {
+    font-size: 2.5rem; /* Slightly smaller font for smaller screens */
+    white-space: normal; /* Allow 'Welcome' to break */
+  }
 }
 
 @media (max-width: 320px) {
-    #titleSmall {
-        font-size: 2rem;
-        white-space: normal; /* Allow 'Welcome' to break */
-    }
+  #titleSmall {
+    font-size: 2rem;
+    white-space: normal; /* Allow 'Welcome' to break */
+  }
 }
 
 /* Ensure the grid layout adjusts dynamically */
 .gridSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-    gap: 1rem;
-    padding: 1%;
-    align-items: start; /* Align items to the top of the grid cells */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  gap: 1rem;
+  padding: 1%;
+  align-items: start; /* Align items to the top of the grid cells */
 }
 
 /* Style the image container */
 .image-container {
-    display: flex; /* Use flexbox for vertical centering */
-    justify-content: center;
-    align-items: center;
-    background-color: #30343f; /* Match your background */
-    border: 0.125rem #0ff0ff solid;
-    filter: drop-shadow(0 0 0.2rem #0ff0ff);
-    padding: 1rem; /* Optional padding around the image */
+  display: flex; /* Use flexbox for vertical centering */
+  justify-content: center;
+  align-items: center;
+  background-color: #30343f; /* Match your background */
+  border: 0.125rem #0ff0ff solid;
+  filter: drop-shadow(0 0 0.2rem #0ff0ff);
+  padding: 1rem; /* Optional padding around the image */
 }
 
 /* Ensure the image maintains its aspect ratio */
 .imgFluid {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure proper fitting inside the container */
-    display: block;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure proper fitting inside the container */
+  display: block;
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 900px) {
-    .gridSection {
-        grid-template-columns: 1fr; /* Stack the grid items vertically */
-    }
+  .gridSection {
+    grid-template-columns: 1fr; /* Stack the grid items vertically */
+  }
 
-    .gridItem:nth-child(3) {
-        order: 4;
-    }
+  .gridItem:nth-child(3) {
+    order: 4;
+  }
 
-    .gridItem:nth-child(4) {
-        order: 3;
-    }
+  .gridItem:nth-child(4) {
+    order: 3;
+  }
+
+  .gridItem,
+  .image-container {
+    width: 93%; /* Add spacing to the left and right */
+    margin-left: auto;
+    margin-right: auto; /* Center the items horizontally */
+  }
 }
 
 .gridItem {
-    border: 0.125rem #0ff0ff solid;
-    filter: drop-shadow(0 0 0.2rem #0ff0ff);
-    background-color: #30343f;
-    height: 100%;
+  border: 0.125rem #0ff0ff solid;
+  filter: drop-shadow(0 0 0.2rem #0ff0ff);
+  background-color: #30343f;
+  height: 100%;
 }
 
 .gridTitle {
-    font-family: "Convergence", Verdana, Geneva, Tahoma, sans-serif;
-    color: #0ff0ff;
-    font-size: 2.2rem;
-    text-align: center;
+  font-family: "Convergence", Verdana, Geneva, Tahoma, sans-serif;
+  color: #0ff0ff;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 .gridText {
-    font-family: "Assistant", sans-serif;
-    font-size: 1.22rem;
-    color: #ffffff;
+  font-family: "Assistant", sans-serif;
+  font-size: 1.22rem;
+  color: #ffffff;
 }
 
 /* Statistics section */
 .stats-container {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5rem auto;
-    max-width: 1000px;
-    padding-inline: 0.4px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5rem auto;
+  max-width: 1000px;
+  padding-inline: 0.4px;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stats-container .stat {
-    background: #30343f;
-    border: 0.125rem #0ff0ff solid;
-    filter: drop-shadow(0 0 0.2rem #0ff0ff);
-    padding: 24px;
-    text-align: center;
-    color: #edf2f4;
+  background: #30343f;
+  border: 0.125rem #0ff0ff solid;
+  filter: drop-shadow(0 0 0.2rem #0ff0ff);
+  padding: 24px;
+  text-align: center;
+  color: #edf2f4;
 }
 
 .stats-container .stat .value {
-    font-size: 50px;
-    font-weight: bold;
-    display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 .stats-container .stat .type {
-    font-size: 20px;
-    color: #0ff0ff;
-    font-weight: 600;
+  font-size: 20px;
+  color: #0ff0ff;
+  font-weight: 600;
 }
 
 .value.plus {
-    position: relative;
+  position: relative;
 }
 
 .value.plus::after {
-    content: "+";
-    position: absolute;
-    top: 0;
-    right: -20px;
-    top: 18.5px;
-    font-size: 30px;
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  top: 18.5px;
+  font-size: 30px;
 }
 
 @media (max-width: 700px) {
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-container {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
