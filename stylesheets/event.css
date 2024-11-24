@@ -5,6 +5,7 @@ html {
 body {
     background-color: #121212;
     color: #f5f5f5;
+    padding-top: 3.2dvh;
 }
 
 /* ANIMATIONS RELATED */
@@ -26,6 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    margin-top: -30px;
 }
 .event-card {
     min-height: 21.5vh;
@@ -249,12 +251,13 @@ span::after {
 
 /*REGISTER BUTTON*/
 .ReadRegister .Register button {
-    background-color: #39ff14;
+    background-color: rgb(10, 10, 139);
     color: #ff00ff;
     border-radius: 1.5rem;
     font-family: "Assistant", sans-serif;
     font-weight: 550;
     transition: 0.5s ease-in-out;
+    border-color: transparent;
 }
 
 .ReadRegister .Register button:hover,
@@ -318,6 +321,9 @@ span::after {
     }
     h1::after {
         content: "FIESTRON EVENTS";
+    }
+    body{
+        padding-top: 8dvh;
     }
 }
 
