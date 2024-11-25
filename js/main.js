@@ -65,6 +65,9 @@ loader.load(
     model.position.set(0, 0, 0);
     model.scale.set(0.65, 0.65, 0.65);
     scene.add(model);
+
+    // Apply responsive scaling
+    applyResponsiveScaling();
   },
   (xhr) => {
     console.log(`Loading: ${(xhr.loaded / xhr.total) * 100}%`);
@@ -96,4 +99,22 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
   initializeControls();
+  applyResponsiveScaling();
 });
+
+// Function to handle model scaling based on viewport width
+function applyResponsiveScaling() {
+  if (!model) return;
+
+  const width = window.innerWidth;
+
+  if (width > 768 && width <= 1176) {
+    model.scale.set(0.55, 0.55, 0.55); // Medium scale
+  } else {
+    model.scale.set(0.65, 0.65, 0.65); // Default scale
+  }
+}
+
+// Add media query listeners for dynamic updates
+const mediaQuery = window.matchMedia("(min-width: 768px) and (max-width: 1176px)");
+mediaQuery.addEventListener("change", applyResponsiveScaling);
