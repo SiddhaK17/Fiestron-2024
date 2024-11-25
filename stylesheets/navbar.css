@@ -172,14 +172,14 @@ body {
     }
 
     .checkbox-trigger:checked {
-        left: -130px;
+        left: -143px;
     }
 
     .checkbox-trigger:checked + .menu-content .hamburger-menu {
         width: 1.7em;
         transition: width 0.5s ease 0.3s;
-        transform: translateX(-130px);
-        transition: transform 0.9s ease;
+        transform: translateX(-140px);
+        transition: transform 0.85s ease;
     }
 
     .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
@@ -223,7 +223,7 @@ body {
     }
 
     .checkbox-trigger:checked + .menu-content .elements_wrapper {
-        width: 130px;
+        width: 143px;
         height: auto;
         transition: width 0.3s ease, height 0.5s ease;
         margin-left: 10px;

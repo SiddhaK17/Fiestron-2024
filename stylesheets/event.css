@@ -148,12 +148,15 @@ body {
 }
 .ReadRegister .Register button {
     font-size: 1.4rem;
-    border-radius: 0.8rem;
+    border-radius: 1.5rem;
     border: 0;
     margin-top: 0.5rem;
     padding: 0.1rem 0.6rem;
-    background-color: #39ff14;
-    color: #ffffff;
+    background-color: rgb(10, 10, 139);
+    color: #ff00ff;
+    font-weight: 550;
+    transition: 0.5s ease-in-out;
+    border-color: transparent;
 }
 .ReadRegister .Register button:hover {
     background-color: #ff1493;
@@ -250,15 +253,6 @@ span::after {
 }
 
 /*REGISTER BUTTON*/
-.ReadRegister .Register button {
-    background-color: rgb(10, 10, 139);
-    color: #ff00ff;
-    border-radius: 1.5rem;
-    font-family: "Assistant", sans-serif;
-    font-weight: 550;
-    transition: 0.5s ease-in-out;
-    border-color: transparent;
-}
 
 .ReadRegister .Register button:hover,
 .ReadRegister .Register button:focus {
@@ -284,11 +278,11 @@ span::after {
     }
     .EventI {
         justify-content: center;
-        align-items: center;
     }
     .EventI img {
         max-width: 80%;
         margin: 0.6rem;
+        box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.08);
     }
     .TitleDate .Title {
         font-size: 1.35rem;
@@ -307,10 +301,7 @@ span::after {
     }
     .Description.deactive {
         height: 3.7em;
-    }
-    .EventI img {
-        box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.08);
-    }
+    } 
     .font-apply {
         font-size: 4.9vw;
         margin-top: 40px;

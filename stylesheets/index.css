@@ -420,6 +420,16 @@ html {
   .body {
   margin: 60px;
 }
+@media(max-width:420px){
+  .heading{
+    font-size: 5vw;
+    line-height: 10vw;
+
+  }
+  .slogan{
+    font-size: 4.5vw;
+  }
+}
 /*  */
 
 @media (1176px > width >= 768px) {
