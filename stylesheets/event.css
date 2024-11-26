@@ -146,20 +146,22 @@ body {
     justify-content: end;
     max-width: fit-content;
 }
-.ReadRegister .Register button {
+.ReadRegister .Register a {
     font-size: 1.4rem;
     border-radius: 1.5rem;
     border: 0;
     margin-top: 0.5rem;
     padding: 0.1rem 0.6rem;
-    background-color: rgb(10, 10, 139);
-    color: #ff00ff;
+    background-color: rgb(228, 132, 247);
+    color: #020e44;
     font-weight: 550;
     transition: 0.5s ease-in-out;
     border-color: transparent;
+    text-decoration: none;
 }
-.ReadRegister .Register button:hover {
+.ReadRegister .Register a:hover {
     background-color: #ff1493;
+    transform: scale(1.1);
 }
 
 /*ANIMATIONS*/
@@ -254,15 +256,15 @@ span::after {
 
 /*REGISTER BUTTON*/
 
-.ReadRegister .Register button:hover,
-.ReadRegister .Register button:focus {
+.ReadRegister .Register a:hover,
+.ReadRegister .Register a:focus {
     border-color: #ff00ff;
     color: #ffd300;
     transform: scale(1.05);
 }
 
-.RegisterAnimation button:hover,
-.RegisterAnimation button:focus {
+.RegisterAnimation a:hover,
+.RegisterAnimation a:focus {
     box-shadow: inset 0 0 0 30px #ff00ff;
 }
 
@@ -335,7 +337,7 @@ span::after {
     .ReadRegister .Read button {
         font-size: 1.8rem;
     }
-    .ReadRegister .Register button {
+    .ReadRegister .Register a {
         font-size: 2rem;
         border-radius: 2rem;
     }
@@ -357,7 +359,7 @@ span::after {
     .ReadRegister .Read button {
         font-size: 1.7rem;
     }
-    .ReadRegister .Register button {
+    .ReadRegister .Register a {
         font-size: 1.9rem;
         border-radius: 1.9rem;
     }
@@ -379,7 +381,7 @@ span::after {
     .ReadRegister .Read button {
         font-size: 1.6rem;
     }
-    .ReadRegister .Register button {
+    .ReadRegister .Register a {
         font-size: 1.8rem;
         border-radius: 1.8rem;
     }
@@ -401,7 +403,7 @@ span::after {
     .ReadRegister .Read button {
         font-size: 1.4rem;
     }
-    .ReadRegister .Register button {
+    .ReadRegister .Register a {
         font-size: 1.6rem;
         border-radius: 1.6rem;
     }
