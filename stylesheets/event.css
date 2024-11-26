@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 .event-card {
     min-height: 21.5vh;
@@ -303,7 +303,7 @@ span::after {
     }
     .Description.deactive {
         height: 3.7em;
-    } 
+    }
     .font-apply {
         font-size: 4.9vw;
         margin-top: 40px;
@@ -315,7 +315,7 @@ span::after {
     h1::after {
         content: "FIESTRON EVENTS";
     }
-    body{
+    body {
         padding-top: 8dvh;
     }
 }
@@ -406,5 +406,23 @@ span::after {
     .ReadRegister .Register a {
         font-size: 1.6rem;
         border-radius: 1.6rem;
+    }
+}
+
+.brochure {
+    text-align: center;
+    color: #e484f7;
+    font-size: 2rem;
+}
+
+.brochureDiv {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:420px){
+    .brochure{
+        font-size: 1.5rem;
+        padding-bottom: 5%;
     }
 }
