@@ -421,7 +421,7 @@
 }
 
 .corepic2 {
-    background-image: url(../images/team/Burhan.png);
+    background-image: url(../images/team/burhan.jpg);
 }
 
 .corepic3 {
@@ -591,7 +591,7 @@
 }
 
 .accounts-pic {
-    background-image: url(../images/sampleTeam.jpg);
+    background-image: url(../images/team/accounts.jpg);
     background-position: center center;
 }
 
@@ -655,17 +655,17 @@
 }
 
 .logistics-pic {
-    background-image: url(../images/sampleTeam.jpg);
+    background-image: url(../images/team/kunalM.jpg);
     background-position: center center;
 }
 
 .prandmarketing-pic {
-    background-image: url(../images/sampleTeam.jpg);
+    background-image: url(../images/team/marketing.jpg);
     background-position: center center;
 }
 
 .technical-pic {
-    background-image: url(../images/sampleTeam.jpg);
+    background-image: url(../images/team/technicals.png);
     background-position: center center;
 }
 
@@ -704,7 +704,7 @@
     width: 63%;
     padding-bottom: 66%;
     margin: 0 auto;
-    background-image: url(../images/sampleTeam.jpg);
+    background-image: url(../images/team/security.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 10% / 15%;
