@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./testth1.css">
+    <title>QR Code Scanner / Reader</title>
+</head>
+
+<body class="bg-dark text-white d-flex align-items-center justify-content-center vh-100">
+    <div class="container" id="scanner">
+        <h1 class="text-center mb-4" id="dd">Scan QR Codes</h1>
+        <div class="section p-4 bg-white rounded shadow-sm">
+            <div id="reader"></div>
+        </div>
+        <button id="clearButton" class="btn btn-danger mt-4">Clear Progress</button>
+    </div>
+    <div id="riddle1" class="container" hidden>
+        <h2>What has a head and tails but no body?</h2>
+        <input type="text" name="answer1" id="text1">
+        <button type="button" id="btnAnswer1">Submit</button>
+    </div>
+
+    <div id="riddle2" class="container" hidden>
+        <h2>What is the full form of 'I' in IP</h2>
+        <input type="text" name="answer2" id="text2">
+        <button type="button" id="btnAnswer2">Submit</button>
+    </div>
+
+    <div id="riddle3" class="container" hidden>
+        <h2>I am an electronic device that can do complex numbers. I can leave it in your hands, I am synonymous with
+            computers. What am I?</h2>
+        <input type="text" name="answer3" id="text3">
+        <button type="button" id="btnAnswer3">Submit</button>
+    </div>
+
+    <div id="riddle4" class="container" hidden>
+        <h2>I am a programming language named after a snake. I know about simplicity and readability. What am I?</h2>
+        <input type="text" name="answer4" id="text4">
+        <button type="button" id="btnAnswer4">Submit</button>
+    </div>
+
+    <div id="riddle5" class="container" hidden>
+        <h2>I connect devices to the internet without wires. What am I?</h2>
+        <input type="text" name="answer5" id="text5">
+        <button type="button" id="btnAnswer5">Submit</button>
+    </div>
+
+    <div id="riddle6" class="container" hidden>
+        <h2>I process information and am the brain of a computer. What am I?</h2>
+        <input type="text" name="answer6" id="text6">
+        <button type="button" id="btnAnswer6">Submit</button>
+    </div>
+
+    <div id="riddle7" class="container" hidden>
+        <h2>I'm a temporary memory that helps your computer run faster. What am I?</h2>
+        <input type="text" name="answer7" id="text7">
+        <button type="button" id="btnAnswer7">Submit</button>
+    </div>
+
+    <div id="riddle8" class="container" hidden>
+        <h2>I'm a collection of pages you can view online. What am I?</h2>
+        <input type="text" name="answer8" id="text8">
+        <button type="button" id="btnAnswer8">Submit</button>
+    </div>
+
+    <div id="riddle9" class="container" hidden>
+        <h2>I display what's happening on your computer. What am I?</h2>
+        <input type="text" name="answer9" id="text9">
+        <button type="button" id="btnAnswer9">Submit</button>
+    </div>
+
+    <div id="riddle10" class="container" hidden>
+        <h2>I help you fix bugs in your code. What am I?</h2>
+        <input type="text" name="answer10" id="text10">
+        <button type="button" id="btnAnswer10">Submit</button>
+    </div>
+
+    <div id="riddle11" class="container" hidden>
+        <h2>I'm software that manages the hardware of your computer. What am I?</h2>
+        <input type="text" name="answer11" id="text11">
+        <button type="button" id="btnAnswer11">Submit</button>
+    </div>
+
+    <div id="riddle12" class="container" hidden>
+        <h2>I'm the language that web browsers understand. What am I?</h2>
+        <input type="text" name="answer12" id="text12">
+        <button type="button" id="btnAnswer12">Submit</button>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./testth1.js"></script>
+</body>
+
+</html>
