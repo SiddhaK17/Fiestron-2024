@@ -31,6 +31,29 @@ function shuffleArray(array) {
     return array;
 }
 
+try {
+    let nextQRIndex = parseInt(getCookie("nextQRIndex"));
+    if (nextQRIndex < qrCodes.length) {
+        const clue = JSON.parse(getCookie("shuffledOrder"))[nextQRIndex][0];
+        document.getElementById("dd").innerHTML = "Clue for the next location : " + clue + ". You have completed " + (nextQRIndex + 1) + " clues";
+    } else if (nextQRIndex === 999) {
+        document.getElementById("dd").innerHTML = "Final Clue"
+    }
+} catch (error) {
+    console.log("Start of game");
+}
+
+const element = document.querySelector('#body');
+
+function adjustHeight() {
+    const viewportHeight = window.innerHeight; // 100vh equivalent
+    const contentHeight = element.scrollHeight + 500; // Height of the content
+    console.log(viewportHeight, contentHeight)
+    element.style.height = `${Math.max(viewportHeight, contentHeight)}px`; // Set the larger of the two
+}
+
+// Adjust the height on page load
+adjustHeight()
 
 function onScanSuccess(decodedText, decodedResult) {
     pauseScan();
