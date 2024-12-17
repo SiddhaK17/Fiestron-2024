@@ -134,72 +134,96 @@ function onScanSuccess(decodedText, decodedResult) {
 document.querySelector("#btnAnswer1").addEventListener('click', () => {
     if (document.getElementById("text1").value.trim().toLowerCase() == "coin") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer2").addEventListener('click', () => {
     if (document.getElementById("text2").value.trim().toLowerCase() == "internet") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer3").addEventListener('click', () => {
     if (document.getElementById("text3").value.trim().toLowerCase() == "calculator") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer4").addEventListener('click', () => {
     if (document.getElementById("text4").value.trim().toLowerCase() == "python") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer5").addEventListener('click', () => {
     if (document.getElementById("text5").value.trim().toLowerCase() == "wifi") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer6").addEventListener('click', () => {
     if (document.getElementById("text6").value.trim().toLowerCase() == "cpu") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer7").addEventListener('click', () => {
     if (document.getElementById("text7").value.trim().toLowerCase() == "ram") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer8").addEventListener('click', () => {
     if (document.getElementById("text8").value.trim().toLowerCase() == "website") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer9").addEventListener('click', () => {
     if (document.getElementById("text9").value.trim().toLowerCase() == "monitor") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer10").addEventListener('click', () => {
     if (document.getElementById("text10").value.trim().toLowerCase() == "debugger") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer11").addEventListener('click', () => {
     if (document.getElementById("text11").value.trim().toLowerCase() == "os") {
         riddleSolved();
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
 document.querySelector("#btnAnswer12").addEventListener('click', () => {
     if (document.getElementById("text12").value.trim().toLowerCase() == "html") {
         alert("You found the treasure")
+    } else {
+        showAlert("This answer is incorrect")
     }
 });
 
@@ -269,3 +293,23 @@ function resumeScan() {
 // Render the scanner with success and failure callbacks
 html5QrcodeScanner.render(onScanSuccess);
 
+// Function to display Bootstrap alert with fading effect
+function showAlert(message, type = 'danger') {
+    // Create alert element
+    const alertElement = document.createElement('div');
+    alertElement.classList.add('alert', `alert-${type}`, 'alert-dismissible', 'fade', 'show');
+    alertElement.setAttribute('role', 'alert');
+    alertElement.innerHTML = `${message} <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+
+    // Append alert to container
+    const alertContainer = document.getElementById('alertContainer');
+    alertContainer.appendChild(alertElement);
+
+    // Fade out the alert after 7.5 seconds
+    setTimeout(() => {
+        alertElement.classList.remove('show');
+        setTimeout(() => {
+            alertElement.remove();
+        }, 1250); // Fade out duration is 1.25 seconds
+    }, 7500); // Alert stays visible for 7.5 seconds
+}
