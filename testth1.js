@@ -158,7 +158,7 @@ document.querySelector("#btnAnswer3").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer4").addEventListener('click', () => {
-    if (document.getElementById("text4").value.trim().toLowerCase() == "python") {
+    if (document.getElementById("text4").value.trim().toLowerCase() == "keyboard") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -166,7 +166,7 @@ document.querySelector("#btnAnswer4").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer5").addEventListener('click', () => {
-    if (document.getElementById("text5").value.trim().toLowerCase() == "wifi") {
+    if (document.getElementById("text5").value.trim().toLowerCase() == "krusty krab") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -174,7 +174,7 @@ document.querySelector("#btnAnswer5").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer6").addEventListener('click', () => {
-    if (document.getElementById("text6").value.trim().toLowerCase() == "cpu") {
+    if (document.getElementById("text6").value.trim().toLowerCase() == "chatur") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -182,7 +182,7 @@ document.querySelector("#btnAnswer6").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer7").addEventListener('click', () => {
-    if (document.getElementById("text7").value.trim().toLowerCase() == "ram") {
+    if (document.getElementById("text7").value.trim().toLowerCase() == "tees maar khan") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -190,7 +190,7 @@ document.querySelector("#btnAnswer7").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer8").addEventListener('click', () => {
-    if (document.getElementById("text8").value.trim().toLowerCase() == "website") {
+    if (document.getElementById("text8").value.trim().toLowerCase() == "sholay") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -198,7 +198,7 @@ document.querySelector("#btnAnswer8").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer9").addEventListener('click', () => {
-    if (document.getElementById("text9").value.trim().toLowerCase() == "monitor") {
+    if (document.getElementById("text9").value.trim().toLowerCase() == "age") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -206,7 +206,7 @@ document.querySelector("#btnAnswer9").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer10").addEventListener('click', () => {
-    if (document.getElementById("text10").value.trim().toLowerCase() == "debugger") {
+    if (document.getElementById("text10").value.trim().toLowerCase() == "coin") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -214,7 +214,7 @@ document.querySelector("#btnAnswer10").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer11").addEventListener('click', () => {
-    if (document.getElementById("text11").value.trim().toLowerCase() == "os") {
+    if (document.getElementById("text11").value.trim().toLowerCase() == "envelope") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -222,7 +222,7 @@ document.querySelector("#btnAnswer11").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer12").addEventListener('click', () => {
-    if (document.getElementById("text12").value.trim().toLowerCase() == "html") {
+    if (document.getElementById("text12").value.trim().toLowerCase() == "c") {
         alert("You found the treasure, meet the event head immeditately")
     } else {
         showAlert("This answer is incorrect")
