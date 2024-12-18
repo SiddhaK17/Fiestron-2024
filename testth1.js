@@ -1,5 +1,5 @@
 // Define QR codes for each stage
-let qrCodes = [["A place where computers reside", 1], ["The room of inauguration", 2], ["You come here to play chess", 3], ["You hate the man sitting here", 4], ["You chill here", 5], ["Exit of Audi", 6], ["The hallway of goodness", 7], ["The place where orientation happened", 8], ["You play carrom here", 9], ["Your workshop is here", 10]];
+let qrCodes = [["Where the hum of machines fills the air, And problem-solving minds gather there. Find this place if you dare!", 1], ["In this space, ideas take shape, With bright screens and no red tape. Find me to continue the escape.", 2], ["I'm not a room, but I lead to them all, A gathering place, both wide and small. Find me just beyond the hall.", 3], ["I'm not the end, but the start of the way, Where people pause and often stay. Find me where paths convey.", 4], ["I stand tall, I mark the start, The way inside, where journeys chart. Find me where all paths depart.", 5], ["I'm the first to welcome, the last to bid bye, Standing still under the sky. Find me where all must pass by.", 6], ["Lights dim low, and the speakers play, Here's where visuals lead the way. Find me where ideas display.", 7], ["Where sounds and visuals come alive, A space where creativity thrives. Find me where media and ideas live.", 8], ["Not a field, but it holds the gear, For athletes and players who gather here. Find me where the spirit is clear.", 9], ["Rackets, balls, and a game plan too, This is the room for the sporty crew. Find me where fitness comes through.", 10]];
 
 // Function to set a cookie with an expiration in hours
 function setCookie(name, value, hours) {
@@ -60,16 +60,17 @@ function onScanSuccess(decodedText, decodedResult) {
     let nextQRIndex = parseInt(getCookie("nextQRIndex"));
     let shuffledOrder = JSON.parse(getCookie("shuffledOrder"));
     if (nextQRIndex == 999) {
-        if (decodedText === 'QRCode12') {
+        if (decodedText === 'qrCode12QuadFinal') {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle12").hidden = false;
         } else {
-            alert("Invalid last scan")
+            let errArr = ["Oops! This QR Code is invalid or corrupted. But don't worry, join us tomorrow at Fiestron for more exciting events!", "Error: Unable to read this QR Code. However, come visit Fiestron tomorrow for our next amazing event!", "Invalid QR Code. It seems something went wrong. But the fun doesn't stop here—join us at Fiestron tomorrow for more!", "Unable to scan this QR Code. But the adventure continues—head over to Fiestron tomorrow for more fantastic events!", "Whoops! Something went wrong with this QR Code. Visit us tomorrow at Fiestron for even more exciting activities!", "This QR Code seems invalid. Don’t miss out though—come join us tomorrow at Fiestron for more events!", "Scan failed. The QR Code didn’t work, but there's plenty more fun ahead. Join us tomorrow at Fiestron!", "This QR Code isn’t valid. But stay tuned for more! Join us tomorrow at Fiestron for exciting new events."]
+            alert(errArr[Math.floor(Math.random() * errArr.length)]);
             resumeScan();
         }
     }
     else {
-        if (decodedText === 'QRCode1') {
+        if (decodedText === 'qrcode1quadpopeye') {
             if (nextQRIndex) {
                 alert("Invalid QR");
             } else {
@@ -83,48 +84,49 @@ function onScanSuccess(decodedText, decodedResult) {
                 document.getElementById("data1").innerHTML = shuffledOrder + " | " + nextQRIndex;
             }
         }
-        else if (decodedText === 'QRCode2' && shuffledOrder[nextQRIndex][1] === 1) {
+        else if (decodedText === 'qrCode2cslabxoxo' && shuffledOrder[nextQRIndex][1] === 1) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle2").hidden = false;
         }
-        else if (decodedText === 'QRCode3' && shuffledOrder[nextQRIndex][1] === 2) {
+        else if (decodedText === 'qrCode3cslabrpop' && shuffledOrder[nextQRIndex][1] === 2) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle3").hidden = false;
         }
-        else if (decodedText === 'QRCode4' && shuffledOrder[nextQRIndex][1] === 3) {
+        else if (decodedText === 'qrCode4foyermom' && shuffledOrder[nextQRIndex][1] === 3) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle4").hidden = false;
         }
-        else if (decodedText === 'QRCode5' && shuffledOrder[nextQRIndex][1] === 4) {
+        else if (decodedText === 'qrCode5foyercode' && shuffledOrder[nextQRIndex][1] === 4) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle5").hidden = false;
         }
-        else if (decodedText === 'QRCode6' && shuffledOrder[nextQRIndex][1] === 5) {
+        else if (decodedText === 'qrCode6gateagain' && shuffledOrder[nextQRIndex][1] === 5) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle6").hidden = false;
         }
-        else if (decodedText === 'QRCode7' && shuffledOrder[nextQRIndex][1] === 6) {
+        else if (decodedText === 'qrCode7gatewalebhai' && shuffledOrder[nextQRIndex][1] === 6) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle7").hidden = false;
         }
-        else if (decodedText === 'QRCode8' && shuffledOrder[nextQRIndex][1] === 7) {
+        else if (decodedText === 'qrcode8mmragain' && shuffledOrder[nextQRIndex][1] === 7) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle8").hidden = false;
         }
-        else if (decodedText === 'QRCode9' && shuffledOrder[nextQRIndex][1] === 8) {
+        else if (decodedText === 'QRCode9mmrbro' && shuffledOrder[nextQRIndex][1] === 8) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle9").hidden = false;
         }
-        else if (decodedText === 'QRCode10' && shuffledOrder[nextQRIndex][1] === 9) {
+        else if (decodedText === 'QRCode10sportsRoombhai' && shuffledOrder[nextQRIndex][1] === 9) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle10").hidden = false;
         }
-        else if (decodedText === 'QRCode11' && shuffledOrder[nextQRIndex][1] === 10) {
+        else if (decodedText === 'QRCode11againsportsRoom' && shuffledOrder[nextQRIndex][1] === 10) {
             document.getElementById("scanner").hidden = true;
             document.getElementById("riddle11").hidden = false;
         }
         else {
-            alert("Invalid qrhi")
+            let errArr = ["Oops! This QR Code is invalid or corrupted. But don't worry, join us tomorrow at Fiestron for more exciting events!", "Error: Unable to read this QR Code. However, come visit Fiestron tomorrow for our next amazing event!", "Invalid QR Code. It seems something went wrong. But the fun doesn't stop here—join us at Fiestron tomorrow for more!", "Unable to scan this QR Code. But the adventure continues—head over to Fiestron tomorrow for more fantastic events!", "Whoops! Something went wrong with this QR Code. Visit us tomorrow at Fiestron for even more exciting activities!", "This QR Code seems invalid. Don’t miss out though—come join us tomorrow at Fiestron for more events!", "Scan failed. The QR Code didn’t work, but there's plenty more fun ahead. Join us tomorrow at Fiestron!", "This QR Code isn’t valid. But stay tuned for more! Join us tomorrow at Fiestron for exciting new events."]
+            alert(errArr[Math.floor(Math.random() * errArr.length)]);
             resumeScan();
         }
     }
@@ -221,7 +223,7 @@ document.querySelector("#btnAnswer11").addEventListener('click', () => {
 
 document.querySelector("#btnAnswer12").addEventListener('click', () => {
     if (document.getElementById("text12").value.trim().toLowerCase() == "html") {
-        alert("You found the treasure")
+        alert("You found the treasure, meet the event head immeditately")
     } else {
         showAlert("This answer is incorrect")
     }
@@ -236,7 +238,7 @@ function riddleSolved() {
         const clue = JSON.parse(getCookie("shuffledOrder"))[nextQRIndex][0];
         document.getElementById("dd").innerHTML = "Clue for the next location : " + clue + ". You have completed " + (nextQRIndex + 1) + " clues";
     } else if (nextQRIndex === 999) {
-        document.getElementById("dd").innerHTML = "Final Clue"
+        document.getElementById("dd").innerHTML = "Open skies and paths align, A meeting spot both grand and fine. Find me where the campus does shine."
     }
     resumeScan();
     setCookie("nextQRIndex", nextQRIndex, 3);
