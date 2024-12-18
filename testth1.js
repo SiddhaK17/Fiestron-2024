@@ -70,7 +70,7 @@ function onScanSuccess(decodedText, decodedResult) {
         }
     }
     else {
-        if (decodedText === 'qrcode1quadpopeye') {
+        if (decodedText === 'qrcode1') {
             if (nextQRIndex) {
                 alert("Invalid QR");
             } else {
