@@ -134,7 +134,7 @@ function onScanSuccess(decodedText, decodedResult) {
 
 
 document.querySelector("#btnAnswer1").addEventListener('click', () => {
-    if (document.getElementById("text1").value.trim().toLowerCase() == "coin") {
+    if (document.getElementById("text1").value.trim().toLowerCase() == "ratatouille") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -142,7 +142,7 @@ document.querySelector("#btnAnswer1").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer2").addEventListener('click', () => {
-    if (document.getElementById("text2").value.trim().toLowerCase() == "internet") {
+    if (document.getElementById("text2").value.trim().toLowerCase() == "harry potter") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
@@ -150,7 +150,7 @@ document.querySelector("#btnAnswer2").addEventListener('click', () => {
 });
 
 document.querySelector("#btnAnswer3").addEventListener('click', () => {
-    if (document.getElementById("text3").value.trim().toLowerCase() == "calculator") {
+    if (document.getElementById("text3").value.trim().toLowerCase() == "modern family") {
         riddleSolved();
     } else {
         showAlert("This answer is incorrect")
