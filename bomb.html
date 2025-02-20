@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bomb Puzzle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        img {
+            width: 80vw;
+            max-width: 2000px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 30px;
+        }
+
+        .controls button {
+            width: 150px;
+            height: 150px;
+            font-size: 4rem;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+            width: 150px;
+            height: 150px;
+            font-size: 4rem;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .submit-button:hover {
+            background-color: #218838;
+        }
+
+        .clues {
+            margin-top: 60px;
+            text-align: left;
+            font-size: 3rem;
+            line-height: 2.5rem;
+        }
+
+        h3 {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bombImage" src="./bombNoLight.png" alt="Bomb">
+
+    <div class="controls">
+        <button class="digit-button" onclick="cycleDigit(0)">0</button>
+        <button class="digit-button" onclick="cycleDigit(1)">0</button>
+        <button class="digit-button" onclick="cycleDigit(2)">0</button>
+        <button class="digit-button" onclick="cycleDigit(3)">0</button>
+        <button class="submit-button" onclick="checkCode()">✓</button>
+    </div>
+
+    <div class="clues" id="clueContainer">
+        <h3>Brain Teaser Clues:</h3>
+        <p>Loading clues...</p>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Array of clue sets
+        const clueSets = [
+            {
+                code: "0429",
+                clues: [
+                    "Clue 1: Code 8 9 5 1 - Two digits right but both are at wrong positions.",
+                    "Clue 2: Code 2 1 6 9 - One digit right and in the right place. Another digit right but in wrong place.",
+                    "Clue 3: Code 3 6 9 4 - One digit right and in the right place. Another digit right but in wrong place.",
+                    "Clue 4: Code 4 7 2 1 - One digit right and in the right place. Another digit right but in wrong place.",
+                    "Clue 5: Code 1 2 3 7 - Three digits are right but all are at wrong place."
+                ]
+            },
+            {
+                code: "5732",
+                clues: [
+                    "Clue 1: Code 4 5 6 7 - Two digits right but both are at wrong positions.",
+                    "Clue 2: Code 7 2 3 8 - One digit right and in the right place. Another digit right but in wrong place.",
+                    "Clue 3: Code 5 3 9 0 - One digit right and in the right place. Another digit right but in wrong place.",
+                    "Clue 4: Code 8 7 4 5 - One digit right and in the right place. Another digit right but in wrong place.",
+                    "Clue 5: Code 1 3 5 2 - Three digits are right but all are at wrong place."
+                ]
+            }
+        ];
+
+        // Select a random clue set
+        const selectedSet = clueSets[Math.floor(Math.random() * clueSets.length)];
+        const correctCode = selectedSet.code;
+        const digits = [0, 0, 0, 0];
+        let blinking;
+        const bombImage = document.getElementById("bombImage");
+
+        function cycleDigit(index) {
+            digits[index] = (digits[index] + 1) % 10;
+            document.querySelectorAll(".digit-button")[index].innerText = digits[index];
+        }
+
+        function startBlinking() {
+            let isRed = false;
+            blinking = setInterval(() => {
+                bombImage.src = isRed ? "./bombNoLight.png" : "./bombRed.png";
+                isRed = !isRed;
+            }, 750);
+        }
+
+        function stopBlinking() {
+            clearInterval(blinking);
+        }
+
+        function checkCode() {
+            const inputCode = digits.join("");
+            if (inputCode === correctCode) {
+                stopBlinking();
+                bombImage.src = "./bombGreen.png";
+                alert("Code Correct! Bomb Defused!");
+            } else {
+                startBlinking();
+                alert("Wrong Code! Try Again!");
+            }
+        }
+
+        // Display the clues on load
+        window.onload = () => {
+            const clueContainer = document.getElementById("clueContainer");
+            clueContainer.innerHTML = "<h3>Brain Teaser Clues:</h3>";
+            selectedSet.clues.forEach(clue => {
+                clueContainer.innerHTML += `<p>${clue}</p>`;
+            });
+            startBlinking();
+        }
+    </script>
+</body>
+
+</html>
